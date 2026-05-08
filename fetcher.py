@@ -1,4 +1,3 @@
-import io
 import os
 import requests
 import pandas as pd
@@ -7,16 +6,27 @@ import streamlit as st
 FRED_API_KEY = os.getenv("FRED_API_KEY", "")
 
 FRED_SERIES = {
+    # Economic
     "housing_starts": "HOUST",
     "cpi":            "CPIAUCSL",
-    "us10y":          "DGS10",
     "wti":            "DCOILWTICO",
-    "fed_rate":        "FEDFUNDS",
-    "fed_assets":      "WALCL",
-    "fed_treasuries":  "TREAST",
-    "fed_mbs":         "WSHOMCB",
-    "us_m2":           "M2SL",
-    "boj_assets":      "JPNASSETS",
+    # Yields
+    "us2y":           "DGS2",
+    "us10y":          "DGS10",
+    "jgb10y":         "IRLTLT01JPM156N",   # Japan 10Y (monthly, OECD)
+    "hy_spread":      "BAMLH0A0HYM2",      # ICE BofA HY OAS
+    # Fed policy & balance sheet
+    "fed_rate":       "FEDFUNDS",
+    "fed_assets":     "WALCL",
+    "fed_treasuries": "TREAST",
+    "fed_mbs":        "WSHOMCB",
+    # Liquidity
+    "us_m2":          "M2SL",
+    "bank_credit":    "TOTBKCR",           # Total bank credit
+    "rrp":            "RRPONTSYD",         # Fed overnight RRP
+    "tga":            "WTREGEN",           # Treasury General Account
+    # BOJ (FRED proxy)
+    "boj_assets":     "JPNASSETS",
 }
 
 
@@ -24,40 +34,61 @@ FRED_SERIES = {
 def fetch_fred(series_id: str) -> pd.DataFrame:
     if not FRED_API_KEY:
         return pd.DataFrame()
-    r = requests.get(
-        "https://api.stlouisfed.org/fred/series/observations",
-        params={"series_id": series_id, "api_key": FRED_API_KEY, "file_type": "json"},
-        timeout=10,
-    )
-    r.raise_for_status()
-    df = pd.DataFrame(r.json().get("observations", []))
-    df = df[df["value"] != "."].copy()
-    df["date"]  = pd.to_datetime(df["date"])
-    df["value"] = df["value"].astype(float)
-    return df.sort_values("date").reset_index(drop=True)
+    try:
+        r = requests.get(
+            "https://api.stlouisfed.org/fred/series/observations",
+            params={"series_id": series_id, "api_key": FRED_API_KEY, "file_type": "json"},
+            timeout=15,
+        )
+        r.raise_for_status()
+        df = pd.DataFrame(r.json().get("observations", []))
+        if df.empty:
+            return pd.DataFrame()
+        df = df[df["value"] != "."].copy()
+        df["date"]  = pd.to_datetime(df["date"])
+        df["value"] = df["value"].astype(float)
+        return df.sort_values("date").reset_index(drop=True)
+    except Exception:
+        return pd.DataFrame()
 
 
 @st.cache_data(ttl=3600)
 def fetch_yahoo(ticker: str, interval: str = "1wk", range_: str = "max") -> pd.DataFrame:
-    r = requests.get(
+    # Try both Yahoo Finance endpoints in case one is blocked
+    urls = [
         f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}",
-        params={"interval": interval, "range": range_},
-        headers={"User-Agent": "Mozilla/5.0"},
-        timeout=10,
-    )
-    r.raise_for_status()
-    result = r.json()["chart"]["result"][0]
-    df = pd.DataFrame({
-        "date":  pd.to_datetime(result["timestamp"], unit="s"),
-        "value": result["indicators"]["quote"][0]["close"],
-    }).dropna()
-    return df.reset_index(drop=True)
+        f"https://query2.finance.yahoo.com/v8/finance/chart/{ticker}",
+    ]
+    for url in urls:
+        try:
+            r = requests.get(
+                url,
+                params={"interval": interval, "range": range_},
+                headers={
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                    "Accept": "application/json",
+                },
+                timeout=15,
+            )
+            if r.status_code != 200:
+                continue
+            payload = r.json()
+            result  = payload.get("chart", {}).get("result")
+            if not result:
+                continue
+            df = pd.DataFrame({
+                "date":  pd.to_datetime(result[0]["timestamp"], unit="s"),
+                "value": result[0]["indicators"]["quote"][0]["close"],
+            }).dropna()
+            return df.reset_index(drop=True)
+        except Exception:
+            continue
+    return pd.DataFrame()
 
 
 BOJ_API = "https://www.stat-search.boj.or.jp/api/v1"
 
 BOJ_SERIES = {
-    # db,         code,            freq
     "boj_monetary_base": ("MD01", "MABS1AN11",    "M"),
     "boj_m2":            ("MD02", "MAM1NAM2M2MO", "M"),
     "boj_jgb":           ("BS01", "MABJMA5B",     "M"),
@@ -82,7 +113,7 @@ def fetch_boj(key: str) -> pd.DataFrame:
     if not resultset or not resultset[0].get("VALUES"):
         return pd.DataFrame()
 
-    vals = resultset[0]["VALUES"]
+    vals      = resultset[0]["VALUES"]
     dates_raw = vals["SURVEY_DATES"]
     values    = vals["VALUES"]
 
@@ -96,7 +127,7 @@ def fetch_boj(key: str) -> pd.DataFrame:
     return df.dropna().sort_values("date").reset_index(drop=True)
 
 
-@st.cache_data(ttl=86400)  # 하루 1회 갱신 (월별 데이터)
+@st.cache_data(ttl=86400)
 def fetch_cape() -> pd.DataFrame:
     import re
     r = requests.get(
@@ -119,32 +150,52 @@ def fetch_cape() -> pd.DataFrame:
             except Exception:
                 pass
     df = pd.DataFrame(records).sort_values("date").reset_index(drop=True)
-    # 날짜를 월 시작일로 정규화
     df["date"] = df["date"].dt.to_period("M").dt.to_timestamp()
     return df
 
 
 def load_all() -> dict:
+    # ── CPI YoY ───────────────────────────────────────────────────────────────
     df_cpi = fetch_fred(FRED_SERIES["cpi"])
-
     df_cpi_yoy = df_cpi.copy()
     df_cpi_yoy["value"] = df_cpi_yoy["value"].pct_change(12) * 100
     df_cpi_yoy = df_cpi_yoy.dropna().reset_index(drop=True)
 
-    fx_tickers = {"dxy": "DX-Y.NYB", "eurusd": "EURUSD=X", "usdjpy": "JPY=X", "usdmxn": "MXN=X"}
+    # ── 2Y-10Y Yield Spread ───────────────────────────────────────────────────
+    df_us2y  = fetch_fred(FRED_SERIES["us2y"])
+    df_us10y = fetch_fred(FRED_SERIES["us10y"])
+    merged_y = pd.merge(
+        df_us10y.rename(columns={"value": "us10y"}),
+        df_us2y.rename(columns={"value": "us2y"}),
+        on="date", how="inner",
+    )
+    df_spread = merged_y.copy()
+    df_spread["value"] = merged_y["us10y"] - merged_y["us2y"]
+    df_spread = df_spread[["date", "value"]].sort_values("date").reset_index(drop=True)
 
     result = {
+        # Economic
         "housing":    fetch_fred(FRED_SERIES["housing_starts"]),
         "cpi_yoy":    df_cpi_yoy,
-        "us10y":      fetch_fred(FRED_SERIES["us10y"]),
         "wti":        fetch_fred(FRED_SERIES["wti"]),
         "cape":       fetch_cape(),
-        "fed_rate":   fetch_fred(FRED_SERIES["fed_rate"]),
+        # Yields
+        "us2y":       df_us2y,
+        "us10y":      df_us10y,
+        "spread_2y10y": df_spread,
+        "jgb10y":     fetch_fred(FRED_SERIES["jgb10y"]),
+        "hy_spread":  fetch_fred(FRED_SERIES["hy_spread"]),
+        # Fed policy & balance sheet
+        "fed_rate":       fetch_fred(FRED_SERIES["fed_rate"]),
         "fed_assets":     fetch_fred(FRED_SERIES["fed_assets"]),
         "fed_treasuries": fetch_fred(FRED_SERIES["fed_treasuries"]),
         "fed_mbs":        fetch_fred(FRED_SERIES["fed_mbs"]),
-        "us_m2":      fetch_fred(FRED_SERIES["us_m2"]),
-        # BOJ 공식 API
+        # Liquidity
+        "us_m2":       fetch_fred(FRED_SERIES["us_m2"]),
+        "bank_credit": fetch_fred(FRED_SERIES["bank_credit"]),
+        "rrp":         fetch_fred(FRED_SERIES["rrp"]),
+        "tga":         fetch_fred(FRED_SERIES["tga"]),
+        # BOJ
         "boj_monetary_base": fetch_boj("boj_monetary_base"),
         "boj_m2":            fetch_boj("boj_m2"),
         "boj_total_assets":  fetch_boj("boj_total_assets"),
@@ -154,9 +205,27 @@ def load_all() -> dict:
         "boj_policy_rate":   fetch_boj("boj_policy_rate"),
     }
 
-    # 주봉 (전체 기간용) + 일봉 (1년 이내용)
-    for key, ticker in fx_tickers.items():
-        result[key]            = fetch_yahoo(ticker, interval="1wk", range_="max")
-        result[f"{key}_daily"] = fetch_yahoo(ticker, interval="1d",  range_="2y")
+    # ── Yahoo Finance: weekly (all history) + daily (2Y) ─────────────────────
+    yahoo_tickers = {
+        # FX
+        "dxy":    "DX-Y.NYB",
+        "eurusd": "EURUSD=X",
+        "usdjpy": "JPY=X",
+        "usdmxn": "MXN=X",
+        # Equities & commodities
+        "sp500":  "^GSPC",
+        "nikkei": "^N225",
+        "gold":   "GC=F",
+        "vix":    "^VIX",
+    }
+    for key, ticker in yahoo_tickers.items():
+        try:
+            result[key] = fetch_yahoo(ticker, interval="1wk", range_="max")
+        except Exception:
+            result[key] = pd.DataFrame()
+        try:
+            result[f"{key}_daily"] = fetch_yahoo(ticker, interval="1d", range_="2y")
+        except Exception:
+            result[f"{key}_daily"] = pd.DataFrame()
 
     return result
