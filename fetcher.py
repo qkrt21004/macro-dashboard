@@ -31,22 +31,26 @@ FRED_SERIES = {
 def fetch_fred(series_id: str) -> pd.DataFrame:
     if not FRED_API_KEY:
         return pd.DataFrame()
-    try:
-        r = requests.get(
-            "https://api.stlouisfed.org/fred/series/observations",
-            params={"series_id": series_id, "api_key": FRED_API_KEY, "file_type": "json"},
-            timeout=15,
-        )
-        r.raise_for_status()
-        df = pd.DataFrame(r.json().get("observations", []))
-        if df.empty:
-            return pd.DataFrame()
-        df = df[df["value"] != "."].copy()
-        df["date"]  = pd.to_datetime(df["date"])
-        df["value"] = df["value"].astype(float)
-        return df.sort_values("date").reset_index(drop=True)
-    except Exception:
-        return pd.DataFrame()
+    for attempt in range(3):  # 최대 3회 시도
+        try:
+            r = requests.get(
+                "https://api.stlouisfed.org/fred/series/observations",
+                params={"series_id": series_id, "api_key": FRED_API_KEY, "file_type": "json"},
+                timeout=30,
+            )
+            r.raise_for_status()
+            df = pd.DataFrame(r.json().get("observations", []))
+            if df.empty:
+                return pd.DataFrame()
+            df = df[df["value"] != "."].copy()
+            df["date"]  = pd.to_datetime(df["date"])
+            df["value"] = df["value"].astype(float)
+            return df.sort_values("date").reset_index(drop=True)
+        except Exception:
+            if attempt == 2:
+                return pd.DataFrame()
+            continue
+    return pd.DataFrame()
 
 
 @st.cache_data(ttl=3600)
