@@ -103,29 +103,36 @@ BOJ_SERIES = {
 @st.cache_data(ttl=86400)
 def fetch_boj(key: str) -> pd.DataFrame:
     db, code, freq = BOJ_SERIES[key]
-    r = requests.get(
-        f"{BOJ_API}/getDataCode",
-        params={"format": "json", "lang": "en", "db": db, "code": code},
-        headers={"User-Agent": "Mozilla/5.0"},
-        timeout=20,
-    )
-    r.raise_for_status()
-    resultset = r.json().get("RESULTSET", [])
-    if not resultset or not resultset[0].get("VALUES"):
-        return pd.DataFrame()
+    for attempt in range(3):
+        try:
+            r = requests.get(
+                f"{BOJ_API}/getDataCode",
+                params={"format": "json", "lang": "en", "db": db, "code": code},
+                headers={"User-Agent": "Mozilla/5.0"},
+                timeout=30,
+            )
+            r.raise_for_status()
+            resultset = r.json().get("RESULTSET", [])
+            if not resultset or not resultset[0].get("VALUES"):
+                return pd.DataFrame()
 
-    vals      = resultset[0]["VALUES"]
-    dates_raw = vals["SURVEY_DATES"]
-    values    = vals["VALUES"]
+            vals      = resultset[0]["VALUES"]
+            dates_raw = vals["SURVEY_DATES"]
+            values    = vals["VALUES"]
 
-    if freq == "D":
-        dates = pd.to_datetime([str(d) for d in dates_raw], format="%Y%m%d")
-    else:
-        dates = pd.to_datetime([str(d) + "01" for d in dates_raw], format="%Y%m%d")
+            if freq == "D":
+                dates = pd.to_datetime([str(d) for d in dates_raw], format="%Y%m%d")
+            else:
+                dates = pd.to_datetime([str(d) + "01" for d in dates_raw], format="%Y%m%d")
 
-    df = pd.DataFrame({"date": dates, "value": values}).dropna()
-    df["value"] = pd.to_numeric(df["value"], errors="coerce")
-    return df.dropna().sort_values("date").reset_index(drop=True)
+            df = pd.DataFrame({"date": dates, "value": values}).dropna()
+            df["value"] = pd.to_numeric(df["value"], errors="coerce")
+            return df.dropna().sort_values("date").reset_index(drop=True)
+        except Exception:
+            if attempt == 2:
+                return pd.DataFrame()
+            continue
+    return pd.DataFrame()
 
 
 @st.cache_data(ttl=86400)
