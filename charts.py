@@ -173,7 +173,7 @@ def make_fed_balance_sheet_chart(df_tsy: pd.DataFrame, df_mbs: pd.DataFrame, per
                     color="#888", showgrid=False, range=[0, 100], ticksuffix="%"),
         height=320,
         hovermode="x unified",
-        legend=dict(orientation="h", y=-0.15, x=0),
+        legend=dict(orientation="h", y=-0.15, x=0, font=dict(color="#ffffff")),
     )
     return fig
 
@@ -199,7 +199,7 @@ def make_comparison_chart(dataframes: dict, period_label: str) -> go.Figure:
     _base_layout(fig, f"Indicator Comparison — % Change from Period Start ({period_label})", height=360)
     fig.update_layout(
         yaxis=dict(ticksuffix="%"),
-        legend=dict(orientation="h", y=-0.12, x=0),
+        legend=dict(orientation="h", y=-0.12, x=0, font=dict(color="#ffffff")),
     )
     return fig
 
@@ -226,6 +226,6 @@ def make_fx_chart(dataframes: dict, period_label: str) -> go.Figure:
     _base_layout(fig, f"DXY vs EUR/USD · USD/JPY · USD/MXN — % Change from Period Start ({period_label})", height=320)
     fig.update_layout(
         yaxis=dict(ticksuffix="%"),
-        legend=dict(orientation="h", y=-0.12, x=0),
+        legend=dict(orientation="h", y=-0.12, x=0, font=dict(color="#ffffff")),
     )
     return fig
