@@ -25,12 +25,12 @@ COLORS = {
 }
 
 
-def _base_layout(fig: go.Figure, title: str, height: int = 300) -> go.Figure:
+def _base_layout(fig: go.Figure, title: str, height: int = 260) -> go.Figure:
     fig.update_layout(
-        title=dict(text=title, font=dict(size=13, color="#ccc")),
+        title=dict(text=title, font=dict(size=13, color="#FFD700")),
         plot_bgcolor="#0e1117",
         paper_bgcolor="#0e1117",
-        font=dict(color="#ccc"),
+        font=dict(color="#FFD700"),
         margin=dict(l=10, r=10, t=40, b=10),
         xaxis=dict(showgrid=False, color="#555"),
         yaxis=dict(showgrid=True, gridcolor="#1e1e2e", color="#555"),
@@ -134,15 +134,15 @@ def make_fed_balance_sheet_chart(df_tsy: pd.DataFrame, df_mbs: pd.DataFrame, per
     ))
 
     fig.update_layout(
-        title=dict(text=f"대차대조표 — 미국채 & MBS ({period_label})", font=dict(size=13, color="#ccc")),
+        title=dict(text=f"대차대조표 — 미국채 & MBS ({period_label})", font=dict(size=13, color="#FFD700")),
         plot_bgcolor="#0e1117", paper_bgcolor="#0e1117",
-        font=dict(color="#ccc"),
+        font=dict(color="#FFD700"),
         margin=dict(l=10, r=60, t=40, b=10),
         xaxis=dict(showgrid=False, color="#555"),
         yaxis=dict(title="보유액 (백만 달러)", showgrid=True, gridcolor="#1e1e2e", color="#555"),
         yaxis2=dict(title="비중 (%)", overlaying="y", side="right",
                     color="#888", showgrid=False, range=[0, 100], ticksuffix="%"),
-        height=400,
+        height=320,
         hovermode="x unified",
         legend=dict(orientation="h", y=-0.15, x=0),
     )
@@ -167,7 +167,7 @@ def make_comparison_chart(dataframes: dict, period_label: str) -> go.Figure:
             hovertemplate=f"{label}: %{{y:+.2f}}%<extra></extra>",
         ))
     fig.add_hline(y=0, line_dash="dot", line_color="#444")
-    _base_layout(fig, f"지표 비교 — 기간 시작 대비 % 변화 ({period_label})", height=450)
+    _base_layout(fig, f"지표 비교 — 기간 시작 대비 % 변화 ({period_label})", height=360)
     fig.update_layout(
         yaxis=dict(ticksuffix="%"),
         legend=dict(orientation="h", y=-0.12, x=0),
@@ -194,7 +194,7 @@ def make_fx_chart(dataframes: dict, period_label: str) -> go.Figure:
             hovertemplate=f"{label}: %{{y:+.2f}}%<extra></extra>",
         ))
     fig.add_hline(y=0, line_dash="dot", line_color="#444")
-    _base_layout(fig, f"DXY vs EUR/USD · USD/JPY · USD/MXN — 기간 시작 대비 % 변화 ({period_label})", height=380)
+    _base_layout(fig, f"DXY vs EUR/USD · USD/JPY · USD/MXN — 기간 시작 대비 % 변화 ({period_label})", height=320)
     fig.update_layout(
         yaxis=dict(ticksuffix="%"),
         legend=dict(orientation="h", y=-0.12, x=0),

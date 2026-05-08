@@ -14,10 +14,64 @@ st.set_page_config(
 
 st.markdown("""
 <style>
+    /* ── 공통 ── */
     .stMetric label { font-size: 0.85rem; color: #888; }
     .block-container { padding-top: 2rem; }
-    /* 기간 선택 라디오 버튼 폰트 작게 */
     div[data-testid="stHorizontalBlock"] .stRadio label { font-size: 0.78rem; }
+
+    /* ── 모바일 (640px 이하) ── */
+    @media (max-width: 640px) {
+        /* 전체 여백 축소 */
+        .block-container {
+            padding: 1rem 0.75rem !important;
+        }
+
+        /* 메트릭 카드 폰트 축소 */
+        [data-testid="stMetric"] {
+            padding: 0.4rem !important;
+        }
+        [data-testid="metric-container"] label {
+            font-size: 0.65rem !important;
+        }
+        [data-testid="metric-container"] [data-testid="stMetricValue"] {
+            font-size: 1rem !important;
+        }
+        [data-testid="metric-container"] [data-testid="stMetricDelta"] {
+            font-size: 0.65rem !important;
+        }
+
+        /* 컬럼 → 세로 스택 */
+        [data-testid="stHorizontalBlock"] {
+            flex-wrap: wrap !important;
+        }
+        [data-testid="stHorizontalBlock"] > [data-testid="stVerticalBlock"] {
+            min-width: 100% !important;
+            flex: 1 1 100% !important;
+        }
+
+        /* 라디오 버튼 가로 스크롤 */
+        [data-testid="stRadio"] > div {
+            flex-wrap: nowrap !important;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 4px;
+        }
+        [data-testid="stRadio"] label {
+            font-size: 0.7rem !important;
+            white-space: nowrap;
+        }
+
+        /* 제목 크기 */
+        h1 { font-size: 1.4rem !important; }
+        h2 { font-size: 1.1rem !important; }
+        h3 { font-size: 1rem !important; }
+
+        /* 멀티셀렉트 */
+        [data-testid="stMultiSelect"] { font-size: 0.8rem !important; }
+
+        /* 차트 여백 */
+        [data-testid="stPlotlyChart"] { margin-bottom: 0.5rem !important; }
+    }
 </style>
 """, unsafe_allow_html=True)
 
