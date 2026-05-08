@@ -149,7 +149,7 @@ r1a, r1b = st.columns(2)
 with r1a:
     _, d = period_selector("fed_rate_p")
     st.plotly_chart(
-        make_line_chart(filter_period(data["fed_rate"], d), "Interest Rate (%)", "fed_rate", "%"),
+        make_line_chart(filter_period(data["fed_rate"], d), "Federal Funds Rate (%)", "fed_rate", "%"),
         use_container_width=True,
     )
     st.caption("Source: Federal Reserve via FRED (FEDFUNDS)")
