@@ -260,30 +260,6 @@ with r3b:
     )
     st.caption("Source: Bank of Japan Official API — MD02/MAM1NAM2M2MO")
 
-r3c, r3d = st.columns(2)
-with r3c:
-    _, d = period_selector("rrp_p")
-    st.plotly_chart(
-        make_line_chart(filter_period(data["rrp"], d), "Fed Overnight RRP (Billion USD)", "rrp", "B"),
-        use_container_width=True,
-    )
-    st.caption("Source: Federal Reserve via FRED (RRPONTSYD)")
-
-with r3d:
-    _, d = period_selector("tga_p")
-    st.plotly_chart(
-        make_line_chart(filter_period(data["tga"], d), "Treasury General Account — TGA (Billion USD)", "tga", "B"),
-        use_container_width=True,
-    )
-    st.caption("Source: Federal Reserve via FRED (WTREGEN)")
-
-_, d = period_selector("bank_credit_p")
-st.plotly_chart(
-    make_line_chart(filter_period(data["bank_credit"], d), "US Total Bank Credit (Billion USD)", "bank_credit", "B"),
-    use_container_width=True,
-)
-st.caption("Source: Federal Reserve via FRED (TOTBKCR)")
-
 st.divider()
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -482,9 +458,6 @@ ALL_INDICATORS = {
     # Section 3
     "US M2":              lambda d, days: filter_period(d["us_m2"],        days),
     "Japan M2":           lambda d, days: filter_period(d["boj_m2"],       days),
-    "Fed RRP":            lambda d, days: filter_period(d["rrp"],          days),
-    "TGA":                lambda d, days: filter_period(d["tga"],          days),
-    "Bank Credit":        lambda d, days: filter_period(d["bank_credit"],  days),
     # Section 4
     "US 2Y Yield":        lambda d, days: filter_period(d["us2y"],          days),
     "US 10Y Yield":       lambda d, days: filter_period(d["us10y"],         days),

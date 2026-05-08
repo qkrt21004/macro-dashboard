@@ -22,9 +22,6 @@ FRED_SERIES = {
     "fed_mbs":        "WSHOMCB",
     # Liquidity
     "us_m2":          "M2SL",
-    "bank_credit":    "TOTBKCR",           # Total bank credit
-    "rrp":            "RRPONTSYD",         # Fed overnight RRP
-    "tga":            "WTREGEN",           # Treasury General Account
     # BOJ (FRED proxy)
     "boj_assets":     "JPNASSETS",
 }
@@ -192,9 +189,6 @@ def load_all() -> dict:
         "fed_mbs":        fetch_fred(FRED_SERIES["fed_mbs"]),
         # Liquidity
         "us_m2":       fetch_fred(FRED_SERIES["us_m2"]),
-        "bank_credit": fetch_fred(FRED_SERIES["bank_credit"]),
-        "rrp":         fetch_fred(FRED_SERIES["rrp"]),
-        "tga":         fetch_fred(FRED_SERIES["tga"]),
         # BOJ
         "boj_monetary_base": fetch_boj("boj_monetary_base"),
         "boj_m2":            fetch_boj("boj_m2"),
