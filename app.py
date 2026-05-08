@@ -123,7 +123,7 @@ vix_v,    vix_d    = get_latest(data["vix"])
 
 m1, m2, m3, m4, m5, m6 = st.columns(6)
 with m1:
-    if fed_v:   st.metric("Fed Funds Rate",    f"{fed_v:.2f}%",   f"{fed_d:+.2f}pp")
+    if fed_v:   st.metric("Interest Rate",    f"{fed_v:.2f}%",   f"{fed_d:+.2f}pp")
 with m2:
     if boj_v:   st.metric("BOJ Policy Rate",   f"{boj_v:.2f}%",   f"{boj_d:+.2f}pp")
 with m3:
@@ -149,7 +149,7 @@ r1a, r1b = st.columns(2)
 with r1a:
     _, d = period_selector("fed_rate_p")
     st.plotly_chart(
-        make_line_chart(filter_period(data["fed_rate"], d), "Fed Funds Rate (%)", "fed_rate", "%"),
+        make_line_chart(filter_period(data["fed_rate"], d), "Interest Rate (%)", "fed_rate", "%"),
         use_container_width=True,
     )
     st.caption("Source: Federal Reserve via FRED (FEDFUNDS)")
@@ -446,7 +446,7 @@ st.subheader("Indicator Comparison")
 
 ALL_INDICATORS = {
     # Section 1
-    "Fed Funds Rate":     lambda d, days: filter_period(d["fed_rate"],       days),
+    "Interest Rate":     lambda d, days: filter_period(d["fed_rate"],       days),
     "BOJ Policy Rate":    lambda d, days: filter_period(d["boj_policy_rate"], days),
     "Fed Total Assets":   lambda d, days: filter_period(d["fed_assets"],      days),
     "BOJ Call Rate":      lambda d, days: filter_period(d["boj_call_rate"],   days),
@@ -485,7 +485,7 @@ with cmp_left:
     selected = st.multiselect(
         "Select indicators",
         options=list(ALL_INDICATORS.keys()),
-        default=["Fed Funds Rate", "US 10Y Yield", "2Y–10Y Spread"],
+        default=["Interest Rate", "US 10Y Yield", "2Y–10Y Spread"],
         label_visibility="collapsed",
     )
 with cmp_right:
