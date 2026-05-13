@@ -3,10 +3,10 @@
   "window_from": "2026-02-12",
   "window_to": "2026-11-09",
   "ticker_count": 124,
-  "succeeded": 108,
-  "empty": 16,
+  "succeeded": 109,
+  "empty": 15,
   "failed": 0,
-  "event_count": 180,
+  "event_count": 182,
   "events": [
     {
       "title": "ACI · BMO",
@@ -327,6 +327,16 @@
       "sector": "Aerospace & Defense",
       "name": "제너럴 다이내믹스",
       "timing": "BMO"
+    },
+    {
+      "title": "GOOGL · AMC",
+      "start": "2026-04-29",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "GOOGL",
+      "sector": "Tech",
+      "name": "알파벳 C",
+      "timing": "AMC"
     },
     {
       "title": "META · AMC",
@@ -1247,6 +1257,16 @@
       "sector": "Commodities",
       "name": "GE베르노바",
       "timing": ""
+    },
+    {
+      "title": "GOOGL · AMC",
+      "start": "2026-07-21",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "GOOGL",
+      "sector": "Tech",
+      "name": "알파벳 C",
+      "timing": "AMC"
     },
     {
       "title": "TSLA · AMC",
