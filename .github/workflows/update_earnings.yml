@@ -38,7 +38,15 @@ jobs:
           git add data/earnings.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
-          else
-            git commit -m "chore: refresh earnings data [skip ci]"
-            git push
+            exit 0
           fi
+          git commit -m "chore: refresh earnings data [skip ci]"
+          # Rebase onto latest main in case of concurrent commits, retry up to 3 times
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push; then
+              exit 0
+            fi
+            echo "Push attempt $i failed, retrying..."
+            sleep 5
+          done
+          exit 1

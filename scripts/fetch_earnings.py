@@ -29,7 +29,7 @@ OUTPUT_JSON = REPO_ROOT / "data" / "earnings.json"
 
 WINDOW_PAST_DAYS   = 180
 WINDOW_FUTURE_DAYS = 180
-RATE_LIMIT_SLEEP   = 1.1   # seconds between calls → ~55 calls/min (under 60)
+CHUNK_DAYS         = 30   # split window into 30-day chunks for bulk query
 
 # Sector → color palette
 SECTOR_COLOR = {
@@ -62,26 +62,31 @@ def format_timing(hour: str) -> str:
     return {"bmo": "BMO", "amc": "AMC", "dmh": "DMH"}.get((hour or "").lower(), "")
 
 
-def fetch_one(symbol: str, from_date: str, to_date: str, api_key: str) -> list:
-    """Fetch earnings for a single symbol with 2-attempt retry."""
+def fetch_window(from_date: str, to_date: str, api_key: str) -> list:
+    """
+    Fetch ALL US earnings in a date range via bulk /calendar/earnings.
+    Finnhub free tier appears to only support bulk queries (no symbol param).
+    """
     url = "https://finnhub.io/api/v1/calendar/earnings"
-    params = {"from": from_date, "to": to_date, "symbol": symbol, "token": api_key}
+    params = {"from": from_date, "to": to_date, "token": api_key}
 
-    for attempt in range(2):
+    for attempt in range(3):
         try:
-            r = requests.get(url, params=params, timeout=20)
+            r = requests.get(url, params=params, timeout=30)
             if r.status_code == 429:
-                # Rate-limited — back off and retry once
-                time.sleep(3)
+                time.sleep(5)
                 continue
             if r.status_code != 200:
-                return []
+                print(f"  ! HTTP {r.status_code} for {from_date}→{to_date}", file=sys.stderr)
+                if attempt == 2:
+                    return []
+                continue
             return r.json().get("earningsCalendar", []) or []
         except Exception as e:
-            if attempt == 1:
-                print(f"  ! {symbol}: {e}", file=sys.stderr)
+            if attempt == 2:
+                print(f"  ! {from_date}→{to_date}: {e}", file=sys.stderr)
                 return []
-            time.sleep(1)
+            time.sleep(2)
     return []
 
 
@@ -92,60 +97,83 @@ def main() -> int:
         return 1
 
     tickers = load_tickers()
-    today      = date.today()
-    from_date  = (today - timedelta(days=WINDOW_PAST_DAYS)).isoformat()
-    to_date    = (today + timedelta(days=WINDOW_FUTURE_DAYS)).isoformat()
+    # Build ticker → (sector, name) lookup. Normalize to uppercase.
+    ticker_meta: dict[str, tuple[str, str]] = {}
+    for t, s, n in tickers:
+        ticker_meta[t.upper()] = (s, n)
+        # Also accept BRK-B / BRK.B aliases
+        if "." in t:
+            ticker_meta[t.upper().replace(".", "-")] = (s, n)
 
-    print(f"Fetching {len(tickers)} tickers · window: {from_date} → {to_date}")
-    print(f"Rate limit: {RATE_LIMIT_SLEEP}s between calls "
-          f"(~{int(60 / RATE_LIMIT_SLEEP)} calls/min)")
+    today     = date.today()
+    from_date = (today - timedelta(days=WINDOW_PAST_DAYS)).isoformat()
+    to_date   = (today + timedelta(days=WINDOW_FUTURE_DAYS)).isoformat()
+
+    print(f"Watchlist: {len(tickers)} tickers · window: {from_date} → {to_date}")
+    print(f"Strategy: bulk query in {CHUNK_DAYS}-day chunks")
+
+    # Split window into CHUNK_DAYS chunks (bulk endpoint has range limits)
+    chunks: list[tuple[str, str]] = []
+    start = today - timedelta(days=WINDOW_PAST_DAYS)
+    end   = today + timedelta(days=WINDOW_FUTURE_DAYS)
+    cur   = start
+    while cur < end:
+        nxt = min(cur + timedelta(days=CHUNK_DAYS), end)
+        chunks.append((cur.isoformat(), nxt.isoformat()))
+        cur = nxt + timedelta(days=1)
 
     events: list[dict] = []
     seen:   set        = set()
-    succeeded = 0
-    empty     = 0
-    failed    = 0
+    all_returned       = 0
+    matched_tickers    = set()
 
-    for i, (symbol, sector, name) in enumerate(tickers, 1):
-        color = SECTOR_COLOR.get(sector, DEFAULT_COLOR)
-        data  = fetch_one(symbol, from_date, to_date, api_key)
-
-        if not data:
-            empty += 1
-        else:
-            succeeded += 1
+    for i, (f, t) in enumerate(chunks, 1):
+        data = fetch_window(f, t, api_key)
+        all_returned += len(data)
 
         for item in data:
             sym = (item.get("symbol") or "").upper()
-            d   = item.get("date", "")
+            if sym not in ticker_meta:
+                continue
+
+            d = item.get("date", "")
             if not d:
                 continue
+
             key = (sym, d)
             if key in seen:
                 continue
             seen.add(key)
 
+            sector, name = ticker_meta[sym]
+            color = SECTOR_COLOR.get(sector, DEFAULT_COLOR)
             timing = format_timing(item.get("hour", ""))
-            title  = f"{sym} · {timing}" if timing else sym
+            # Display BRK-B as BRK.B
+            display_sym = sym.replace("-B", ".B") if sym.endswith("-B") else sym
+            title = f"{display_sym} · {timing}" if timing else display_sym
 
             events.append({
                 "title":   title,
                 "start":   d,
                 "color":   color,
                 "allDay":  True,
-                "ticker":  sym,
+                "ticker":  display_sym,
                 "sector":  sector,
                 "name":    name,
                 "timing":  timing,
             })
+            matched_tickers.add(sym)
 
-        if i % 20 == 0:
-            print(f"  [{i:3}/{len(tickers)}]  succeeded:{succeeded}  empty:{empty}")
+        print(f"  [{i:2}/{len(chunks)}] {f}→{t}  raw:{len(data):4}  matched:{len(events)}")
+        time.sleep(1.0)  # gentle pacing
 
-        time.sleep(RATE_LIMIT_SLEEP)
-
-    failed = len(tickers) - succeeded - empty
+    succeeded = len(matched_tickers)
+    empty     = len(tickers) - succeeded
+    failed    = 0
     events.sort(key=lambda e: (e["start"], e["ticker"]))
+
+    print(f"\nFinnhub returned {all_returned} total earnings rows across all chunks")
+    print(f"After ticker filter: {len(events)} events for {succeeded} tickers")
 
     OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     payload = {
