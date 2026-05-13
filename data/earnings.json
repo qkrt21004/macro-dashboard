@@ -1,10 +1,10 @@
 {
-  "generated_at": "",
-  "window_from": "",
-  "window_to": "",
-  "ticker_count": 0,
+  "generated_at": "2026-05-13",
+  "window_from": "2025-11-14",
+  "window_to": "2026-11-09",
+  "ticker_count": 124,
   "succeeded": 0,
-  "empty": 0,
+  "empty": 124,
   "failed": 0,
   "event_count": 0,
   "events": []
