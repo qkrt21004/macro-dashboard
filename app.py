@@ -10,6 +10,7 @@ from charts import (
     make_fed_balance_sheet_chart,
 )
 from events import get_calendar_events, LEGEND
+from earnings import get_earnings_events, EARNINGS_LEGEND
 from streamlit_calendar import calendar as st_calendar
 
 st.set_page_config(
@@ -101,7 +102,7 @@ st.caption(f"Updated: {datetime.now().strftime('%Y-%m-%d %H:%M')}  |  Sources: F
 
 # ── Tabs ──────────────────────────────────────────────────────────────────────
 
-tab_dash, tab_cal = st.tabs(["📊 Dashboard", "📅 Macro Calendar"])
+tab_dash, tab_cal, tab_earn = st.tabs(["📊 Dashboard", "📅 Macro Calendar", "📈 Earnings Calendar"])
 
 # ══════════════════════════════════════════════════════════════════════════════
 # CALENDAR TAB
@@ -160,6 +161,66 @@ with tab_cal:
         events = get_calendar_events()
 
     st_calendar(events=events, options=cal_options, custom_css=custom_css)
+
+# ══════════════════════════════════════════════════════════════════════════════
+# EARNINGS CALENDAR TAB
+# ══════════════════════════════════════════════════════════════════════════════
+
+with tab_earn:
+    st.markdown("### Earnings Calendar")
+    st.caption(
+        "Confirmed quarterly earnings dates by sector.  "
+        "BMO = Before Market Open · AMC = After Market Close.  "
+        "Q1 2026 reported dates + confirmed Q2 2026 dates where available."
+    )
+
+    # Legend — 2 rows for readability
+    leg_row1 = EARNINGS_LEGEND[:6]
+    leg_row2 = EARNINGS_LEGEND[6:]
+
+    for row in (leg_row1, leg_row2):
+        cols = st.columns(len(row))
+        for col, (label, color) in zip(cols, row):
+            col.markdown(
+                f'<span style="display:inline-block;width:12px;height:12px;'
+                f'background:{color};border-radius:3px;margin-right:6px;"></span>'
+                f'<span style="font-size:0.78rem;color:#ccc;">{label}</span>',
+                unsafe_allow_html=True,
+            )
+
+    st.markdown("")
+
+    earn_options = {
+        "initialView":         "dayGridMonth",
+        "initialDate":         datetime.now().strftime("%Y-%m-%d"),
+        "headerToolbar": {
+            "left":   "prev,next today",
+            "center": "title",
+            "right":  "dayGridMonth,listMonth",
+        },
+        "height":              680,
+        "fixedWeekCount":      False,
+        "showNonCurrentDates": True,
+    }
+
+    earn_css = """
+        .fc { background: #0e1117; color: #FFD700; font-family: sans-serif; }
+        .fc-toolbar-title { color: #FFD700 !important; font-size: 1.1rem !important; }
+        .fc-button { background: #1e1e2e !important; border-color: #444 !important; color: #ccc !important; }
+        .fc-button:hover { background: #2e2e3e !important; }
+        .fc-button-active { background: #3e3e4e !important; }
+        .fc-daygrid-day-number { color: #888 !important; }
+        .fc-col-header-cell-cushion { color: #FFD700 !important; }
+        .fc-day-today { background: #1a1a2e !important; }
+        .fc-event-title { font-weight: 600; font-size: 0.72rem; }
+        .fc-list-event-title { color: #fff !important; }
+        .fc-list-day-cushion { background: #1e1e2e !important; color: #FFD700 !important; }
+        .fc-list-event:hover td { background: #2e2e3e !important; }
+        .fc-scrollgrid { border-color: #333 !important; }
+        .fc-scrollgrid td, .fc-scrollgrid th { border-color: #2a2a3a !important; }
+    """
+
+    st_calendar(events=get_earnings_events(), options=earn_options, custom_css=earn_css)
 
 # ══════════════════════════════════════════════════════════════════════════════
 # DASHBOARD TAB
