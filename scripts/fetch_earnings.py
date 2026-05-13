@@ -29,7 +29,7 @@ OUTPUT_JSON = REPO_ROOT / "data" / "earnings.json"
 
 WINDOW_PAST_DAYS   = 90    # most past earnings already absorbed; focus forward
 WINDOW_FUTURE_DAYS = 180
-CHUNK_DAYS         = 14    # smaller chunks to stay under Finnhub's 1500-row response cap
+CHUNK_DAYS         = 7     # 7-day chunks to stay well under Finnhub's 1500-row cap even in peak earnings weeks
 
 # Sector → color palette
 SECTOR_COLOR = {
