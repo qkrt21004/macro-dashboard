@@ -98,12 +98,20 @@ def main() -> int:
 
     tickers = load_tickers()
     # Build ticker → (sector, name) lookup. Normalize to uppercase.
+    # Also register cross-class aliases (GOOG/GOOGL, BRK.B/BRK-B etc.)
+    DUAL_CLASS_ALIASES = {
+        "GOOG":  ["GOOGL"],
+        "GOOGL": ["GOOG"],
+    }
     ticker_meta: dict[str, tuple[str, str]] = {}
     for t, s, n in tickers:
         ticker_meta[t.upper()] = (s, n)
-        # Also accept BRK-B / BRK.B aliases
+        # BRK.B / BRK-B
         if "." in t:
             ticker_meta[t.upper().replace(".", "-")] = (s, n)
+        # Class A/C aliases
+        for alias in DUAL_CLASS_ALIASES.get(t.upper(), []):
+            ticker_meta[alias] = (s, n)
 
     today     = date.today()
     from_date = (today - timedelta(days=WINDOW_PAST_DAYS)).isoformat()
