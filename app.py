@@ -190,9 +190,33 @@ with tab_earn:
 
     st.markdown("")
 
+    # ── Load events + diagnostics ─────────────────────────────────────────────
+    import os as _os
+    _earn_events  = get_earnings_events()
+    _finnhub_key  = bool(_os.getenv("FINNHUB_API_KEY"))
+    _event_count  = len(_earn_events)
+
+    # Status badge
+    if _event_count == 0:
+        st.warning("⚠️ No earnings events loaded. Check Finnhub API key or network.")
+    else:
+        api_status = "✅ Finnhub live" if _finnhub_key and _event_count > 0 else "📦 Hardcoded fallback"
+        st.caption(f"**{_event_count} events loaded**  ·  {api_status}")
+
+    # Pick a sensible initial date: jump to first upcoming event if any,
+    # otherwise show the earliest event in the dataset.
+    _init_date = datetime.now().strftime("%Y-%m-%d")
+    if _earn_events:
+        _today_iso = datetime.now().strftime("%Y-%m-%d")
+        _future    = [e["start"] for e in _earn_events if e["start"] >= _today_iso]
+        if _future:
+            _init_date = min(_future)
+        else:
+            _init_date = min(e["start"] for e in _earn_events)
+
     earn_options = {
         "initialView":         "dayGridMonth",
-        "initialDate":         datetime.now().strftime("%Y-%m-%d"),
+        "initialDate":         _init_date,
         "headerToolbar": {
             "left":   "prev,next today",
             "center": "title",
@@ -220,7 +244,17 @@ with tab_earn:
         .fc-scrollgrid td, .fc-scrollgrid th { border-color: #2a2a3a !important; }
     """
 
-    st_calendar(events=get_earnings_events(), options=earn_options, custom_css=earn_css)
+    st_calendar(events=_earn_events, options=earn_options, custom_css=earn_css)
+
+    # ── Debug expander ────────────────────────────────────────────────────────
+    with st.expander("🔧 Debug info"):
+        st.write(f"**Finnhub API key set:** {'✅ Yes' if _finnhub_key else '❌ No'}")
+        st.write(f"**Total events loaded:** {_event_count}")
+        st.write(f"**Calendar initial date:** {_init_date}")
+        if _earn_events:
+            dates = sorted({e["start"] for e in _earn_events})
+            st.write(f"**Date range:** {dates[0]} → {dates[-1]}")
+            st.write(f"**Sample events:** {_earn_events[:5]}")
 
 # ══════════════════════════════════════════════════════════════════════════════
 # DASHBOARD TAB
