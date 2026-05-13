@@ -62,22 +62,31 @@ def format_timing(hour: str) -> str:
     return {"bmo": "BMO", "amc": "AMC", "dmh": "DMH"}.get((hour or "").lower(), "")
 
 
+_DEBUG_FIRST = True
+
 def fetch_window(from_date: str, to_date: str, api_key: str) -> list:
     """
     Fetch ALL US earnings in a date range via bulk /calendar/earnings.
-    Finnhub free tier appears to only support bulk queries (no symbol param).
     """
+    global _DEBUG_FIRST
     url = "https://finnhub.io/api/v1/calendar/earnings"
     params = {"from": from_date, "to": to_date, "token": api_key}
 
     for attempt in range(3):
         try:
             r = requests.get(url, params=params, timeout=30)
+            print(f"     HTTP {r.status_code} · body length: {len(r.text)} bytes "
+                  f"· rate-remaining: {r.headers.get('X-Ratelimit-Remaining', '?')}")
+            if _DEBUG_FIRST:
+                _DEBUG_FIRST = False
+                print(f"     [DEBUG first response] URL: {r.url[:140]}...")
+                print(f"     [DEBUG first response] First 500 chars: {r.text[:500]}")
+
             if r.status_code == 429:
                 time.sleep(5)
                 continue
             if r.status_code != 200:
-                print(f"  ! HTTP {r.status_code} for {from_date}→{to_date}", file=sys.stderr)
+                print(f"     ! HTTP {r.status_code}: {r.text[:200]}", file=sys.stderr)
                 if attempt == 2:
                     return []
                 continue
