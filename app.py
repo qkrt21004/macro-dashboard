@@ -101,17 +101,17 @@ st.caption(f"Updated: {datetime.now().strftime('%Y-%m-%d %H:%M')}  |  Sources: F
 
 # ── Tabs ──────────────────────────────────────────────────────────────────────
 
-tab_dash, tab_cal = st.tabs(["📊 Dashboard", "📅 Calendar"])
+tab_dash, tab_cal = st.tabs(["📊 Dashboard", "📅 Macro Calendar"])
 
 # ══════════════════════════════════════════════════════════════════════════════
 # CALENDAR TAB
 # ══════════════════════════════════════════════════════════════════════════════
 
 with tab_cal:
-    st.markdown("### Macro Event Calendar")
+    st.markdown("### Macro Calendar")
     st.caption(
-        "Central bank meetings (FOMC · BOJ · ECB) + key US data releases "
-        "(CPI · NFP · GDP · PCE).  2026 CB dates are estimated."
+        "FOMC rate decisions · CPI releases · US market holidays (NYSE) · Quadruple Witching days.  "
+        "2026 FOMC dates are per Fed schedule."
     )
 
     # Legend
