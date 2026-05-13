@@ -27,9 +27,9 @@ REPO_ROOT   = Path(__file__).resolve().parent.parent
 TICKERS_CSV = REPO_ROOT / "data" / "tickers.csv"
 OUTPUT_JSON = REPO_ROOT / "data" / "earnings.json"
 
-WINDOW_PAST_DAYS   = 180
+WINDOW_PAST_DAYS   = 90    # most past earnings already absorbed; focus forward
 WINDOW_FUTURE_DAYS = 180
-CHUNK_DAYS         = 30   # split window into 30-day chunks for bulk query
+CHUNK_DAYS         = 14    # smaller chunks to stay under Finnhub's 1500-row response cap
 
 # Sector → color palette
 SECTOR_COLOR = {
@@ -62,26 +62,17 @@ def format_timing(hour: str) -> str:
     return {"bmo": "BMO", "amc": "AMC", "dmh": "DMH"}.get((hour or "").lower(), "")
 
 
-_DEBUG_FIRST = True
-
 def fetch_window(from_date: str, to_date: str, api_key: str) -> list:
     """
     Fetch ALL US earnings in a date range via bulk /calendar/earnings.
+    Finnhub caps responses at 1500 rows — keep chunks small.
     """
-    global _DEBUG_FIRST
     url = "https://finnhub.io/api/v1/calendar/earnings"
     params = {"from": from_date, "to": to_date, "token": api_key}
 
     for attempt in range(3):
         try:
             r = requests.get(url, params=params, timeout=30)
-            print(f"     HTTP {r.status_code} · body length: {len(r.text)} bytes "
-                  f"· rate-remaining: {r.headers.get('X-Ratelimit-Remaining', '?')}")
-            if _DEBUG_FIRST:
-                _DEBUG_FIRST = False
-                print(f"     [DEBUG first response] URL: {r.url[:140]}...")
-                print(f"     [DEBUG first response] First 500 chars: {r.text[:500]}")
-
             if r.status_code == 429:
                 time.sleep(5)
                 continue
