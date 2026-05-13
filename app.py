@@ -10,7 +10,7 @@ from charts import (
     make_fed_balance_sheet_chart,
 )
 from events import get_calendar_events, LEGEND
-from earnings import get_earnings_events, EARNINGS_LEGEND
+from earnings import get_earnings_events, get_earnings_meta, EARNINGS_LEGEND
 from streamlit_calendar import calendar as st_calendar
 
 st.set_page_config(
@@ -168,40 +168,45 @@ with tab_cal:
 
 with tab_earn:
     st.markdown("### Earnings Calendar")
-    st.caption(
-        "Confirmed quarterly earnings dates by sector.  "
-        "BMO = Before Market Open · AMC = After Market Close.  "
-        "Q1 2026 reported dates + confirmed Q2 2026 dates where available."
-    )
 
-    # Legend — 2 rows for readability
-    leg_row1 = EARNINGS_LEGEND[:6]
-    leg_row2 = EARNINGS_LEGEND[6:]
+    # Load metadata + events
+    _meta         = get_earnings_meta()
+    _earn_events  = get_earnings_events()
+    _event_count  = len(_earn_events)
 
-    for row in (leg_row1, leg_row2):
-        cols = st.columns(len(row))
-        for col, (label, color) in zip(cols, row):
-            col.markdown(
-                f'<span style="display:inline-block;width:12px;height:12px;'
-                f'background:{color};border-radius:3px;margin-right:6px;"></span>'
-                f'<span style="font-size:0.78rem;color:#ccc;">{label}</span>',
-                unsafe_allow_html=True,
-            )
+    # Caption with refresh timestamp
+    if _meta.get("generated_at"):
+        st.caption(
+            f"Auto-refreshed daily via GitHub Actions  ·  "
+            f"Last update: **{_meta['generated_at']}**  ·  "
+            f"{_event_count} events across {_meta.get('succeeded', 0)}/"
+            f"{_meta.get('ticker_count', 0)} tickers  ·  "
+            f"BMO = Before Market Open · AMC = After Market Close"
+        )
+    else:
+        st.caption(
+            "Earnings data not yet generated.  "
+            "Trigger the **Update Earnings Data** workflow in GitHub Actions."
+        )
+
+    # Legend — single row, 6 sectors
+    cols = st.columns(len(EARNINGS_LEGEND))
+    for col, (label, color) in zip(cols, EARNINGS_LEGEND):
+        col.markdown(
+            f'<span style="display:inline-block;width:12px;height:12px;'
+            f'background:{color};border-radius:3px;margin-right:6px;"></span>'
+            f'<span style="font-size:0.78rem;color:#ccc;">{label}</span>',
+            unsafe_allow_html=True,
+        )
 
     st.markdown("")
 
-    # ── Load events + diagnostics ─────────────────────────────────────────────
-    import os as _os
-    _earn_events  = get_earnings_events()
-    _finnhub_key  = bool(_os.getenv("FINNHUB_API_KEY"))
-    _event_count  = len(_earn_events)
-
-    # Status badge
+    # Status warning if empty
     if _event_count == 0:
-        st.warning("⚠️ No earnings events loaded. Check Finnhub API key or network.")
-    else:
-        api_status = "✅ Finnhub live" if _finnhub_key and _event_count > 0 else "📦 Hardcoded fallback"
-        st.caption(f"**{_event_count} events loaded**  ·  {api_status}")
+        st.warning(
+            "⚠️ No earnings events loaded. "
+            "Run the GitHub Actions workflow to populate data/earnings.json."
+        )
 
     # Pick a sensible initial date: jump to first upcoming event if any,
     # otherwise show the earliest event in the dataset.
@@ -248,9 +253,12 @@ with tab_earn:
 
     # ── Debug expander ────────────────────────────────────────────────────────
     with st.expander("🔧 Debug info"):
-        st.write(f"**Finnhub API key set:** {'✅ Yes' if _finnhub_key else '❌ No'}")
-        st.write(f"**Total events loaded:** {_event_count}")
-        st.write(f"**Calendar initial date:** {_init_date}")
+        st.write(f"**Generated at:**  {_meta.get('generated_at', '—')}")
+        st.write(f"**Window:**  {_meta.get('window_from', '—')} → {_meta.get('window_to', '—')}")
+        st.write(f"**Tickers in CSV:**  {_meta.get('ticker_count', 0)}")
+        st.write(f"**Tickers with data:**  {_meta.get('succeeded', 0)}")
+        st.write(f"**Total events:**  {_event_count}")
+        st.write(f"**Calendar initial date:**  {_init_date}")
         if _earn_events:
             dates = sorted({e["start"] for e in _earn_events})
             st.write(f"**Date range:** {dates[0]} → {dates[-1]}")

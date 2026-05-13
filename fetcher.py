@@ -165,21 +165,27 @@ def fetch_cape() -> pd.DataFrame:
 def load_all() -> dict:
     # ── CPI YoY ───────────────────────────────────────────────────────────────
     df_cpi = fetch_fred(FRED_SERIES["cpi"])
-    df_cpi_yoy = df_cpi.copy()
-    df_cpi_yoy["value"] = df_cpi_yoy["value"].pct_change(12) * 100
-    df_cpi_yoy = df_cpi_yoy.dropna().reset_index(drop=True)
+    if not df_cpi.empty and "value" in df_cpi.columns:
+        df_cpi_yoy = df_cpi.copy()
+        df_cpi_yoy["value"] = df_cpi_yoy["value"].pct_change(12) * 100
+        df_cpi_yoy = df_cpi_yoy.dropna().reset_index(drop=True)
+    else:
+        df_cpi_yoy = pd.DataFrame()
 
     # ── 2Y-10Y Yield Spread ───────────────────────────────────────────────────
     df_us2y  = fetch_fred(FRED_SERIES["us2y"])
     df_us10y = fetch_fred(FRED_SERIES["us10y"])
-    merged_y = pd.merge(
-        df_us10y.rename(columns={"value": "us10y"}),
-        df_us2y.rename(columns={"value": "us2y"}),
-        on="date", how="inner",
-    )
-    df_spread = merged_y.copy()
-    df_spread["value"] = merged_y["us10y"] - merged_y["us2y"]
-    df_spread = df_spread[["date", "value"]].sort_values("date").reset_index(drop=True)
+    if not df_us2y.empty and not df_us10y.empty:
+        merged_y = pd.merge(
+            df_us10y.rename(columns={"value": "us10y"}),
+            df_us2y.rename(columns={"value": "us2y"}),
+            on="date", how="inner",
+        )
+        df_spread = merged_y.copy()
+        df_spread["value"] = merged_y["us10y"] - merged_y["us2y"]
+        df_spread = df_spread[["date", "value"]].sort_values("date").reset_index(drop=True)
+    else:
+        df_spread = pd.DataFrame()
 
     result = {
         # Economic

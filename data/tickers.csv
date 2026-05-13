@@ -1,0 +1,125 @@
+Ticker,Sector,Company Name
+RY,Financials,로열 뱅크 오브 캐나다
+HSBC,Financials,HSBC 홀딩스(ADR)
+HDB,Financials,HDFC 뱅크(ADR)
+IBN,Financials,ICICI 뱅크(ADR)
+TD,Financials,토론토 도미니언 뱅크
+USB,Financials,US 뱅코프
+PNC,Financials,PNC 파이낸셜 서비스
+AFRM,Financials,어펌 홀딩스
+KKR,Financials,KKR & CO
+OWL,Financials,블루 아울 캐피털
+HLNE,Financials,해밀턴 레인
+APO,Financials,아폴로 글로벌 매니지먼트
+CG,Financials,칼라일 그룹
+ENR.DE,Commodities,SIEMENS ENERGY AG NA O.N.
+AEP,Commodities,아메리칸 일렉트릭 파워
+NI,Commodities,나이소스
+DTE,Commodities,DTE 에너지
+BKH,Commodities,블랙 힐스
+EXC,Commodities,엑셀론
+GEV,Commodities,GE베르노바
+SMR,Commodities,뉴스케일 파워
+USO,Commodities,아멕스 USO
+GSG,Commodities,아멕스 GSG
+XOM,Commodities,엑슨 모빌
+AA,Commodities,알코아
+BHP,Commodities,BHP 그룹 UK(ADR)
+OXY,Commodities,옥시덴털 페트롤리엄
+CVX,Commodities,셰브론
+FCX,Commodities,프리포트 맥모란
+9501.T,Commodities,도쿄 전력
+SHEL,Commodities,쉘(ADR)
+AMZN,Tech,아마존닷컴
+GOOG,Tech,알파벳 C
+MSFT,Tech,마이크로소프트
+NVDA,Tech,엔비디아
+AAPL,Tech,애플
+META,Tech,메타 플랫폼스(페이스북)
+TSLA,Tech,테슬라
+TSM,Tech,TSMC(ADR)
+ASML,Tech,ASML 홀딩(ADR)
+LRCX,Tech,램 리서치
+AMD,Tech,AMD
+QCOM,Tech,퀄컴
+SMCI,Tech,슈퍼 마이크로 컴퓨터
+INTC,Tech,인텔
+IBM,Tech,IBM
+AVGO,Tech,브로드컴
+ARM,Tech,에이알엠 홀딩스(ADR)
+NFLX,Tech,넷플릭스
+BIDU,Tech,바이두(ADR)
+AMBA,Tech,암바렐라
+CSCO,Tech,시스코 시스템즈
+ANET,Tech,아리스타 네트웍스
+HPE,Tech,휴렛 팩커드 엔터프라이즈
+MRVL,Tech,마블 테크놀로지 그룹
+MU,Tech,마이크론 테크놀로지
+DELL,Tech,델 테크놀로지스
+CRM,Tech,세일즈포스
+ADBE,Tech,어도비
+PLTR,Tech,팔란티어 테크
+ORCL,Tech,오라클
+PYPL,Tech,페이팔 홀딩스
+LMT,Aerospace & Defense,록히드 마틴
+RCAT,Aerospace & Defense,레드 캣 홀딩스
+AVAV,Aerospace & Defense,에어로바이런먼트
+KTOS,Aerospace & Defense,크라토스 디펜스 앤드 시큐리티 솔루션
+RTX,Aerospace & Defense,RTX
+NOC,Aerospace & Defense,노스롭 그루만
+GD,Aerospace & Defense,제너럴 다이내믹스
+LHX,Aerospace & Defense,L3 해리스 테크놀로지스
+HII,Aerospace & Defense,헌팅턴 잉걸스 인더스트리스
+BA,Aerospace & Defense,보잉
+RKLB,Aerospace & Defense,로켓 랩
+LDOS,Aerospace & Defense,레이도스 홀딩스
+BAH,Aerospace & Defense,부즈 알렌 해밀턴 홀딩
+GE,Aerospace & Defense,GE에어로스페이스
+HWM,Aerospace & Defense,하우멧 에어로스페이스
+TDG,Aerospace & Defense,트랜스다임 그룹
+7936.T,Consumer & Retail,아식스 고베
+WMT,Consumer & Retail,월마트
+9983.T,Consumer & Retail,패스트리테일링
+COST,Consumer & Retail,코스트코 홀세일
+KR,Consumer & Retail,크로거
+ACI,Consumer & Retail,앨버트슨 컴퍼니스
+LULU,Consumer & Retail,룰루레몬 애슬레티카
+KO,Consumer & Retail,코카콜라
+SBUX,Consumer & Retail,스타벅스
+CPNG,Consumer & Retail,쿠팡
+NKE,Consumer & Retail,나이키 B
+CROX,Consumer & Retail,크록스
+CAVA,Consumer & Retail,카바 그룹
+CMG,Consumer & Retail,치폴레 멕시칸 그릴
+GIS,Consumer & Retail,제너럴 밀스
+SHAK,Consumer & Retail,쉐이크쉑
+TGT,Consumer & Retail,타겟
+GO,Consumer & Retail,그로서리 아웃렛 홀딩스
+BJ,Consumer & Retail,BJS 홀세일 클럽 홀딩스
+DPZ,Consumer & Retail,도미노 피자
+EAT,Consumer & Retail,브링커 인터내셔널
+DRI,Consumer & Retail,다든 레스토랑
+BLMN,Consumer & Retail,블루민 브랜즈
+QSR,Consumer & Retail,레스토랑 브랜즈 인터내셔널
+YUM,Consumer & Retail,염 브랜즈
+WING,Consumer & Retail,윙스톱
+WEN,Consumer & Retail,웬디스 컴퍼니
+DLTR,Consumer & Retail,달러 트리
+DG,Consumer & Retail,달러 제너럴
+ROST,Consumer & Retail,로스 스토어스
+OLLI,Consumer & Retail,올리스 바겐 아웃렛 홀딩스
+FIVE,Consumer & Retail,파이브 빌로우
+IRM,REITs,아이언 마운틴
+EQIX,REITs,에퀴닉스
+VTR,REITs,벤타스
+O,REITs,리얼티 인컴
+PLD,REITs,프로로지스
+AMT,REITs,아메리칸 타워
+WELL,REITs,웰타워
+PSA,REITs,퍼블릭 스토리지
+SPG,REITs,사이먼 프라퍼티 그룹
+CCI,REITs,크라운 캐슬
+DLR,REITs,디지털 리얼티 트러스트
+EPR,REITs,EPR 프라퍼티스
+VNO,REITs,보나도 리얼티 트러스트
+KRC,REITs,킬로이 리얼티
