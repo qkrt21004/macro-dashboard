@@ -73,54 +73,57 @@ def _format_timing(hour: str) -> str:
 @st.cache_data(ttl=3600)
 def fetch_finnhub_earnings() -> list:
     """
-    Fetch earnings calendar from Finnhub.
-    Returns events from 30 days ago through 120 days forward.
+    Fetch earnings calendar from Finnhub — per-symbol query approach.
+    The bulk /calendar/earnings endpoint returns limited results on free tier,
+    so we query each ticker individually with a 6-month forward / 6-month back
+    window. Total ~30-35 API calls, well within the 60/min free tier limit.
     """
     if not FINNHUB_API_KEY:
         return []
 
     today     = date.today()
-    from_date = (today - timedelta(days=30)).isoformat()
-    to_date   = (today + timedelta(days=120)).isoformat()
+    from_date = (today - timedelta(days=180)).isoformat()
+    to_date   = (today + timedelta(days=180)).isoformat()
 
-    for attempt in range(3):
+    # De-dupe ticker list (skip BRK-B alias; query only canonical BRK.B)
+    unique_tickers = [t for t in TICKER_SECTOR.keys() if t != "BRK-B"]
+
+    events = []
+    seen   = set()
+
+    for symbol in unique_tickers:
         try:
             r = requests.get(
                 "https://finnhub.io/api/v1/calendar/earnings",
                 params={
-                    "from":  from_date,
-                    "to":    to_date,
-                    "token": FINNHUB_API_KEY,
+                    "from":   from_date,
+                    "to":     to_date,
+                    "symbol": symbol,
+                    "token":  FINNHUB_API_KEY,
                 },
-                timeout=30,
+                timeout=15,
             )
             if r.status_code != 200:
-                if attempt == 2:
-                    return []
                 continue
 
-            data   = r.json().get("earningsCalendar", []) or []
-            events = []
-            seen   = set()  # dedupe by (symbol, date)
-
+            data = r.json().get("earningsCalendar", []) or []
             for item in data:
-                symbol = (item.get("symbol") or "").upper()
-                if symbol not in TICKER_SECTOR:
-                    continue
-
-                d = item.get("date", "")
+                sym = (item.get("symbol") or "").upper()
+                d   = item.get("date", "")
                 if not d:
                     continue
 
-                key = (symbol, d)
+                key = (sym, d)
                 if key in seen:
                     continue
                 seen.add(key)
 
+                sector_key = TICKER_SECTOR.get(sym) or TICKER_SECTOR.get(symbol)
+                if not sector_key:
+                    continue
+
                 timing      = _format_timing(item.get("hour", ""))
-                sector_key  = TICKER_SECTOR[symbol]
-                # Normalize "BRK-B" → "BRK.B" for display
-                display_sym = "BRK.B" if symbol in ("BRK.B", "BRK-B") else symbol
+                display_sym = "BRK.B" if sym in ("BRK.B", "BRK-B") else sym
                 title       = f"{display_sym} · {timing}" if timing else display_sym
 
                 events.append({
@@ -129,13 +132,10 @@ def fetch_finnhub_earnings() -> list:
                     "color":  SC[sector_key],
                     "allDay": True,
                 })
-            return events
-
         except Exception:
-            if attempt == 2:
-                return []
             continue
-    return []
+
+    return events
 
 
 # ── Fallback hardcoded events (used only if Finnhub API unavailable) ──────────
