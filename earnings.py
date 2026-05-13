@@ -1,8 +1,21 @@
 """
-Earnings Calendar events for the macro dashboard.
-Companies grouped by GICS sector with confirmed earnings dates.
-Includes BMO (Before Market Open) / AMC (After Market Close) timing.
+Earnings Calendar with Finnhub API integration.
+
+Strategy:
+  1. Fetch live earnings dates from Finnhub for tickers in TICKER_SECTOR.
+  2. Apply sector-based color coding.
+  3. Fall back to hardcoded HARDCODED_EVENTS if API fails or key missing.
+
+The Finnhub free tier (60 calls/min) is more than sufficient — we make one
+batched call per cache window (1 hour TTL).
 """
+
+import os
+import requests
+import streamlit as st
+from datetime import date, timedelta
+
+FINNHUB_API_KEY = os.getenv("FINNHUB_API_KEY", "")
 
 # ── Color palette by sector ────────────────────────────────────────────────────
 SC = {
@@ -19,25 +32,128 @@ SC = {
     "ota":        "#B794F4",   # purple  — Online Travel
 }
 
+# ── Ticker → sector mapping (used by Finnhub fetch) ───────────────────────────
+# Note: Foreign-exchange tickers (7181.T, LFC, PNGAY) may not appear in
+# Finnhub's free US-only dataset; they're omitted to avoid clutter.
+TICKER_SECTOR = {
+    # Health Care
+    "UNH":  "health",  "ELV": "health",  "HUM": "health",
+    # P&C / Reinsurance
+    "PGR":  "ins_pc",  "TRV": "ins_pc",  "CB":  "ins_pc",
+    "ACGL": "ins_pc",  "RNR": "ins_pc",  "ALL": "ins_pc",
+    "AIG":  "ins_pc",  "EG":  "ins_pc",
+    # Life & Health Insurance
+    "AFL":  "ins_life", "PRU": "ins_life", "MET": "ins_life",
+    # Diversified Financials
+    "BRK.B": "fin_div", "BRK-B": "fin_div",   # Finnhub sometimes uses dash form
+    # Consumer Staples
+    "CL":   "staples",
+    # Machinery
+    "CAT":  "machinery",
+    # Airlines
+    "DAL":  "airlines", "ALK": "airlines", "UAL": "airlines",
+    "LUV":  "airlines", "AAL": "airlines",
+    # Hotels & Lodging
+    "HLT":  "hotels", "WH":  "hotels", "H":  "hotels", "MAR": "hotels",
+    # Casinos & Gaming
+    "LVS":  "casinos", "CZR": "casinos", "MGM": "casinos", "WYNN": "casinos",
+    # Cruise Lines
+    "CCL":  "cruise", "RCL": "cruise", "NCLH": "cruise",
+    # Online Travel
+    "BKNG": "ota", "TRIP": "ota", "ABNB": "ota", "EXPE": "ota", "TCOM": "ota",
+}
 
-def _ev(ticker: str, date: str, timing: str, sector_key: str) -> dict:
-    """Build a calendar event dict."""
+
+def _format_timing(hour: str) -> str:
+    """Convert Finnhub 'hour' field to display label."""
+    mapping = {"bmo": "BMO", "amc": "AMC", "dmh": "DMH"}
+    return mapping.get((hour or "").lower(), "")
+
+
+@st.cache_data(ttl=3600)
+def fetch_finnhub_earnings() -> list:
+    """
+    Fetch earnings calendar from Finnhub.
+    Returns events from 30 days ago through 120 days forward.
+    """
+    if not FINNHUB_API_KEY:
+        return []
+
+    today     = date.today()
+    from_date = (today - timedelta(days=30)).isoformat()
+    to_date   = (today + timedelta(days=120)).isoformat()
+
+    for attempt in range(3):
+        try:
+            r = requests.get(
+                "https://finnhub.io/api/v1/calendar/earnings",
+                params={
+                    "from":  from_date,
+                    "to":    to_date,
+                    "token": FINNHUB_API_KEY,
+                },
+                timeout=30,
+            )
+            if r.status_code != 200:
+                if attempt == 2:
+                    return []
+                continue
+
+            data   = r.json().get("earningsCalendar", []) or []
+            events = []
+            seen   = set()  # dedupe by (symbol, date)
+
+            for item in data:
+                symbol = (item.get("symbol") or "").upper()
+                if symbol not in TICKER_SECTOR:
+                    continue
+
+                d = item.get("date", "")
+                if not d:
+                    continue
+
+                key = (symbol, d)
+                if key in seen:
+                    continue
+                seen.add(key)
+
+                timing      = _format_timing(item.get("hour", ""))
+                sector_key  = TICKER_SECTOR[symbol]
+                # Normalize "BRK-B" → "BRK.B" for display
+                display_sym = "BRK.B" if symbol in ("BRK.B", "BRK-B") else symbol
+                title       = f"{display_sym} · {timing}" if timing else display_sym
+
+                events.append({
+                    "title":  title,
+                    "start":  d,
+                    "color":  SC[sector_key],
+                    "allDay": True,
+                })
+            return events
+
+        except Exception:
+            if attempt == 2:
+                return []
+            continue
+    return []
+
+
+# ── Fallback hardcoded events (used only if Finnhub API unavailable) ──────────
+def _ev(ticker: str, date_str: str, timing: str, sector_key: str) -> dict:
     return {
-        "title":  f"{ticker} · {timing}",
-        "start":  date,
+        "title":  f"{ticker} · {timing}" if timing else ticker,
+        "start":  date_str,
         "color":  SC[sector_key],
         "allDay": True,
     }
 
 
-# ── Earnings events (Q1 2026 reported + TCOM upcoming + Q2 2026 confirmed) ────
-EARNINGS_EVENTS = [
-    # ══ Health Care — Managed Care ═══════════════════════════════════════════
+HARDCODED_EVENTS = [
+    # Health Care
     _ev("UNH",   "2026-04-21", "BMO", "health"),
     _ev("ELV",   "2026-04-22", "BMO", "health"),
     _ev("HUM",   "2026-04-29", "BMO", "health"),
-
-    # ══ Financials — P&C / Reinsurance ═══════════════════════════════════════
+    # P&C / Reinsurance
     _ev("PGR",   "2026-04-15", "BMO", "ins_pc"),
     _ev("TRV",   "2026-04-16", "BMO", "ins_pc"),
     _ev("CB",    "2026-04-21", "AMC", "ins_pc"),
@@ -46,63 +162,60 @@ EARNINGS_EVENTS = [
     _ev("ALL",   "2026-04-29", "AMC", "ins_pc"),
     _ev("AIG",   "2026-04-30", "AMC", "ins_pc"),
     _ev("EG",    "2026-04-30", "AMC", "ins_pc"),
-
-    # ══ Financials — Life & Health Insurance ═════════════════════════════════
+    # Life Insurance
     _ev("AFL",   "2026-04-29", "AMC", "ins_life"),
     _ev("PRU",   "2026-05-05", "AMC", "ins_life"),
     _ev("MET",   "2026-05-06", "BMO", "ins_life"),
-
-    # ══ Financials — Diversified (Berkshire) ═════════════════════════════════
+    # Diversified Financials
     _ev("BRK.B", "2026-05-02", "BMO", "fin_div"),
-    _ev("BRK.B", "2026-08-03", "BMO", "fin_div"),    # Q2 2026 confirmed
-
-    # ══ Consumer Staples ═════════════════════════════════════════════════════
+    _ev("BRK.B", "2026-08-03", "BMO", "fin_div"),
+    # Consumer Staples
     _ev("CL",    "2026-05-01", "BMO", "staples"),
-
-    # ══ Industrials — Machinery ══════════════════════════════════════════════
+    # Machinery
     _ev("CAT",   "2026-04-30", "BMO", "machinery"),
-
-    # ══ Industrials — Airlines ═══════════════════════════════════════════════
+    # Airlines
     _ev("DAL",   "2026-04-08", "BMO", "airlines"),
     _ev("ALK",   "2026-04-20", "AMC", "airlines"),
     _ev("UAL",   "2026-04-22", "AMC", "airlines"),
     _ev("LUV",   "2026-04-22", "AMC", "airlines"),
     _ev("AAL",   "2026-04-23", "BMO", "airlines"),
-
-    # ══ Consumer Discretionary — Hotels & Lodging ════════════════════════════
+    # Hotels
     _ev("HLT",   "2026-04-28", "BMO", "hotels"),
     _ev("WH",    "2026-04-29", "AMC", "hotels"),
     _ev("H",     "2026-04-30", "BMO", "hotels"),
     _ev("MAR",   "2026-05-06", "BMO", "hotels"),
-
-    # ══ Consumer Discretionary — Casinos & Gaming ════════════════════════════
+    # Casinos
     _ev("LVS",   "2026-04-22", "AMC", "casinos"),
     _ev("CZR",   "2026-04-28", "AMC", "casinos"),
     _ev("MGM",   "2026-04-29", "AMC", "casinos"),
     _ev("WYNN",  "2026-05-06", "AMC", "casinos"),
-
-    # ══ Consumer Discretionary — Cruise Lines ════════════════════════════════
-    _ev("CCL",   "2026-03-27", "BMO", "cruise"),     # FY Nov-end fiscal Q1
+    # Cruise Lines
+    _ev("CCL",   "2026-03-27", "BMO", "cruise"),
     _ev("RCL",   "2026-04-30", "BMO", "cruise"),
     _ev("NCLH",  "2026-05-04", "BMO", "cruise"),
-
-    # ══ Consumer Discretionary — Online Travel (OTAs) ════════════════════════
+    # Online Travel
     _ev("BKNG",  "2026-04-28", "AMC", "ota"),
     _ev("TRIP",  "2026-05-06", "AMC", "ota"),
     _ev("ABNB",  "2026-05-07", "AMC", "ota"),
     _ev("EXPE",  "2026-05-07", "AMC", "ota"),
-    _ev("TCOM",  "2026-05-25", "BMO", "ota"),        # 🔜 UPCOMING Q1 2026
-    _ev("BKNG",  "2026-08-05", "AMC", "ota"),        # Q2 2026 confirmed
-    _ev("EXPE",  "2026-08-06", "AMC", "ota"),        # Q2 2026 confirmed
+    _ev("TCOM",  "2026-05-25", "BMO", "ota"),
+    _ev("BKNG",  "2026-08-05", "AMC", "ota"),
+    _ev("EXPE",  "2026-08-06", "AMC", "ota"),
 ]
 
 
 def get_earnings_events() -> list:
-    """Return all earnings calendar events."""
-    return EARNINGS_EVENTS
+    """
+    Return earnings events.
+    Prefers live Finnhub data; falls back to HARDCODED_EVENTS if unavailable.
+    """
+    events = fetch_finnhub_earnings()
+    if events:
+        return events
+    return HARDCODED_EVENTS
 
 
-# ── Legend metadata (for UI display) ─────────────────────────────────────────
+# ── Legend metadata (for UI display) ──────────────────────────────────────────
 EARNINGS_LEGEND = [
     ("Health Care",        SC["health"]),
     ("Insurance — P&C",    SC["ins_pc"]),
