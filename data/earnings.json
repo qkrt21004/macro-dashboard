@@ -1,53 +1,13 @@
 {
-  "generated_at": "2026-05-28",
-  "window_from": "2026-02-27",
-  "window_to": "2026-11-24",
+  "generated_at": "2026-05-29",
+  "window_from": "2026-02-28",
+  "window_to": "2026-11-25",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 160,
+  "event_count": 158,
   "events": [
-    {
-      "title": "AMT · BMO",
-      "start": "2026-04-28",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "AMT",
-      "sector": "REITs",
-      "name": "아메리칸 타워",
-      "timing": "BMO"
-    },
-    {
-      "title": "KO · BMO",
-      "start": "2026-04-28",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "KO",
-      "sector": "Consumer & Retail",
-      "name": "코카콜라",
-      "timing": "BMO"
-    },
-    {
-      "title": "SBUX · AMC",
-      "start": "2026-04-28",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SBUX",
-      "sector": "Consumer & Retail",
-      "name": "스타벅스",
-      "timing": "AMC"
-    },
-    {
-      "title": "WELL · AMC",
-      "start": "2026-04-28",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "WELL",
-      "sector": "REITs",
-      "name": "웰타워",
-      "timing": "AMC"
-    },
     {
       "title": "AMZN · AMC",
       "start": "2026-04-29",
@@ -830,7 +790,7 @@
     },
     {
       "title": "MU · AMC",
-      "start": "2026-06-23",
+      "start": "2026-06-24",
       "color": "#B794F4",
       "allDay": true,
       "ticker": "MU",
@@ -1269,33 +1229,73 @@
       "timing": "BMO"
     },
     {
-      "title": "AMD · AMC",
-      "start": "2026-08-03",
+      "title": "AAPL · AMC",
+      "start": "2026-07-29",
       "color": "#B794F4",
       "allDay": true,
-      "ticker": "AMD",
+      "ticker": "AAPL",
       "sector": "Tech",
-      "name": "AMD",
+      "name": "애플",
       "timing": "AMC"
     },
     {
-      "title": "ANET · AMC",
-      "start": "2026-08-03",
+      "title": "AMZN · AMC",
+      "start": "2026-07-29",
       "color": "#B794F4",
       "allDay": true,
-      "ticker": "ANET",
+      "ticker": "AMZN",
       "sector": "Tech",
-      "name": "아리스타 네트웍스",
+      "name": "아마존닷컴",
       "timing": "AMC"
     },
     {
-      "title": "APO · BMO",
-      "start": "2026-08-03",
+      "title": "EXC · BMO",
+      "start": "2026-07-29",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "EXC",
+      "sector": "Commodities",
+      "name": "엑셀론",
+      "timing": "BMO"
+    },
+    {
+      "title": "HII · BMO",
+      "start": "2026-07-29",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "HII",
+      "sector": "Aerospace & Defense",
+      "name": "헌팅턴 잉걸스 인더스트리스",
+      "timing": "BMO"
+    },
+    {
+      "title": "HWM · BMO",
+      "start": "2026-07-29",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "HWM",
+      "sector": "Aerospace & Defense",
+      "name": "하우멧 에어로스페이스",
+      "timing": "BMO"
+    },
+    {
+      "title": "KKR · BMO",
+      "start": "2026-07-29",
       "color": "#4299E1",
       "allDay": true,
-      "ticker": "APO",
+      "ticker": "KKR",
       "sector": "Financials",
-      "name": "아폴로 글로벌 매니지먼트",
+      "name": "KKR & CO",
+      "timing": "BMO"
+    },
+    {
+      "title": "SHAK · BMO",
+      "start": "2026-07-29",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "SHAK",
+      "sector": "Consumer & Retail",
+      "name": "쉐이크쉑",
       "timing": "BMO"
     },
     {
@@ -1349,16 +1349,6 @@
       "timing": ""
     },
     {
-      "title": "SMCI · AMC",
-      "start": "2026-08-03",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "SMCI",
-      "sector": "Tech",
-      "name": "슈퍼 마이크로 컴퓨터",
-      "timing": "AMC"
-    },
-    {
       "title": "SPG",
       "start": "2026-08-03",
       "color": "#4FD1C5",
@@ -1367,16 +1357,6 @@
       "sector": "REITs",
       "name": "사이먼 프라퍼티 그룹",
       "timing": ""
-    },
-    {
-      "title": "TDG · BMO",
-      "start": "2026-08-03",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "TDG",
-      "sector": "Aerospace & Defense",
-      "name": "트랜스다임 그룹",
-      "timing": "BMO"
     },
     {
       "title": "VNO",
