@@ -1,83 +1,13 @@
 {
-  "generated_at": "2026-06-06",
-  "window_from": "2026-03-08",
-  "window_to": "2026-12-03",
+  "generated_at": "2026-06-07",
+  "window_from": "2026-03-09",
+  "window_to": "2026-12-04",
   "ticker_count": 124,
-  "succeeded": 100,
-  "empty": 24,
+  "succeeded": 101,
+  "empty": 23,
   "failed": 0,
-  "event_count": 127,
+  "event_count": 122,
   "events": [
-    {
-      "title": "AFRM · AMC",
-      "start": "2026-05-07",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "AFRM",
-      "sector": "Financials",
-      "name": "어펌 홀딩스",
-      "timing": "AMC"
-    },
-    {
-      "title": "CG · BMO",
-      "start": "2026-05-07",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "CG",
-      "sector": "Financials",
-      "name": "칼라일 그룹",
-      "timing": "BMO"
-    },
-    {
-      "title": "HWM · BMO",
-      "start": "2026-05-07",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "HWM",
-      "sector": "Aerospace & Defense",
-      "name": "하우멧 에어로스페이스",
-      "timing": "BMO"
-    },
-    {
-      "title": "RCAT · AMC",
-      "start": "2026-05-07",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "RCAT",
-      "sector": "Aerospace & Defense",
-      "name": "레드 캣 홀딩스",
-      "timing": "AMC"
-    },
-    {
-      "title": "RKLB · AMC",
-      "start": "2026-05-07",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "RKLB",
-      "sector": "Aerospace & Defense",
-      "name": "로켓 랩",
-      "timing": "AMC"
-    },
-    {
-      "title": "SHAK · BMO",
-      "start": "2026-05-07",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SHAK",
-      "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
-      "timing": "BMO"
-    },
-    {
-      "title": "SMR · AMC",
-      "start": "2026-05-07",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "SMR",
-      "sector": "Commodities",
-      "name": "뉴스케일 파워",
-      "timing": "AMC"
-    },
     {
       "title": "WEN · BMO",
       "start": "2026-05-08",
@@ -899,6 +829,36 @@
       "timing": "BMO"
     },
     {
+      "title": "CVX · BMO",
+      "start": "2026-07-30",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "CVX",
+      "sector": "Commodities",
+      "name": "셰브론",
+      "timing": "BMO"
+    },
+    {
+      "title": "OWL · BMO",
+      "start": "2026-07-30",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "OWL",
+      "sector": "Financials",
+      "name": "블루 아울 캐피털",
+      "timing": "BMO"
+    },
+    {
+      "title": "XOM · BMO",
+      "start": "2026-07-30",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "XOM",
+      "sector": "Commodities",
+      "name": "엑슨 모빌",
+      "timing": "BMO"
+    },
+    {
       "title": "CPNG · AMC",
       "start": "2026-08-03",
       "color": "#68D391",
@@ -967,16 +927,6 @@
       "sector": "REITs",
       "name": "보나도 리얼티 트러스트",
       "timing": ""
-    },
-    {
-      "title": "YUM · BMO",
-      "start": "2026-08-03",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "YUM",
-      "sector": "Consumer & Retail",
-      "name": "염 브랜즈",
-      "timing": "BMO"
     },
     {
       "title": "BLMN · BMO",
