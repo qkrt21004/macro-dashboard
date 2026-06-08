@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-06-07",
-  "window_from": "2026-03-09",
-  "window_to": "2026-12-04",
+  "generated_at": "2026-06-08",
+  "window_from": "2026-03-10",
+  "window_to": "2026-12-05",
   "ticker_count": 124,
   "succeeded": 101,
   "empty": 23,
   "failed": 0,
-  "event_count": 122,
+  "event_count": 121,
   "events": [
-    {
-      "title": "WEN · BMO",
-      "start": "2026-05-08",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "WEN",
-      "sector": "Consumer & Retail",
-      "name": "웬디스 컴퍼니",
-      "timing": "BMO"
-    },
     {
       "title": "SPG · AMC",
       "start": "2026-05-11",
@@ -209,16 +199,6 @@
       "timing": "AMC"
     },
     {
-      "title": "OLLI",
-      "start": "2026-06-01",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "OLLI",
-      "sector": "Consumer & Retail",
-      "name": "올리스 바겐 아웃렛 홀딩스",
-      "timing": ""
-    },
-    {
       "title": "DG · BMO",
       "start": "2026-06-02",
       "color": "#68D391",
@@ -227,16 +207,6 @@
       "sector": "Consumer & Retail",
       "name": "달러 제너럴",
       "timing": "BMO"
-    },
-    {
-      "title": "FIVE",
-      "start": "2026-06-02",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "FIVE",
-      "sector": "Consumer & Retail",
-      "name": "파이브 빌로우",
-      "timing": ""
     },
     {
       "title": "AVGO · AMC",
@@ -249,8 +219,28 @@
       "timing": "AMC"
     },
     {
-      "title": "LULU · AMC",
+      "title": "FIVE · AMC",
       "start": "2026-06-03",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "FIVE",
+      "sector": "Consumer & Retail",
+      "name": "파이브 빌로우",
+      "timing": "AMC"
+    },
+    {
+      "title": "OLLI · BMO",
+      "start": "2026-06-03",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "OLLI",
+      "sector": "Consumer & Retail",
+      "name": "올리스 바겐 아웃렛 홀딩스",
+      "timing": "BMO"
+    },
+    {
+      "title": "LULU · AMC",
+      "start": "2026-06-04",
       "color": "#68D391",
       "allDay": true,
       "ticker": "LULU",
