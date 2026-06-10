@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-09",
-  "window_from": "2026-03-11",
-  "window_to": "2026-12-06",
+  "generated_at": "2026-06-10",
+  "window_from": "2026-03-12",
+  "window_to": "2026-12-07",
   "ticker_count": 124,
-  "succeeded": 101,
-  "empty": 23,
+  "succeeded": 97,
+  "empty": 27,
   "failed": 0,
-  "event_count": 121,
+  "event_count": 114,
   "events": [
     {
       "title": "SPG · AMC",
@@ -847,76 +847,6 @@
       "sector": "Commodities",
       "name": "엑슨 모빌",
       "timing": "BMO"
-    },
-    {
-      "title": "CPNG · AMC",
-      "start": "2026-08-03",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "CPNG",
-      "sector": "Consumer & Retail",
-      "name": "쿠팡",
-      "timing": "AMC"
-    },
-    {
-      "title": "GO",
-      "start": "2026-08-03",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "GO",
-      "sector": "Consumer & Retail",
-      "name": "그로서리 아웃렛 홀딩스",
-      "timing": ""
-    },
-    {
-      "title": "HLNE",
-      "start": "2026-08-03",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "HLNE",
-      "sector": "Financials",
-      "name": "해밀턴 레인",
-      "timing": ""
-    },
-    {
-      "title": "LDOS",
-      "start": "2026-08-03",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "LDOS",
-      "sector": "Aerospace & Defense",
-      "name": "레이도스 홀딩스",
-      "timing": ""
-    },
-    {
-      "title": "PLTR",
-      "start": "2026-08-03",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "PLTR",
-      "sector": "Tech",
-      "name": "팔란티어 테크",
-      "timing": ""
-    },
-    {
-      "title": "SPG",
-      "start": "2026-08-03",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "SPG",
-      "sector": "REITs",
-      "name": "사이먼 프라퍼티 그룹",
-      "timing": ""
-    },
-    {
-      "title": "VNO",
-      "start": "2026-08-03",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "VNO",
-      "sector": "REITs",
-      "name": "보나도 리얼티 트러스트",
-      "timing": ""
     },
     {
       "title": "BLMN · BMO",
