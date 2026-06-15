@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-14",
-  "window_from": "2026-03-16",
-  "window_to": "2026-12-11",
+  "generated_at": "2026-06-15",
+  "window_from": "2026-03-17",
+  "window_to": "2026-12-12",
   "ticker_count": 124,
-  "succeeded": 101,
-  "empty": 23,
+  "succeeded": 103,
+  "empty": 21,
   "failed": 0,
-  "event_count": 118,
+  "event_count": 120,
   "events": [
     {
       "title": "BIDU · BMO",
@@ -789,6 +789,36 @@
       "timing": "BMO"
     },
     {
+      "title": "CVX · BMO",
+      "start": "2026-07-30",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "CVX",
+      "sector": "Commodities",
+      "name": "셰브론",
+      "timing": "BMO"
+    },
+    {
+      "title": "OWL · BMO",
+      "start": "2026-07-30",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "OWL",
+      "sector": "Financials",
+      "name": "블루 아울 캐피털",
+      "timing": "BMO"
+    },
+    {
+      "title": "XOM · BMO",
+      "start": "2026-07-30",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "XOM",
+      "sector": "Commodities",
+      "name": "엑슨 모빌",
+      "timing": "BMO"
+    },
+    {
       "title": "AMD · AMC",
       "start": "2026-08-03",
       "color": "#B794F4",
@@ -877,16 +907,6 @@
       "sector": "Tech",
       "name": "슈퍼 마이크로 컴퓨터",
       "timing": "AMC"
-    },
-    {
-      "title": "SPG",
-      "start": "2026-08-03",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "SPG",
-      "sector": "REITs",
-      "name": "사이먼 프라퍼티 그룹",
-      "timing": ""
     },
     {
       "title": "BLMN · BMO",
