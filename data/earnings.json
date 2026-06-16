@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-15",
-  "window_from": "2026-03-17",
-  "window_to": "2026-12-12",
+  "generated_at": "2026-06-16",
+  "window_from": "2026-03-18",
+  "window_to": "2026-12-13",
   "ticker_count": 124,
   "succeeded": 103,
   "empty": 21,
@@ -290,7 +290,7 @@
     },
     {
       "title": "AVAV · AMC",
-      "start": "2026-06-30",
+      "start": "2026-06-29",
       "color": "#FC8181",
       "allDay": true,
       "ticker": "AVAV",
@@ -319,24 +319,34 @@
       "timing": "AMC"
     },
     {
-      "title": "PLD",
-      "start": "2026-07-14",
-      "color": "#4FD1C5",
+      "title": "PNC · BMO",
+      "start": "2026-07-15",
+      "color": "#4299E1",
       "allDay": true,
-      "ticker": "PLD",
-      "sector": "REITs",
-      "name": "프로로지스",
-      "timing": ""
+      "ticker": "PNC",
+      "sector": "Financials",
+      "name": "PNC 파이낸셜 서비스",
+      "timing": "BMO"
     },
     {
-      "title": "NFLX · AMC",
-      "start": "2026-07-15",
-      "color": "#B794F4",
+      "title": "DPZ · BMO",
+      "start": "2026-07-16",
+      "color": "#68D391",
       "allDay": true,
-      "ticker": "NFLX",
-      "sector": "Tech",
-      "name": "넷플릭스",
-      "timing": "AMC"
+      "ticker": "DPZ",
+      "sector": "Consumer & Retail",
+      "name": "도미노 피자",
+      "timing": "BMO"
+    },
+    {
+      "title": "FCX",
+      "start": "2026-07-16",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "FCX",
+      "sector": "Commodities",
+      "name": "프리포트 맥모란",
+      "timing": ""
     },
     {
       "title": "GE · BMO",
@@ -349,14 +359,24 @@
       "timing": "BMO"
     },
     {
-      "title": "PNC · BMO",
+      "title": "NFLX · AMC",
       "start": "2026-07-16",
-      "color": "#4299E1",
+      "color": "#B794F4",
       "allDay": true,
-      "ticker": "PNC",
-      "sector": "Financials",
-      "name": "PNC 파이낸셜 서비스",
-      "timing": "BMO"
+      "ticker": "NFLX",
+      "sector": "Tech",
+      "name": "넷플릭스",
+      "timing": "AMC"
+    },
+    {
+      "title": "PLD",
+      "start": "2026-07-16",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "PLD",
+      "sector": "REITs",
+      "name": "프로로지스",
+      "timing": ""
     },
     {
       "title": "USB",
@@ -367,16 +387,6 @@
       "sector": "Financials",
       "name": "US 뱅코프",
       "timing": ""
-    },
-    {
-      "title": "DPZ · BMO",
-      "start": "2026-07-20",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "DPZ",
-      "sector": "Consumer & Retail",
-      "name": "도미노 피자",
-      "timing": "BMO"
     },
     {
       "title": "KO · BMO",
@@ -447,16 +457,6 @@
       "sector": "Consumer & Retail",
       "name": "치폴레 멕시칸 그릴",
       "timing": "AMC"
-    },
-    {
-      "title": "FCX",
-      "start": "2026-07-21",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "FCX",
-      "sector": "Commodities",
-      "name": "프리포트 맥모란",
-      "timing": ""
     },
     {
       "title": "GD · BMO",
