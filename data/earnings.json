@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-23",
-  "window_from": "2026-03-25",
-  "window_to": "2026-12-20",
+  "generated_at": "2026-06-24",
+  "window_from": "2026-03-26",
+  "window_to": "2026-12-21",
   "ticker_count": 124,
   "succeeded": 107,
   "empty": 17,
   "failed": 0,
-  "event_count": 217,
+  "event_count": 212,
   "events": [
     {
       "title": "CRM · AMC",
@@ -1589,6 +1589,16 @@
       "timing": "AMC"
     },
     {
+      "title": "VTR",
+      "start": "2026-10-27",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "VTR",
+      "sector": "REITs",
+      "name": "벤타스",
+      "timing": ""
+    },
+    {
       "title": "AAPL · AMC",
       "start": "2026-10-28",
       "color": "#B794F4",
@@ -1607,66 +1617,6 @@
       "sector": "Tech",
       "name": "아마존닷컴",
       "timing": "AMC"
-    },
-    {
-      "title": "CROX · BMO",
-      "start": "2026-10-28",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "CROX",
-      "sector": "Consumer & Retail",
-      "name": "크록스",
-      "timing": "BMO"
-    },
-    {
-      "title": "DTE · BMO",
-      "start": "2026-10-28",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "DTE",
-      "sector": "Commodities",
-      "name": "DTE 에너지",
-      "timing": "BMO"
-    },
-    {
-      "title": "HII · BMO",
-      "start": "2026-10-28",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "HII",
-      "sector": "Aerospace & Defense",
-      "name": "헌팅턴 잉걸스 인더스트리스",
-      "timing": "BMO"
-    },
-    {
-      "title": "HWM · BMO",
-      "start": "2026-10-28",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "HWM",
-      "sector": "Aerospace & Defense",
-      "name": "하우멧 에어로스페이스",
-      "timing": "BMO"
-    },
-    {
-      "title": "LHX · AMC",
-      "start": "2026-10-28",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "LHX",
-      "sector": "Aerospace & Defense",
-      "name": "L3 해리스 테크놀로지스",
-      "timing": "AMC"
-    },
-    {
-      "title": "SHAK · BMO",
-      "start": "2026-10-28",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SHAK",
-      "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
-      "timing": "BMO"
     },
     {
       "title": "CG · BMO",
