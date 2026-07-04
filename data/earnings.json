@@ -1,43 +1,13 @@
 {
-  "generated_at": "2026-07-03",
-  "window_from": "2026-04-04",
-  "window_to": "2026-12-30",
+  "generated_at": "2026-07-04",
+  "window_from": "2026-04-05",
+  "window_to": "2026-12-31",
   "ticker_count": 124,
   "succeeded": 106,
   "empty": 18,
   "failed": 0,
-  "event_count": 211,
+  "event_count": 203,
   "events": [
-    {
-      "title": "AVGO · AMC",
-      "start": "2026-06-03",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "AVGO",
-      "sector": "Tech",
-      "name": "브로드컴",
-      "timing": "AMC"
-    },
-    {
-      "title": "FIVE · AMC",
-      "start": "2026-06-03",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "FIVE",
-      "sector": "Consumer & Retail",
-      "name": "파이브 빌로우",
-      "timing": "AMC"
-    },
-    {
-      "title": "OLLI · BMO",
-      "start": "2026-06-03",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "OLLI",
-      "sector": "Consumer & Retail",
-      "name": "올리스 바겐 아웃렛 홀딩스",
-      "timing": "BMO"
-    },
     {
       "title": "LULU · AMC",
       "start": "2026-06-04",
@@ -756,76 +726,6 @@
       "ticker": "GO",
       "sector": "Consumer & Retail",
       "name": "그로서리 아웃렛 홀딩스",
-      "timing": ""
-    },
-    {
-      "title": "HLNE",
-      "start": "2026-08-03",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "HLNE",
-      "sector": "Financials",
-      "name": "해밀턴 레인",
-      "timing": ""
-    },
-    {
-      "title": "LDOS",
-      "start": "2026-08-03",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "LDOS",
-      "sector": "Aerospace & Defense",
-      "name": "레이도스 홀딩스",
-      "timing": ""
-    },
-    {
-      "title": "PLTR",
-      "start": "2026-08-03",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "PLTR",
-      "sector": "Tech",
-      "name": "팔란티어 테크",
-      "timing": ""
-    },
-    {
-      "title": "SMCI · AMC",
-      "start": "2026-08-03",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "SMCI",
-      "sector": "Tech",
-      "name": "슈퍼 마이크로 컴퓨터",
-      "timing": "AMC"
-    },
-    {
-      "title": "SPG",
-      "start": "2026-08-03",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "SPG",
-      "sector": "REITs",
-      "name": "사이먼 프라퍼티 그룹",
-      "timing": ""
-    },
-    {
-      "title": "TDG · BMO",
-      "start": "2026-08-03",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "TDG",
-      "sector": "Aerospace & Defense",
-      "name": "트랜스다임 그룹",
-      "timing": "BMO"
-    },
-    {
-      "title": "VNO",
-      "start": "2026-08-03",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "VNO",
-      "sector": "REITs",
-      "name": "보나도 리얼티 트러스트",
       "timing": ""
     },
     {
@@ -1646,6 +1546,26 @@
       "ticker": "CVX",
       "sector": "Commodities",
       "name": "셰브론",
+      "timing": "BMO"
+    },
+    {
+      "title": "QSR · BMO",
+      "start": "2026-10-29",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "QSR",
+      "sector": "Consumer & Retail",
+      "name": "레스토랑 브랜즈 인터내셔널",
+      "timing": "BMO"
+    },
+    {
+      "title": "XOM · BMO",
+      "start": "2026-10-29",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "XOM",
+      "sector": "Commodities",
+      "name": "엑슨 모빌",
       "timing": "BMO"
     },
     {
