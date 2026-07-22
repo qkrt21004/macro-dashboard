@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-21",
-  "window_from": "2026-04-22",
-  "window_to": "2027-01-17",
+  "generated_at": "2026-07-22",
+  "window_from": "2026-04-23",
+  "window_to": "2027-01-18",
   "ticker_count": 124,
   "succeeded": 107,
   "empty": 17,
   "failed": 0,
-  "event_count": 215,
+  "event_count": 211,
   "events": [
     {
       "title": "MU · AMC",
@@ -289,14 +289,14 @@
       "timing": "AMC"
     },
     {
-      "title": "AMT",
+      "title": "AMT · BMO",
       "start": "2026-07-28",
       "color": "#4FD1C5",
       "allDay": true,
       "ticker": "AMT",
       "sector": "REITs",
       "name": "아메리칸 타워",
-      "timing": ""
+      "timing": "BMO"
     },
     {
       "title": "BA · BMO",
@@ -329,14 +329,14 @@
       "timing": "BMO"
     },
     {
-      "title": "PYPL · AMC",
+      "title": "PYPL · BMO",
       "start": "2026-07-28",
       "color": "#B794F4",
       "allDay": true,
       "ticker": "PYPL",
       "sector": "Tech",
       "name": "페이팔 홀딩스",
-      "timing": "AMC"
+      "timing": "BMO"
     },
     {
       "title": "ARM",
@@ -599,103 +599,53 @@
       "timing": ""
     },
     {
-      "title": "BKH · AMC",
-      "start": "2026-08-05",
-      "color": "#F6AD55",
+      "title": "AMD · AMC",
+      "start": "2026-08-04",
+      "color": "#B794F4",
       "allDay": true,
-      "ticker": "BKH",
-      "sector": "Commodities",
-      "name": "블랙 힐스",
+      "ticker": "AMD",
+      "sector": "Tech",
+      "name": "AMD",
       "timing": "AMC"
     },
     {
-      "title": "BLMN · BMO",
-      "start": "2026-08-05",
-      "color": "#68D391",
+      "title": "ANET · AMC",
+      "start": "2026-08-04",
+      "color": "#B794F4",
       "allDay": true,
-      "ticker": "BLMN",
-      "sector": "Consumer & Retail",
-      "name": "블루민 브랜즈",
-      "timing": "BMO"
+      "ticker": "ANET",
+      "sector": "Tech",
+      "name": "아리스타 네트웍스",
+      "timing": "AMC"
     },
     {
-      "title": "CG · BMO",
-      "start": "2026-08-05",
+      "title": "APO · BMO",
+      "start": "2026-08-04",
       "color": "#4299E1",
       "allDay": true,
-      "ticker": "CG",
+      "ticker": "APO",
       "sector": "Financials",
-      "name": "칼라일 그룹",
+      "name": "아폴로 글로벌 매니지먼트",
       "timing": "BMO"
     },
     {
-      "title": "IRM · BMO",
-      "start": "2026-08-05",
-      "color": "#4FD1C5",
+      "title": "HLNE",
+      "start": "2026-08-04",
+      "color": "#4299E1",
       "allDay": true,
-      "ticker": "IRM",
-      "sector": "REITs",
-      "name": "아이언 마운틴",
-      "timing": "BMO"
-    },
-    {
-      "title": "NI · BMO",
-      "start": "2026-08-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "NI",
-      "sector": "Commodities",
-      "name": "나이소스",
-      "timing": "BMO"
-    },
-    {
-      "title": "O · AMC",
-      "start": "2026-08-05",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "O",
-      "sector": "REITs",
-      "name": "리얼티 인컴",
-      "timing": "AMC"
-    },
-    {
-      "title": "OXY · AMC",
-      "start": "2026-08-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "OXY",
-      "sector": "Commodities",
-      "name": "옥시덴털 페트롤리엄",
-      "timing": "AMC"
-    },
-    {
-      "title": "RKLB",
-      "start": "2026-08-05",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "RKLB",
-      "sector": "Aerospace & Defense",
-      "name": "로켓 랩",
+      "ticker": "HLNE",
+      "sector": "Financials",
+      "name": "해밀턴 레인",
       "timing": ""
     },
     {
-      "title": "SHAK · BMO",
-      "start": "2026-08-05",
-      "color": "#68D391",
+      "title": "LDOS",
+      "start": "2026-08-04",
+      "color": "#FC8181",
       "allDay": true,
-      "ticker": "SHAK",
-      "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
-      "timing": "BMO"
-    },
-    {
-      "title": "SMR",
-      "start": "2026-08-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "SMR",
-      "sector": "Commodities",
-      "name": "뉴스케일 파워",
+      "ticker": "LDOS",
+      "sector": "Aerospace & Defense",
+      "name": "레이도스 홀딩스",
       "timing": ""
     },
     {
@@ -2157,6 +2107,16 @@
       "sector": "Financials",
       "name": "PNC 파이낸셜 서비스",
       "timing": "BMO"
+    },
+    {
+      "title": "NFLX · AMC",
+      "start": "2027-01-18",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "NFLX",
+      "sector": "Tech",
+      "name": "넷플릭스",
+      "timing": "AMC"
     }
   ]
 }
