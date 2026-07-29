@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-28",
-  "window_from": "2026-04-29",
-  "window_to": "2027-01-24",
+  "generated_at": "2026-07-29",
+  "window_from": "2026-04-30",
+  "window_to": "2027-01-25",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
@@ -259,16 +259,6 @@
       "timing": "AMC"
     },
     {
-      "title": "PYPL · BMO",
-      "start": "2026-07-27",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "PYPL",
-      "sector": "Tech",
-      "name": "페이팔 홀딩스",
-      "timing": "BMO"
-    },
-    {
       "title": "WELL · AMC",
       "start": "2026-07-27",
       "color": "#4FD1C5",
@@ -316,6 +306,16 @@
       "ticker": "KO",
       "sector": "Consumer & Retail",
       "name": "코카콜라",
+      "timing": "BMO"
+    },
+    {
+      "title": "PYPL · BMO",
+      "start": "2026-07-28",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "PYPL",
+      "sector": "Tech",
+      "name": "페이팔 홀딩스",
       "timing": "BMO"
     },
     {
@@ -549,34 +549,24 @@
       "timing": "BMO"
     },
     {
-      "title": "AMD · AMC",
-      "start": "2026-08-04",
+      "title": "PLTR · AMC",
+      "start": "2026-08-03",
       "color": "#B794F4",
       "allDay": true,
-      "ticker": "AMD",
+      "ticker": "PLTR",
       "sector": "Tech",
-      "name": "AMD",
+      "name": "팔란티어 테크",
       "timing": "AMC"
     },
     {
-      "title": "ANET · AMC",
-      "start": "2026-08-04",
-      "color": "#B794F4",
+      "title": "VNO · AMC",
+      "start": "2026-08-03",
+      "color": "#4FD1C5",
       "allDay": true,
-      "ticker": "ANET",
-      "sector": "Tech",
-      "name": "아리스타 네트웍스",
+      "ticker": "VNO",
+      "sector": "REITs",
+      "name": "보나도 리얼티 트러스트",
       "timing": "AMC"
-    },
-    {
-      "title": "APO · BMO",
-      "start": "2026-08-04",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "APO",
-      "sector": "Financials",
-      "name": "아폴로 글로벌 매니지먼트",
-      "timing": "BMO"
     },
     {
       "title": "BKH · AMC",
@@ -649,26 +639,6 @@
       "timing": "AMC"
     },
     {
-      "title": "SHAK · BMO",
-      "start": "2026-08-05",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SHAK",
-      "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
-      "timing": "BMO"
-    },
-    {
-      "title": "SMR",
-      "start": "2026-08-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "SMR",
-      "sector": "Commodities",
-      "name": "뉴스케일 파워",
-      "timing": ""
-    },
-    {
       "title": "HWM · BMO",
       "start": "2026-08-06",
       "color": "#FC8181",
@@ -739,14 +709,14 @@
       "timing": ""
     },
     {
-      "title": "CSCO · AMC",
+      "title": "GO",
       "start": "2026-08-11",
-      "color": "#B794F4",
+      "color": "#68D391",
       "allDay": true,
-      "ticker": "CSCO",
-      "sector": "Tech",
-      "name": "시스코 시스템즈",
-      "timing": "AMC"
+      "ticker": "GO",
+      "sector": "Consumer & Retail",
+      "name": "그로서리 아웃렛 홀딩스",
+      "timing": ""
     },
     {
       "title": "SMCI · AMC",
@@ -769,14 +739,14 @@
       "timing": "AMC"
     },
     {
-      "title": "BIDU · BMO",
-      "start": "2026-08-18",
+      "title": "CSCO · AMC",
+      "start": "2026-08-19",
       "color": "#B794F4",
       "allDay": true,
-      "ticker": "BIDU",
+      "ticker": "CSCO",
       "sector": "Tech",
-      "name": "바이두(ADR)",
-      "timing": "BMO"
+      "name": "시스코 시스템즈",
+      "timing": "AMC"
     },
     {
       "title": "ROST",
@@ -796,6 +766,26 @@
       "ticker": "TGT",
       "sector": "Consumer & Retail",
       "name": "타겟",
+      "timing": ""
+    },
+    {
+      "title": "AFRM · AMC",
+      "start": "2026-08-20",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "AFRM",
+      "sector": "Financials",
+      "name": "어펌 홀딩스",
+      "timing": "AMC"
+    },
+    {
+      "title": "MRVL",
+      "start": "2026-08-20",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "MRVL",
+      "sector": "Tech",
+      "name": "마블 테크놀로지 그룹",
       "timing": ""
     },
     {
@@ -829,16 +819,6 @@
       "timing": ""
     },
     {
-      "title": "AFRM · AMC",
-      "start": "2026-08-26",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "AFRM",
-      "sector": "Financials",
-      "name": "어펌 홀딩스",
-      "timing": "AMC"
-    },
-    {
       "title": "AMBA",
       "start": "2026-08-26",
       "color": "#B794F4",
@@ -849,6 +829,26 @@
       "timing": ""
     },
     {
+      "title": "BIDU · BMO",
+      "start": "2026-08-26",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "BIDU",
+      "sector": "Tech",
+      "name": "바이두(ADR)",
+      "timing": "BMO"
+    },
+    {
+      "title": "CRM · AMC",
+      "start": "2026-08-26",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "CRM",
+      "sector": "Tech",
+      "name": "세일즈포스",
+      "timing": "AMC"
+    },
+    {
       "title": "DG",
       "start": "2026-08-26",
       "color": "#68D391",
@@ -856,16 +856,6 @@
       "ticker": "DG",
       "sector": "Consumer & Retail",
       "name": "달러 제너럴",
-      "timing": ""
-    },
-    {
-      "title": "MRVL",
-      "start": "2026-08-26",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "MRVL",
-      "sector": "Tech",
-      "name": "마블 테크놀로지 그룹",
       "timing": ""
     },
     {
@@ -887,16 +877,6 @@
       "sector": "Consumer & Retail",
       "name": "올리스 바겐 아웃렛 홀딩스",
       "timing": ""
-    },
-    {
-      "title": "CRM · AMC",
-      "start": "2026-09-01",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "CRM",
-      "sector": "Tech",
-      "name": "세일즈포스",
-      "timing": "AMC"
     },
     {
       "title": "DLTR",
@@ -2187,6 +2167,26 @@
       "sector": "Aerospace & Defense",
       "name": "부즈 알렌 해밀턴 홀딩",
       "timing": ""
+    },
+    {
+      "title": "BA · AMC",
+      "start": "2027-01-25",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "BA",
+      "sector": "Aerospace & Defense",
+      "name": "보잉",
+      "timing": "AMC"
+    },
+    {
+      "title": "NOC · AMC",
+      "start": "2027-01-25",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "NOC",
+      "sector": "Aerospace & Defense",
+      "name": "노스롭 그루만",
+      "timing": "AMC"
     }
   ]
 }
