@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-03",
-  "window_from": "2026-05-05",
-  "window_to": "2027-01-30",
+  "generated_at": "2026-08-04",
+  "window_from": "2026-05-06",
+  "window_to": "2027-01-31",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 229,
+  "event_count": 234,
   "events": [
     {
       "title": "PNC · BMO",
@@ -729,24 +729,24 @@
       "timing": "BMO"
     },
     {
-      "title": "RKLB",
+      "title": "RKLB · AMC",
       "start": "2026-08-10",
       "color": "#FC8181",
       "allDay": true,
       "ticker": "RKLB",
       "sector": "Aerospace & Defense",
       "name": "로켓 랩",
-      "timing": ""
+      "timing": "AMC"
     },
     {
-      "title": "SPG",
+      "title": "SPG · AMC",
       "start": "2026-08-10",
       "color": "#4FD1C5",
       "allDay": true,
       "ticker": "SPG",
       "sector": "REITs",
       "name": "사이먼 프라퍼티 그룹",
-      "timing": ""
+      "timing": "AMC"
     },
     {
       "title": "CAVA",
@@ -919,6 +919,16 @@
       "timing": ""
     },
     {
+      "title": "AMBA",
+      "start": "2026-09-01",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "AMBA",
+      "sector": "Tech",
+      "name": "암바렐라",
+      "timing": ""
+    },
+    {
       "title": "DLTR",
       "start": "2026-09-01",
       "color": "#68D391",
@@ -939,16 +949,6 @@
       "timing": "AMC"
     },
     {
-      "title": "AVGO · AMC",
-      "start": "2026-09-02",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "AVGO",
-      "sector": "Tech",
-      "name": "브로드컴",
-      "timing": "AMC"
-    },
-    {
       "title": "LULU · AMC",
       "start": "2026-09-02",
       "color": "#68D391",
@@ -956,6 +956,16 @@
       "ticker": "LULU",
       "sector": "Consumer & Retail",
       "name": "룰루레몬 애슬레티카",
+      "timing": "AMC"
+    },
+    {
+      "title": "AVGO · AMC",
+      "start": "2026-09-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "AVGO",
+      "sector": "Tech",
+      "name": "브로드컴",
       "timing": "AMC"
     },
     {
@@ -1469,6 +1479,66 @@
       "timing": "AMC"
     },
     {
+      "title": "CROX · BMO",
+      "start": "2026-10-28",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "CROX",
+      "sector": "Consumer & Retail",
+      "name": "크록스",
+      "timing": "BMO"
+    },
+    {
+      "title": "DTE · BMO",
+      "start": "2026-10-28",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "DTE",
+      "sector": "Commodities",
+      "name": "DTE 에너지",
+      "timing": "BMO"
+    },
+    {
+      "title": "HII · BMO",
+      "start": "2026-10-28",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "HII",
+      "sector": "Aerospace & Defense",
+      "name": "헌팅턴 잉걸스 인더스트리스",
+      "timing": "BMO"
+    },
+    {
+      "title": "HWM · BMO",
+      "start": "2026-10-28",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "HWM",
+      "sector": "Aerospace & Defense",
+      "name": "하우멧 에어로스페이스",
+      "timing": "BMO"
+    },
+    {
+      "title": "LHX · AMC",
+      "start": "2026-10-28",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "LHX",
+      "sector": "Aerospace & Defense",
+      "name": "L3 해리스 테크놀로지스",
+      "timing": "AMC"
+    },
+    {
+      "title": "SHAK · BMO",
+      "start": "2026-10-28",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "SHAK",
+      "sector": "Consumer & Retail",
+      "name": "쉐이크쉑",
+      "timing": "BMO"
+    },
+    {
       "title": "CG · BMO",
       "start": "2026-10-29",
       "color": "#4299E1",
@@ -1476,26 +1546,6 @@
       "ticker": "CG",
       "sector": "Financials",
       "name": "칼라일 그룹",
-      "timing": "BMO"
-    },
-    {
-      "title": "CVX · BMO",
-      "start": "2026-10-29",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "CVX",
-      "sector": "Commodities",
-      "name": "셰브론",
-      "timing": "BMO"
-    },
-    {
-      "title": "QSR · BMO",
-      "start": "2026-10-29",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "QSR",
-      "sector": "Consumer & Retail",
-      "name": "레스토랑 브랜즈 인터내셔널",
       "timing": "BMO"
     },
     {
