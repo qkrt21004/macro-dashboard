@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-05",
-  "window_from": "2026-05-07",
-  "window_to": "2027-02-01",
+  "generated_at": "2026-08-06",
+  "window_from": "2026-05-08",
+  "window_to": "2027-02-02",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
@@ -519,34 +519,24 @@
       "timing": "BMO"
     },
     {
-      "title": "AMD · AMC",
-      "start": "2026-08-04",
+      "title": "PLTR · AMC",
+      "start": "2026-08-03",
       "color": "#B794F4",
       "allDay": true,
-      "ticker": "AMD",
+      "ticker": "PLTR",
       "sector": "Tech",
-      "name": "AMD",
+      "name": "팔란티어 테크",
       "timing": "AMC"
     },
     {
-      "title": "ANET · AMC",
-      "start": "2026-08-04",
-      "color": "#B794F4",
+      "title": "VNO · AMC",
+      "start": "2026-08-03",
+      "color": "#4FD1C5",
       "allDay": true,
-      "ticker": "ANET",
-      "sector": "Tech",
-      "name": "아리스타 네트웍스",
+      "ticker": "VNO",
+      "sector": "REITs",
+      "name": "보나도 리얼티 트러스트",
       "timing": "AMC"
-    },
-    {
-      "title": "APO · BMO",
-      "start": "2026-08-04",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "APO",
-      "sector": "Financials",
-      "name": "아폴로 글로벌 매니지먼트",
-      "timing": "BMO"
     },
     {
       "title": "BKH · AMC",
@@ -587,56 +577,6 @@
       "sector": "REITs",
       "name": "아이언 마운틴",
       "timing": "BMO"
-    },
-    {
-      "title": "NI · BMO",
-      "start": "2026-08-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "NI",
-      "sector": "Commodities",
-      "name": "나이소스",
-      "timing": "BMO"
-    },
-    {
-      "title": "O · AMC",
-      "start": "2026-08-05",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "O",
-      "sector": "REITs",
-      "name": "리얼티 인컴",
-      "timing": "AMC"
-    },
-    {
-      "title": "OXY · AMC",
-      "start": "2026-08-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "OXY",
-      "sector": "Commodities",
-      "name": "옥시덴털 페트롤리엄",
-      "timing": "AMC"
-    },
-    {
-      "title": "SHAK · BMO",
-      "start": "2026-08-05",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SHAK",
-      "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
-      "timing": "BMO"
-    },
-    {
-      "title": "SMR · AMC",
-      "start": "2026-08-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "SMR",
-      "sector": "Commodities",
-      "name": "뉴스케일 파워",
-      "timing": "AMC"
     },
     {
       "title": "HWM · BMO",
@@ -719,24 +659,24 @@
       "timing": "AMC"
     },
     {
-      "title": "EAT · AMC",
+      "title": "EAT · BMO",
       "start": "2026-08-12",
       "color": "#68D391",
       "allDay": true,
       "ticker": "EAT",
       "sector": "Consumer & Retail",
       "name": "브링커 인터내셔널",
-      "timing": "AMC"
+      "timing": "BMO"
     },
     {
-      "title": "GO",
+      "title": "GO · AMC",
       "start": "2026-08-12",
       "color": "#68D391",
       "allDay": true,
       "ticker": "GO",
       "sector": "Consumer & Retail",
       "name": "그로서리 아웃렛 홀딩스",
-      "timing": ""
+      "timing": "AMC"
     },
     {
       "title": "BIDU · BMO",
@@ -2397,6 +2337,66 @@
       "sector": "Aerospace & Defense",
       "name": "트랜스다임 그룹",
       "timing": ""
+    },
+    {
+      "title": "ARM",
+      "start": "2027-02-02",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "ARM",
+      "sector": "Tech",
+      "name": "에이알엠 홀딩스(ADR)",
+      "timing": ""
+    },
+    {
+      "title": "BKH · AMC",
+      "start": "2027-02-02",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "BKH",
+      "sector": "Commodities",
+      "name": "블랙 힐스",
+      "timing": "AMC"
+    },
+    {
+      "title": "CCI · AMC",
+      "start": "2027-02-02",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "CCI",
+      "sector": "REITs",
+      "name": "크라운 캐슬",
+      "timing": "AMC"
+    },
+    {
+      "title": "GOOGL · AMC",
+      "start": "2027-02-02",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "GOOGL",
+      "sector": "Tech",
+      "name": "알파벳 C",
+      "timing": "AMC"
+    },
+    {
+      "title": "QCOM",
+      "start": "2027-02-02",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "QCOM",
+      "sector": "Tech",
+      "name": "퀄컴",
+      "timing": ""
+    },
+    {
+      "title": "YUM · AMC",
+      "start": "2027-02-02",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "YUM",
+      "sector": "Consumer & Retail",
+      "name": "염 브랜즈",
+      "timing": "AMC"
     }
   ]
 }
