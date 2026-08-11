@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-10",
-  "window_from": "2026-05-12",
-  "window_to": "2027-02-06",
+  "generated_at": "2026-08-11",
+  "window_from": "2026-05-13",
+  "window_to": "2027-02-07",
   "ticker_count": 124,
-  "succeeded": 108,
-  "empty": 16,
+  "succeeded": 109,
+  "empty": 15,
   "failed": 0,
-  "event_count": 255,
+  "event_count": 251,
   "events": [
     {
       "title": "PNC · BMO",
@@ -509,6 +509,26 @@
       "timing": "BMO"
     },
     {
+      "title": "CVX · BMO",
+      "start": "2026-07-31",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "CVX",
+      "sector": "Commodities",
+      "name": "셰브론",
+      "timing": "BMO"
+    },
+    {
+      "title": "XOM · BMO",
+      "start": "2026-07-31",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "XOM",
+      "sector": "Commodities",
+      "name": "엑슨 모빌",
+      "timing": "BMO"
+    },
+    {
       "title": "AMD · AMC",
       "start": "2026-08-04",
       "color": "#B794F4",
@@ -576,16 +596,6 @@
       "ticker": "LDOS",
       "sector": "Aerospace & Defense",
       "name": "레이도스 홀딩스",
-      "timing": "BMO"
-    },
-    {
-      "title": "TDG · BMO",
-      "start": "2026-08-04",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "TDG",
-      "sector": "Aerospace & Defense",
-      "name": "트랜스다임 그룹",
       "timing": "BMO"
     },
     {
@@ -849,6 +859,16 @@
       "timing": ""
     },
     {
+      "title": "AMBA",
+      "start": "2026-08-26",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "AMBA",
+      "sector": "Tech",
+      "name": "암바렐라",
+      "timing": ""
+    },
+    {
       "title": "CRM · AMC",
       "start": "2026-08-26",
       "color": "#B794F4",
@@ -906,16 +926,6 @@
       "ticker": "MRVL",
       "sector": "Tech",
       "name": "마블 테크놀로지 그룹",
-      "timing": ""
-    },
-    {
-      "title": "AMBA",
-      "start": "2026-09-01",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "AMBA",
-      "sector": "Tech",
-      "name": "암바렐라",
       "timing": ""
     },
     {
@@ -1189,16 +1199,6 @@
       "timing": ""
     },
     {
-      "title": "GEV",
-      "start": "2026-10-20",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "GEV",
-      "sector": "Commodities",
-      "name": "GE베르노바",
-      "timing": ""
-    },
-    {
       "title": "LRCX",
       "start": "2026-10-20",
       "color": "#B794F4",
@@ -1439,6 +1439,16 @@
       "timing": "AMC"
     },
     {
+      "title": "VTR",
+      "start": "2026-10-27",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "VTR",
+      "sector": "REITs",
+      "name": "벤타스",
+      "timing": ""
+    },
+    {
       "title": "AAPL · AMC",
       "start": "2026-10-28",
       "color": "#B794F4",
@@ -1457,66 +1467,6 @@
       "sector": "Tech",
       "name": "아마존닷컴",
       "timing": "AMC"
-    },
-    {
-      "title": "CROX · BMO",
-      "start": "2026-10-28",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "CROX",
-      "sector": "Consumer & Retail",
-      "name": "크록스",
-      "timing": "BMO"
-    },
-    {
-      "title": "DTE · BMO",
-      "start": "2026-10-28",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "DTE",
-      "sector": "Commodities",
-      "name": "DTE 에너지",
-      "timing": "BMO"
-    },
-    {
-      "title": "HII · BMO",
-      "start": "2026-10-28",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "HII",
-      "sector": "Aerospace & Defense",
-      "name": "헌팅턴 잉걸스 인더스트리스",
-      "timing": "BMO"
-    },
-    {
-      "title": "HWM · BMO",
-      "start": "2026-10-28",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "HWM",
-      "sector": "Aerospace & Defense",
-      "name": "하우멧 에어로스페이스",
-      "timing": "BMO"
-    },
-    {
-      "title": "LHX · AMC",
-      "start": "2026-10-28",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "LHX",
-      "sector": "Aerospace & Defense",
-      "name": "L3 해리스 테크놀로지스",
-      "timing": "AMC"
-    },
-    {
-      "title": "SHAK · BMO",
-      "start": "2026-10-28",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SHAK",
-      "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
-      "timing": "BMO"
     },
     {
       "title": "CG · BMO",
@@ -1547,6 +1497,16 @@
       "sector": "Consumer & Retail",
       "name": "레스토랑 브랜즈 인터내셔널",
       "timing": "BMO"
+    },
+    {
+      "title": "XOM",
+      "start": "2026-10-29",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "XOM",
+      "sector": "Commodities",
+      "name": "엑슨 모빌",
+      "timing": ""
     },
     {
       "title": "AMD · AMC",
