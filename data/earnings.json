@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-08-14",
-  "window_from": "2026-05-16",
-  "window_to": "2027-02-10",
+  "generated_at": "2026-08-15",
+  "window_from": "2026-05-17",
+  "window_to": "2027-02-11",
   "ticker_count": 124,
-  "succeeded": 109,
-  "empty": 15,
+  "succeeded": 108,
+  "empty": 16,
   "failed": 0,
-  "event_count": 262,
+  "event_count": 265,
   "events": [
-    {
-      "title": "PNC · BMO",
-      "start": "2026-07-15",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "PNC",
-      "sector": "Financials",
-      "name": "PNC 파이낸셜 서비스",
-      "timing": "BMO"
-    },
     {
       "title": "AA · AMC",
       "start": "2026-07-16",
@@ -549,33 +539,83 @@
       "timing": "AMC"
     },
     {
-      "title": "BKH · AMC",
-      "start": "2026-08-05",
-      "color": "#F6AD55",
+      "title": "AMD · AMC",
+      "start": "2026-08-04",
+      "color": "#B794F4",
       "allDay": true,
-      "ticker": "BKH",
-      "sector": "Commodities",
-      "name": "블랙 힐스",
+      "ticker": "AMD",
+      "sector": "Tech",
+      "name": "AMD",
       "timing": "AMC"
     },
     {
-      "title": "BLMN · BMO",
-      "start": "2026-08-05",
-      "color": "#68D391",
+      "title": "ANET · AMC",
+      "start": "2026-08-04",
+      "color": "#B794F4",
       "allDay": true,
-      "ticker": "BLMN",
-      "sector": "Consumer & Retail",
-      "name": "블루민 브랜즈",
+      "ticker": "ANET",
+      "sector": "Tech",
+      "name": "아리스타 네트웍스",
+      "timing": "AMC"
+    },
+    {
+      "title": "APO · BMO",
+      "start": "2026-08-04",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "APO",
+      "sector": "Financials",
+      "name": "아폴로 글로벌 매니지먼트",
       "timing": "BMO"
     },
     {
-      "title": "CG · BMO",
-      "start": "2026-08-05",
+      "title": "CPNG · AMC",
+      "start": "2026-08-04",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "CPNG",
+      "sector": "Consumer & Retail",
+      "name": "쿠팡",
+      "timing": "AMC"
+    },
+    {
+      "title": "HLNE · BMO",
+      "start": "2026-08-04",
       "color": "#4299E1",
       "allDay": true,
-      "ticker": "CG",
+      "ticker": "HLNE",
       "sector": "Financials",
-      "name": "칼라일 그룹",
+      "name": "해밀턴 레인",
+      "timing": "BMO"
+    },
+    {
+      "title": "KTOS · AMC",
+      "start": "2026-08-04",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "KTOS",
+      "sector": "Aerospace & Defense",
+      "name": "크라토스 디펜스 앤드 시큐리티 솔루션",
+      "timing": "AMC"
+    },
+    {
+      "title": "LDOS · BMO",
+      "start": "2026-08-04",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "LDOS",
+      "sector": "Aerospace & Defense",
+      "name": "레이도스 홀딩스",
+      "timing": "BMO"
+    },
+    {
+      "title": "TDG · BMO",
+      "start": "2026-08-04",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "TDG",
+      "sector": "Aerospace & Defense",
+      "name": "트랜스다임 그룹",
       "timing": "BMO"
     },
     {
@@ -587,26 +627,6 @@
       "sector": "Aerospace & Defense",
       "name": "하우멧 에어로스페이스",
       "timing": "BMO"
-    },
-    {
-      "title": "QSR · BMO",
-      "start": "2026-08-06",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "QSR",
-      "sector": "Consumer & Retail",
-      "name": "레스토랑 브랜즈 인터내셔널",
-      "timing": "BMO"
-    },
-    {
-      "title": "RCAT · AMC",
-      "start": "2026-08-06",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "RCAT",
-      "sector": "Aerospace & Defense",
-      "name": "레드 캣 홀딩스",
-      "timing": "AMC"
     },
     {
       "title": "WEN · BMO",
@@ -2626,6 +2646,16 @@
       "ticker": "QSR",
       "sector": "Consumer & Retail",
       "name": "레스토랑 브랜즈 인터내셔널",
+      "timing": "AMC"
+    },
+    {
+      "title": "WEN · AMC",
+      "start": "2027-02-11",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "WEN",
+      "sector": "Consumer & Retail",
+      "name": "웬디스 컴퍼니",
       "timing": "AMC"
     }
   ]
