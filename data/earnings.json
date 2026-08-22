@@ -1,63 +1,13 @@
 {
-  "generated_at": "2026-08-21",
-  "window_from": "2026-05-23",
-  "window_to": "2027-02-17",
+  "generated_at": "2026-08-22",
+  "window_from": "2026-05-24",
+  "window_to": "2027-02-18",
   "ticker_count": 124,
   "succeeded": 109,
   "empty": 15,
   "failed": 0,
-  "event_count": 262,
+  "event_count": 255,
   "events": [
-    {
-      "title": "CCI · AMC",
-      "start": "2026-07-22",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "CCI",
-      "sector": "REITs",
-      "name": "크라운 캐슬",
-      "timing": "AMC"
-    },
-    {
-      "title": "GEV · BMO",
-      "start": "2026-07-22",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "GEV",
-      "sector": "Commodities",
-      "name": "GE베르노바",
-      "timing": "BMO"
-    },
-    {
-      "title": "GOOGL · AMC",
-      "start": "2026-07-22",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "GOOGL",
-      "sector": "Tech",
-      "name": "알파벳 C",
-      "timing": "AMC"
-    },
-    {
-      "title": "IBM · AMC",
-      "start": "2026-07-22",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "IBM",
-      "sector": "Tech",
-      "name": "IBM",
-      "timing": "AMC"
-    },
-    {
-      "title": "TSLA · AMC",
-      "start": "2026-07-22",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "TSLA",
-      "sector": "Tech",
-      "name": "테슬라",
-      "timing": "AMC"
-    },
     {
       "title": "ACI · BMO",
       "start": "2026-07-23",
@@ -449,6 +399,26 @@
       "timing": "BMO"
     },
     {
+      "title": "PLTR · AMC",
+      "start": "2026-08-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "PLTR",
+      "sector": "Tech",
+      "name": "팔란티어 테크",
+      "timing": "AMC"
+    },
+    {
+      "title": "VNO · AMC",
+      "start": "2026-08-03",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "VNO",
+      "sector": "REITs",
+      "name": "보나도 리얼티 트러스트",
+      "timing": "AMC"
+    },
+    {
       "title": "BKH · AMC",
       "start": "2026-08-05",
       "color": "#F6AD55",
@@ -476,56 +446,6 @@
       "ticker": "CG",
       "sector": "Financials",
       "name": "칼라일 그룹",
-      "timing": "BMO"
-    },
-    {
-      "title": "IRM · BMO",
-      "start": "2026-08-05",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "IRM",
-      "sector": "REITs",
-      "name": "아이언 마운틴",
-      "timing": "BMO"
-    },
-    {
-      "title": "NI · BMO",
-      "start": "2026-08-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "NI",
-      "sector": "Commodities",
-      "name": "나이소스",
-      "timing": "BMO"
-    },
-    {
-      "title": "O · AMC",
-      "start": "2026-08-05",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "O",
-      "sector": "REITs",
-      "name": "리얼티 인컴",
-      "timing": "AMC"
-    },
-    {
-      "title": "OXY · AMC",
-      "start": "2026-08-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "OXY",
-      "sector": "Commodities",
-      "name": "옥시덴털 페트롤리엄",
-      "timing": "AMC"
-    },
-    {
-      "title": "SHAK · BMO",
-      "start": "2026-08-05",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SHAK",
-      "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
       "timing": "BMO"
     },
     {
@@ -2626,6 +2546,16 @@
       "ticker": "WING",
       "sector": "Consumer & Retail",
       "name": "윙스톱",
+      "timing": "AMC"
+    },
+    {
+      "title": "WMT · AMC",
+      "start": "2027-02-18",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "WMT",
+      "sector": "Consumer & Retail",
+      "name": "월마트",
       "timing": "AMC"
     }
   ]
