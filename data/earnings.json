@@ -1,103 +1,13 @@
 {
-  "generated_at": "2026-08-29",
-  "window_from": "2026-05-31",
-  "window_to": "2027-02-25",
+  "generated_at": "2026-08-30",
+  "window_from": "2026-06-01",
+  "window_to": "2027-02-26",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 252,
+  "event_count": 238,
   "events": [
-    {
-      "title": "AAPL · AMC",
-      "start": "2026-07-30",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "AAPL",
-      "sector": "Tech",
-      "name": "애플",
-      "timing": "AMC"
-    },
-    {
-      "title": "AEP · BMO",
-      "start": "2026-07-30",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "AEP",
-      "sector": "Commodities",
-      "name": "아메리칸 일렉트릭 파워",
-      "timing": "BMO"
-    },
-    {
-      "title": "AMZN · AMC",
-      "start": "2026-07-30",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "AMZN",
-      "sector": "Tech",
-      "name": "아마존닷컴",
-      "timing": "AMC"
-    },
-    {
-      "title": "CROX · BMO",
-      "start": "2026-07-30",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "CROX",
-      "sector": "Consumer & Retail",
-      "name": "크록스",
-      "timing": "BMO"
-    },
-    {
-      "title": "EXC · BMO",
-      "start": "2026-07-30",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "EXC",
-      "sector": "Commodities",
-      "name": "엑셀론",
-      "timing": "BMO"
-    },
-    {
-      "title": "HII · BMO",
-      "start": "2026-07-30",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "HII",
-      "sector": "Aerospace & Defense",
-      "name": "헌팅턴 잉걸스 인더스트리스",
-      "timing": "BMO"
-    },
-    {
-      "title": "KKR · BMO",
-      "start": "2026-07-30",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "KKR",
-      "sector": "Financials",
-      "name": "KKR & CO",
-      "timing": "BMO"
-    },
-    {
-      "title": "OWL · BMO",
-      "start": "2026-07-30",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "OWL",
-      "sector": "Financials",
-      "name": "블루 아울 캐피털",
-      "timing": "BMO"
-    },
-    {
-      "title": "YUM · BMO",
-      "start": "2026-07-30",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "YUM",
-      "sector": "Consumer & Retail",
-      "name": "염 브랜즈",
-      "timing": "BMO"
-    },
     {
       "title": "CVX · BMO",
       "start": "2026-07-31",
@@ -119,34 +29,24 @@
       "timing": "BMO"
     },
     {
-      "title": "AMD · AMC",
-      "start": "2026-08-04",
+      "title": "PLTR · AMC",
+      "start": "2026-08-03",
       "color": "#B794F4",
       "allDay": true,
-      "ticker": "AMD",
+      "ticker": "PLTR",
       "sector": "Tech",
-      "name": "AMD",
+      "name": "팔란티어 테크",
       "timing": "AMC"
     },
     {
-      "title": "ANET · AMC",
-      "start": "2026-08-04",
-      "color": "#B794F4",
+      "title": "VNO · AMC",
+      "start": "2026-08-03",
+      "color": "#4FD1C5",
       "allDay": true,
-      "ticker": "ANET",
-      "sector": "Tech",
-      "name": "아리스타 네트웍스",
+      "ticker": "VNO",
+      "sector": "REITs",
+      "name": "보나도 리얼티 트러스트",
       "timing": "AMC"
-    },
-    {
-      "title": "APO · BMO",
-      "start": "2026-08-04",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "APO",
-      "sector": "Financials",
-      "name": "아폴로 글로벌 매니지먼트",
-      "timing": "BMO"
     },
     {
       "title": "BKH · AMC",
@@ -197,46 +97,6 @@
       "sector": "Commodities",
       "name": "나이소스",
       "timing": "BMO"
-    },
-    {
-      "title": "O · AMC",
-      "start": "2026-08-05",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "O",
-      "sector": "REITs",
-      "name": "리얼티 인컴",
-      "timing": "AMC"
-    },
-    {
-      "title": "OXY · AMC",
-      "start": "2026-08-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "OXY",
-      "sector": "Commodities",
-      "name": "옥시덴털 페트롤리엄",
-      "timing": "AMC"
-    },
-    {
-      "title": "SHAK · BMO",
-      "start": "2026-08-05",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SHAK",
-      "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
-      "timing": "BMO"
-    },
-    {
-      "title": "SMR · AMC",
-      "start": "2026-08-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "SMR",
-      "sector": "Commodities",
-      "name": "뉴스케일 파워",
-      "timing": "AMC"
     },
     {
       "title": "HWM · BMO",
