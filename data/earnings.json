@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-02",
-  "window_from": "2026-06-04",
-  "window_to": "2027-03-01",
+  "generated_at": "2026-09-03",
+  "window_from": "2026-06-05",
+  "window_to": "2027-03-02",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 245,
+  "event_count": 248,
   "events": [
     {
       "title": "AMD · AMC",
@@ -207,6 +207,16 @@
       "sector": "Aerospace & Defense",
       "name": "레드 캣 홀딩스",
       "timing": "AMC"
+    },
+    {
+      "title": "WEN · BMO",
+      "start": "2026-08-07",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "WEN",
+      "sector": "Consumer & Retail",
+      "name": "웬디스 컴퍼니",
+      "timing": "BMO"
     },
     {
       "title": "RKLB · AMC",
@@ -459,14 +469,14 @@
       "timing": "AMC"
     },
     {
-      "title": "AVAV",
+      "title": "AVAV · AMC",
       "start": "2026-09-09",
       "color": "#FC8181",
       "allDay": true,
       "ticker": "AVAV",
       "sector": "Aerospace & Defense",
       "name": "에어로바이런먼트",
-      "timing": ""
+      "timing": "AMC"
     },
     {
       "title": "KR",
@@ -909,16 +919,6 @@
       "timing": "AMC"
     },
     {
-      "title": "VTR",
-      "start": "2026-10-27",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "VTR",
-      "sector": "REITs",
-      "name": "벤타스",
-      "timing": ""
-    },
-    {
       "title": "AAPL · AMC",
       "start": "2026-10-28",
       "color": "#B794F4",
@@ -1247,6 +1247,16 @@
       "sector": "REITs",
       "name": "아이언 마운틴",
       "timing": "BMO"
+    },
+    {
+      "title": "QCOM · AMC",
+      "start": "2026-11-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "QCOM",
+      "sector": "Tech",
+      "name": "퀄컴",
+      "timing": "AMC"
     },
     {
       "title": "AFRM",
@@ -2456,6 +2466,26 @@
       "ticker": "SMR",
       "sector": "Commodities",
       "name": "뉴스케일 파워",
+      "timing": "AMC"
+    },
+    {
+      "title": "AVGO",
+      "start": "2027-03-02",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "AVGO",
+      "sector": "Tech",
+      "name": "브로드컴",
+      "timing": ""
+    },
+    {
+      "title": "GO · AMC",
+      "start": "2027-03-02",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "GO",
+      "sector": "Consumer & Retail",
+      "name": "그로서리 아웃렛 홀딩스",
       "timing": "AMC"
     }
   ]
