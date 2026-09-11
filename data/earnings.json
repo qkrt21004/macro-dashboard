@@ -1,33 +1,13 @@
 {
-  "generated_at": "2026-09-10",
-  "window_from": "2026-06-12",
-  "window_to": "2027-03-09",
+  "generated_at": "2026-09-11",
+  "window_from": "2026-06-13",
+  "window_to": "2027-03-10",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 230,
+  "event_count": 229,
   "events": [
-    {
-      "title": "CAVA · AMC",
-      "start": "2026-08-11",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "CAVA",
-      "sector": "Consumer & Retail",
-      "name": "카바 그룹",
-      "timing": "AMC"
-    },
-    {
-      "title": "SMCI · AMC",
-      "start": "2026-08-11",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "SMCI",
-      "sector": "Tech",
-      "name": "슈퍼 마이크로 컴퓨터",
-      "timing": "AMC"
-    },
     {
       "title": "CSCO · AMC",
       "start": "2026-08-12",
@@ -689,16 +669,6 @@
       "timing": "AMC"
     },
     {
-      "title": "VTR",
-      "start": "2026-10-27",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "VTR",
-      "sector": "REITs",
-      "name": "벤타스",
-      "timing": ""
-    },
-    {
       "title": "AAPL · AMC",
       "start": "2026-10-28",
       "color": "#B794F4",
@@ -1027,6 +997,16 @@
       "sector": "REITs",
       "name": "아이언 마운틴",
       "timing": "BMO"
+    },
+    {
+      "title": "QCOM · AMC",
+      "start": "2026-11-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "QCOM",
+      "sector": "Tech",
+      "name": "퀄컴",
+      "timing": "AMC"
     },
     {
       "title": "AFRM",
@@ -2306,6 +2286,16 @@
       "ticker": "ORCL",
       "sector": "Tech",
       "name": "오라클",
+      "timing": ""
+    },
+    {
+      "title": "ADBE",
+      "start": "2027-03-10",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "ADBE",
+      "sector": "Tech",
+      "name": "어도비",
       "timing": ""
     }
   ]
