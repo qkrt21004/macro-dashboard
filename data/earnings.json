@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-13",
-  "window_from": "2026-06-15",
-  "window_to": "2027-03-12",
+  "generated_at": "2026-09-14",
+  "window_from": "2026-06-16",
+  "window_to": "2027-03-13",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 223,
+  "event_count": 226,
   "events": [
     {
       "title": "BIDU · BMO",
@@ -199,16 +199,6 @@
       "timing": "AMC"
     },
     {
-      "title": "KR",
-      "start": "2026-09-09",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "KR",
-      "sector": "Consumer & Retail",
-      "name": "크로거",
-      "timing": ""
-    },
-    {
       "title": "ADBE · AMC",
       "start": "2026-09-10",
       "color": "#B794F4",
@@ -227,6 +217,16 @@
       "sector": "Tech",
       "name": "오라클",
       "timing": "AMC"
+    },
+    {
+      "title": "KR · BMO",
+      "start": "2026-09-11",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "KR",
+      "sector": "Consumer & Retail",
+      "name": "크로거",
+      "timing": "BMO"
     },
     {
       "title": "GIS",
@@ -749,6 +749,46 @@
       "timing": "BMO"
     },
     {
+      "title": "CG · BMO",
+      "start": "2026-10-29",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "CG",
+      "sector": "Financials",
+      "name": "칼라일 그룹",
+      "timing": "BMO"
+    },
+    {
+      "title": "CVX · BMO",
+      "start": "2026-10-29",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "CVX",
+      "sector": "Commodities",
+      "name": "셰브론",
+      "timing": "BMO"
+    },
+    {
+      "title": "QSR · BMO",
+      "start": "2026-10-29",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "QSR",
+      "sector": "Consumer & Retail",
+      "name": "레스토랑 브랜즈 인터내셔널",
+      "timing": "BMO"
+    },
+    {
+      "title": "XOM",
+      "start": "2026-10-29",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "XOM",
+      "sector": "Commodities",
+      "name": "엑슨 모빌",
+      "timing": ""
+    },
+    {
       "title": "AMD · AMC",
       "start": "2026-11-02",
       "color": "#B794F4",
@@ -906,16 +946,6 @@
       "ticker": "WING",
       "sector": "Consumer & Retail",
       "name": "윙스톱",
-      "timing": "BMO"
-    },
-    {
-      "title": "YUM · BMO",
-      "start": "2026-11-02",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "YUM",
-      "sector": "Consumer & Retail",
-      "name": "염 브랜즈",
       "timing": "BMO"
     },
     {
