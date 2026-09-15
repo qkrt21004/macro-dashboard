@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-14",
-  "window_from": "2026-06-16",
-  "window_to": "2027-03-13",
+  "generated_at": "2026-09-15",
+  "window_from": "2026-06-17",
+  "window_to": "2027-03-14",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
@@ -279,16 +279,6 @@
       "timing": "AMC"
     },
     {
-      "title": "DPZ · BMO",
-      "start": "2026-10-08",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "DPZ",
-      "sector": "Consumer & Retail",
-      "name": "도미노 피자",
-      "timing": "BMO"
-    },
-    {
       "title": "OWL · BMO",
       "start": "2026-10-12",
       "color": "#4299E1",
@@ -299,8 +289,28 @@
       "timing": "BMO"
     },
     {
-      "title": "PLD",
+      "title": "DPZ · BMO",
       "start": "2026-10-13",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "DPZ",
+      "sector": "Consumer & Retail",
+      "name": "도미노 피자",
+      "timing": "BMO"
+    },
+    {
+      "title": "FCX",
+      "start": "2026-10-15",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "FCX",
+      "sector": "Commodities",
+      "name": "프리포트 맥모란",
+      "timing": ""
+    },
+    {
+      "title": "PLD",
+      "start": "2026-10-15",
       "color": "#4FD1C5",
       "allDay": true,
       "ticker": "PLD",
@@ -436,16 +446,6 @@
       "ticker": "DLR",
       "sector": "REITs",
       "name": "디지털 리얼티 트러스트",
-      "timing": ""
-    },
-    {
-      "title": "FCX",
-      "start": "2026-10-21",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "FCX",
-      "sector": "Commodities",
-      "name": "프리포트 맥모란",
       "timing": ""
     },
     {
