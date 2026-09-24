@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-23",
-  "window_from": "2026-06-25",
-  "window_to": "2027-03-22",
+  "generated_at": "2026-09-24",
+  "window_from": "2026-06-26",
+  "window_to": "2027-03-23",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 225,
+  "event_count": 226,
   "events": [
     {
       "title": "CRM · AMC",
@@ -329,16 +329,6 @@
       "timing": "BMO"
     },
     {
-      "title": "LRCX",
-      "start": "2026-10-20",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "LRCX",
-      "sector": "Tech",
-      "name": "램 리서치",
-      "timing": ""
-    },
-    {
       "title": "NFLX · AMC",
       "start": "2026-10-20",
       "color": "#B794F4",
@@ -389,14 +379,14 @@
       "timing": "AMC"
     },
     {
-      "title": "INTC · AMC",
+      "title": "LRCX",
       "start": "2026-10-21",
       "color": "#B794F4",
       "allDay": true,
-      "ticker": "INTC",
+      "ticker": "LRCX",
       "sector": "Tech",
-      "name": "인텔",
-      "timing": "AMC"
+      "name": "램 리서치",
+      "timing": ""
     },
     {
       "title": "AEP · BMO",
@@ -447,6 +437,26 @@
       "sector": "Aerospace & Defense",
       "name": "제너럴 다이내믹스",
       "timing": "BMO"
+    },
+    {
+      "title": "INTC · AMC",
+      "start": "2026-10-22",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "INTC",
+      "sector": "Tech",
+      "name": "인텔",
+      "timing": "AMC"
+    },
+    {
+      "title": "LHX · AMC",
+      "start": "2026-10-22",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "LHX",
+      "sector": "Aerospace & Defense",
+      "name": "L3 해리스 테크놀로지스",
+      "timing": "AMC"
     },
     {
       "title": "BAH",
@@ -689,16 +699,6 @@
       "timing": "BMO"
     },
     {
-      "title": "LHX · AMC",
-      "start": "2026-10-28",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "LHX",
-      "sector": "Aerospace & Defense",
-      "name": "L3 해리스 테크놀로지스",
-      "timing": "AMC"
-    },
-    {
       "title": "SHAK · BMO",
       "start": "2026-10-28",
       "color": "#68D391",
@@ -896,6 +896,16 @@
       "ticker": "WING",
       "sector": "Consumer & Retail",
       "name": "윙스톱",
+      "timing": "BMO"
+    },
+    {
+      "title": "YUM · BMO",
+      "start": "2026-11-02",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "YUM",
+      "sector": "Consumer & Retail",
+      "name": "염 브랜즈",
       "timing": "BMO"
     },
     {
