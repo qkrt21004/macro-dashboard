@@ -1,53 +1,13 @@
 {
-  "generated_at": "2026-09-26",
-  "window_from": "2026-06-28",
-  "window_to": "2027-03-25",
+  "generated_at": "2026-09-27",
+  "window_from": "2026-06-29",
+  "window_to": "2027-03-26",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 223,
+  "event_count": 220,
   "events": [
-    {
-      "title": "AFRM · AMC",
-      "start": "2026-08-27",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "AFRM",
-      "sector": "Financials",
-      "name": "어펌 홀딩스",
-      "timing": "AMC"
-    },
-    {
-      "title": "DG · BMO",
-      "start": "2026-08-27",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "DG",
-      "sector": "Consumer & Retail",
-      "name": "달러 제너럴",
-      "timing": "BMO"
-    },
-    {
-      "title": "DLTR · BMO",
-      "start": "2026-08-27",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "DLTR",
-      "sector": "Consumer & Retail",
-      "name": "달러 트리",
-      "timing": "BMO"
-    },
-    {
-      "title": "MRVL · AMC",
-      "start": "2026-08-27",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "MRVL",
-      "sector": "Tech",
-      "name": "마블 테크놀로지 그룹",
-      "timing": "AMC"
-    },
     {
       "title": "DELL · AMC",
       "start": "2026-09-01",
@@ -429,6 +389,16 @@
       "timing": "AMC"
     },
     {
+      "title": "KRC",
+      "start": "2026-10-22",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "KRC",
+      "sector": "REITs",
+      "name": "킬로이 리얼티",
+      "timing": ""
+    },
+    {
       "title": "LHX · AMC",
       "start": "2026-10-22",
       "color": "#FC8181",
@@ -466,16 +436,6 @@
       "ticker": "XOM",
       "sector": "Commodities",
       "name": "엑슨 모빌",
-      "timing": ""
-    },
-    {
-      "title": "KRC",
-      "start": "2026-10-26",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "KRC",
-      "sector": "REITs",
-      "name": "킬로이 리얼티",
       "timing": ""
     },
     {
@@ -907,6 +867,16 @@
       "sector": "REITs",
       "name": "아이언 마운틴",
       "timing": "BMO"
+    },
+    {
+      "title": "QCOM · AMC",
+      "start": "2026-11-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "QCOM",
+      "sector": "Tech",
+      "name": "퀄컴",
+      "timing": "AMC"
     },
     {
       "title": "AFRM",
