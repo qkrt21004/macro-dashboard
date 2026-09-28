@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-27",
-  "window_from": "2026-06-29",
-  "window_to": "2027-03-26",
+  "generated_at": "2026-09-28",
+  "window_from": "2026-06-30",
+  "window_to": "2027-03-27",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 220,
+  "event_count": 215,
   "events": [
     {
       "title": "DELL · AMC",
@@ -596,56 +596,6 @@
       "ticker": "CROX",
       "sector": "Consumer & Retail",
       "name": "크록스",
-      "timing": "BMO"
-    },
-    {
-      "title": "EAT",
-      "start": "2026-10-28",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "EAT",
-      "sector": "Consumer & Retail",
-      "name": "브링커 인터내셔널",
-      "timing": ""
-    },
-    {
-      "title": "GEV",
-      "start": "2026-10-28",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "GEV",
-      "sector": "Commodities",
-      "name": "GE베르노바",
-      "timing": ""
-    },
-    {
-      "title": "HII · BMO",
-      "start": "2026-10-28",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "HII",
-      "sector": "Aerospace & Defense",
-      "name": "헌팅턴 잉걸스 인더스트리스",
-      "timing": "BMO"
-    },
-    {
-      "title": "HWM · BMO",
-      "start": "2026-10-28",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "HWM",
-      "sector": "Aerospace & Defense",
-      "name": "하우멧 에어로스페이스",
-      "timing": "BMO"
-    },
-    {
-      "title": "SHAK · BMO",
-      "start": "2026-10-28",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SHAK",
-      "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
       "timing": "BMO"
     },
     {
