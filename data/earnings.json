@@ -1,53 +1,13 @@
 {
-  "generated_at": "2026-10-02",
-  "window_from": "2026-07-04",
-  "window_to": "2027-03-31",
+  "generated_at": "2026-10-03",
+  "window_from": "2026-07-05",
+  "window_to": "2027-04-01",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 220,
+  "event_count": 211,
   "events": [
-    {
-      "title": "AVGO · AMC",
-      "start": "2026-09-02",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "AVGO",
-      "sector": "Tech",
-      "name": "브로드컴",
-      "timing": "AMC"
-    },
-    {
-      "title": "FIVE · AMC",
-      "start": "2026-09-02",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "FIVE",
-      "sector": "Consumer & Retail",
-      "name": "파이브 빌로우",
-      "timing": "AMC"
-    },
-    {
-      "title": "HPE · AMC",
-      "start": "2026-09-02",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "HPE",
-      "sector": "Tech",
-      "name": "휴렛 팩커드 엔터프라이즈",
-      "timing": "AMC"
-    },
-    {
-      "title": "OLLI · BMO",
-      "start": "2026-09-02",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "OLLI",
-      "sector": "Consumer & Retail",
-      "name": "올리스 바겐 아웃렛 홀딩스",
-      "timing": "BMO"
-    },
     {
       "title": "AMBA · AMC",
       "start": "2026-09-03",
@@ -359,6 +319,16 @@
       "timing": "AMC"
     },
     {
+      "title": "LMT · BMO",
+      "start": "2026-10-22",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "LMT",
+      "sector": "Aerospace & Defense",
+      "name": "록히드 마틴",
+      "timing": "BMO"
+    },
+    {
       "title": "BAH",
       "start": "2026-10-23",
       "color": "#FC8181",
@@ -426,16 +396,6 @@
       "ticker": "KO",
       "sector": "Consumer & Retail",
       "name": "코카콜라",
-      "timing": "BMO"
-    },
-    {
-      "title": "LMT · BMO",
-      "start": "2026-10-27",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "LMT",
-      "sector": "Aerospace & Defense",
-      "name": "록히드 마틴",
       "timing": "BMO"
     },
     {
@@ -797,56 +757,6 @@
       "sector": "REITs",
       "name": "리얼티 인컴",
       "timing": "AMC"
-    },
-    {
-      "title": "PLTR",
-      "start": "2026-11-02",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "PLTR",
-      "sector": "Tech",
-      "name": "팔란티어 테크",
-      "timing": ""
-    },
-    {
-      "title": "SMCI",
-      "start": "2026-11-02",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "SMCI",
-      "sector": "Tech",
-      "name": "슈퍼 마이크로 컴퓨터",
-      "timing": ""
-    },
-    {
-      "title": "SPG",
-      "start": "2026-11-02",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "SPG",
-      "sector": "REITs",
-      "name": "사이먼 프라퍼티 그룹",
-      "timing": ""
-    },
-    {
-      "title": "VNO",
-      "start": "2026-11-02",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "VNO",
-      "sector": "REITs",
-      "name": "보나도 리얼티 트러스트",
-      "timing": ""
-    },
-    {
-      "title": "YUM · BMO",
-      "start": "2026-11-02",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "YUM",
-      "sector": "Consumer & Retail",
-      "name": "염 브랜즈",
-      "timing": "BMO"
     },
     {
       "title": "APO · BMO",
