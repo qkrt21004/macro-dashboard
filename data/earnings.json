@@ -1,33 +1,13 @@
 {
-  "generated_at": "2026-10-03",
-  "window_from": "2026-07-05",
-  "window_to": "2027-04-01",
+  "generated_at": "2026-10-04",
+  "window_from": "2026-07-06",
+  "window_to": "2027-04-02",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 211,
+  "event_count": 213,
   "events": [
-    {
-      "title": "AMBA · AMC",
-      "start": "2026-09-03",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "AMBA",
-      "sector": "Tech",
-      "name": "암바렐라",
-      "timing": "AMC"
-    },
-    {
-      "title": "LULU · AMC",
-      "start": "2026-09-03",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "LULU",
-      "sector": "Consumer & Retail",
-      "name": "룰루레몬 애슬레티카",
-      "timing": "AMC"
-    },
     {
       "title": "AVAV · AMC",
       "start": "2026-09-09",
@@ -346,16 +326,6 @@
       "ticker": "XOM",
       "sector": "Commodities",
       "name": "엑슨 모빌",
-      "timing": ""
-    },
-    {
-      "title": "WELL",
-      "start": "2026-10-26",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "WELL",
-      "sector": "REITs",
-      "name": "웰타워",
       "timing": ""
     },
     {
@@ -757,6 +727,56 @@
       "sector": "REITs",
       "name": "리얼티 인컴",
       "timing": "AMC"
+    },
+    {
+      "title": "PLTR",
+      "start": "2026-11-02",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "PLTR",
+      "sector": "Tech",
+      "name": "팔란티어 테크",
+      "timing": ""
+    },
+    {
+      "title": "SMCI",
+      "start": "2026-11-02",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "SMCI",
+      "sector": "Tech",
+      "name": "슈퍼 마이크로 컴퓨터",
+      "timing": ""
+    },
+    {
+      "title": "SPG",
+      "start": "2026-11-02",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "SPG",
+      "sector": "REITs",
+      "name": "사이먼 프라퍼티 그룹",
+      "timing": ""
+    },
+    {
+      "title": "VNO",
+      "start": "2026-11-02",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "VNO",
+      "sector": "REITs",
+      "name": "보나도 리얼티 트러스트",
+      "timing": ""
+    },
+    {
+      "title": "YUM · BMO",
+      "start": "2026-11-02",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "YUM",
+      "sector": "Consumer & Retail",
+      "name": "염 브랜즈",
+      "timing": "BMO"
     },
     {
       "title": "APO · BMO",
