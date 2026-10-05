@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-04",
-  "window_from": "2026-07-06",
-  "window_to": "2027-04-02",
+  "generated_at": "2026-10-05",
+  "window_from": "2026-07-07",
+  "window_to": "2027-04-03",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 213,
+  "event_count": 208,
   "events": [
     {
       "title": "AVAV · AMC",
@@ -239,16 +239,6 @@
       "timing": ""
     },
     {
-      "title": "DLR",
-      "start": "2026-10-22",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "DLR",
-      "sector": "REITs",
-      "name": "디지털 리얼티 트러스트",
-      "timing": ""
-    },
-    {
       "title": "DTE · BMO",
       "start": "2026-10-22",
       "color": "#F6AD55",
@@ -329,6 +319,16 @@
       "timing": ""
     },
     {
+      "title": "WELL",
+      "start": "2026-10-26",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "WELL",
+      "sector": "REITs",
+      "name": "웰타워",
+      "timing": ""
+    },
+    {
       "title": "AMT",
       "start": "2026-10-27",
       "color": "#4FD1C5",
@@ -367,66 +367,6 @@
       "sector": "Consumer & Retail",
       "name": "코카콜라",
       "timing": "BMO"
-    },
-    {
-      "title": "MSFT",
-      "start": "2026-10-27",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "MSFT",
-      "sector": "Tech",
-      "name": "마이크로소프트",
-      "timing": ""
-    },
-    {
-      "title": "NI · BMO",
-      "start": "2026-10-27",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "NI",
-      "sector": "Commodities",
-      "name": "나이소스",
-      "timing": "BMO"
-    },
-    {
-      "title": "PSA · AMC",
-      "start": "2026-10-27",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "PSA",
-      "sector": "REITs",
-      "name": "퍼블릭 스토리지",
-      "timing": "AMC"
-    },
-    {
-      "title": "PYPL · AMC",
-      "start": "2026-10-27",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "PYPL",
-      "sector": "Tech",
-      "name": "페이팔 홀딩스",
-      "timing": "AMC"
-    },
-    {
-      "title": "SBUX · AMC",
-      "start": "2026-10-27",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SBUX",
-      "sector": "Consumer & Retail",
-      "name": "스타벅스",
-      "timing": "AMC"
-    },
-    {
-      "title": "VTR",
-      "start": "2026-10-27",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "VTR",
-      "sector": "REITs",
-      "name": "벤타스",
-      "timing": ""
     },
     {
       "title": "AEP · BMO",
@@ -557,6 +497,16 @@
       "sector": "Consumer & Retail",
       "name": "크록스",
       "timing": "BMO"
+    },
+    {
+      "title": "DLR",
+      "start": "2026-10-29",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "DLR",
+      "sector": "REITs",
+      "name": "디지털 리얼티 트러스트",
+      "timing": ""
     },
     {
       "title": "HII · BMO",
