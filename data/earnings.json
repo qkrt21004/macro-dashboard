@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-10-09",
-  "window_from": "2026-07-11",
-  "window_to": "2027-04-07",
+  "generated_at": "2026-10-10",
+  "window_from": "2026-07-12",
+  "window_to": "2027-04-08",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 211,
+  "event_count": 210,
   "events": [
-    {
-      "title": "AVAV · AMC",
-      "start": "2026-09-09",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "AVAV",
-      "sector": "Aerospace & Defense",
-      "name": "에어로바이런먼트",
-      "timing": "AMC"
-    },
     {
       "title": "ADBE · AMC",
       "start": "2026-09-10",
