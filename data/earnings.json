@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-12",
-  "window_from": "2026-07-14",
-  "window_to": "2027-04-10",
+  "generated_at": "2026-10-13",
+  "window_from": "2026-07-15",
+  "window_to": "2027-04-11",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 206,
+  "event_count": 203,
   "events": [
     {
       "title": "GIS · BMO",
@@ -599,36 +599,6 @@
       "timing": "AMC"
     },
     {
-      "title": "CAVA",
-      "start": "2026-11-02",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "CAVA",
-      "sector": "Consumer & Retail",
-      "name": "카바 그룹",
-      "timing": ""
-    },
-    {
-      "title": "CPNG · AMC",
-      "start": "2026-11-02",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "CPNG",
-      "sector": "Consumer & Retail",
-      "name": "쿠팡",
-      "timing": "AMC"
-    },
-    {
-      "title": "GO",
-      "start": "2026-11-02",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "GO",
-      "sector": "Consumer & Retail",
-      "name": "그로서리 아웃렛 홀딩스",
-      "timing": ""
-    },
-    {
       "title": "O · AMC",
       "start": "2026-11-02",
       "color": "#4FD1C5",
@@ -637,16 +607,6 @@
       "sector": "REITs",
       "name": "리얼티 인컴",
       "timing": "AMC"
-    },
-    {
-      "title": "PLTR",
-      "start": "2026-11-02",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "PLTR",
-      "sector": "Tech",
-      "name": "팔란티어 테크",
-      "timing": ""
     },
     {
       "title": "VNO",
@@ -689,44 +649,44 @@
       "timing": "BMO"
     },
     {
-      "title": "ARM",
-      "start": "2026-11-04",
-      "color": "#B794F4",
+      "title": "HLNE",
+      "start": "2026-11-03",
+      "color": "#4299E1",
       "allDay": true,
-      "ticker": "ARM",
-      "sector": "Tech",
-      "name": "에이알엠 홀딩스(ADR)",
+      "ticker": "HLNE",
+      "sector": "Financials",
+      "name": "해밀턴 레인",
       "timing": ""
     },
     {
-      "title": "BKH · AMC",
-      "start": "2026-11-04",
-      "color": "#F6AD55",
+      "title": "LDOS",
+      "start": "2026-11-03",
+      "color": "#FC8181",
       "allDay": true,
-      "ticker": "BKH",
-      "sector": "Commodities",
-      "name": "블랙 힐스",
-      "timing": "AMC"
+      "ticker": "LDOS",
+      "sector": "Aerospace & Defense",
+      "name": "레이도스 홀딩스",
+      "timing": ""
     },
     {
-      "title": "NI · BMO",
-      "start": "2026-11-04",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "NI",
-      "sector": "Commodities",
-      "name": "나이소스",
-      "timing": "BMO"
-    },
-    {
-      "title": "QCOM · AMC",
-      "start": "2026-11-04",
+      "title": "SMCI",
+      "start": "2026-11-03",
       "color": "#B794F4",
       "allDay": true,
-      "ticker": "QCOM",
+      "ticker": "SMCI",
       "sector": "Tech",
-      "name": "퀄컴",
-      "timing": "AMC"
+      "name": "슈퍼 마이크로 컴퓨터",
+      "timing": ""
+    },
+    {
+      "title": "YUM · BMO",
+      "start": "2026-11-03",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "YUM",
+      "sector": "Consumer & Retail",
+      "name": "염 브랜즈",
+      "timing": "BMO"
     },
     {
       "title": "AFRM",
@@ -746,36 +706,6 @@
       "ticker": "CG",
       "sector": "Financials",
       "name": "칼라일 그룹",
-      "timing": "BMO"
-    },
-    {
-      "title": "SMR",
-      "start": "2026-11-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "SMR",
-      "sector": "Commodities",
-      "name": "뉴스케일 파워",
-      "timing": ""
-    },
-    {
-      "title": "SPG",
-      "start": "2026-11-05",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "SPG",
-      "sector": "REITs",
-      "name": "사이먼 프라퍼티 그룹",
-      "timing": ""
-    },
-    {
-      "title": "WEN · BMO",
-      "start": "2026-11-05",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "WEN",
-      "sector": "Consumer & Retail",
-      "name": "웬디스 컴퍼니",
       "timing": "BMO"
     },
     {
@@ -799,6 +729,16 @@
       "timing": "AMC"
     },
     {
+      "title": "PLTR",
+      "start": "2026-11-09",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "PLTR",
+      "sector": "Tech",
+      "name": "팔란티어 테크",
+      "timing": ""
+    },
+    {
       "title": "RKLB",
       "start": "2026-11-09",
       "color": "#FC8181",
@@ -809,6 +749,26 @@
       "timing": ""
     },
     {
+      "title": "CAVA",
+      "start": "2026-11-10",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "CAVA",
+      "sector": "Consumer & Retail",
+      "name": "카바 그룹",
+      "timing": ""
+    },
+    {
+      "title": "CPNG · AMC",
+      "start": "2026-11-10",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "CPNG",
+      "sector": "Consumer & Retail",
+      "name": "쿠팡",
+      "timing": "AMC"
+    },
+    {
       "title": "CSCO",
       "start": "2026-11-10",
       "color": "#B794F4",
@@ -816,6 +776,16 @@
       "ticker": "CSCO",
       "sector": "Tech",
       "name": "시스코 시스템즈",
+      "timing": ""
+    },
+    {
+      "title": "GO",
+      "start": "2026-11-10",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "GO",
+      "sector": "Consumer & Retail",
+      "name": "그로서리 아웃렛 홀딩스",
       "timing": ""
     },
     {
