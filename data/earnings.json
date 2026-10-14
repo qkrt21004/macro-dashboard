@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-13",
-  "window_from": "2026-07-15",
-  "window_to": "2027-04-11",
+  "generated_at": "2026-10-14",
+  "window_from": "2026-07-16",
+  "window_to": "2027-04-12",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 203,
+  "event_count": 205,
   "events": [
     {
       "title": "GIS · BMO",
@@ -187,6 +187,16 @@
       "sector": "Tech",
       "name": "램 리서치",
       "timing": ""
+    },
+    {
+      "title": "META · AMC",
+      "start": "2026-10-21",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "META",
+      "sector": "Tech",
+      "name": "메타 플랫폼스(페이스북)",
+      "timing": "AMC"
     },
     {
       "title": "DTE · BMO",
@@ -409,16 +419,6 @@
       "timing": ""
     },
     {
-      "title": "META · AMC",
-      "start": "2026-10-28",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "META",
-      "sector": "Tech",
-      "name": "메타 플랫폼스(페이스북)",
-      "timing": "AMC"
-    },
-    {
       "title": "MSFT",
       "start": "2026-10-28",
       "color": "#B794F4",
@@ -609,6 +609,16 @@
       "timing": "AMC"
     },
     {
+      "title": "PLTR",
+      "start": "2026-11-02",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "PLTR",
+      "sector": "Tech",
+      "name": "팔란티어 테크",
+      "timing": ""
+    },
+    {
       "title": "VNO",
       "start": "2026-11-02",
       "color": "#4FD1C5",
@@ -689,24 +699,44 @@
       "timing": "BMO"
     },
     {
-      "title": "AFRM",
-      "start": "2026-11-05",
-      "color": "#4299E1",
+      "title": "ARM",
+      "start": "2026-11-04",
+      "color": "#B794F4",
       "allDay": true,
-      "ticker": "AFRM",
-      "sector": "Financials",
-      "name": "어펌 홀딩스",
+      "ticker": "ARM",
+      "sector": "Tech",
+      "name": "에이알엠 홀딩스(ADR)",
       "timing": ""
     },
     {
-      "title": "CG · BMO",
-      "start": "2026-11-05",
-      "color": "#4299E1",
+      "title": "BKH · AMC",
+      "start": "2026-11-04",
+      "color": "#F6AD55",
       "allDay": true,
-      "ticker": "CG",
-      "sector": "Financials",
-      "name": "칼라일 그룹",
+      "ticker": "BKH",
+      "sector": "Commodities",
+      "name": "블랙 힐스",
+      "timing": "AMC"
+    },
+    {
+      "title": "NI · BMO",
+      "start": "2026-11-04",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "NI",
+      "sector": "Commodities",
+      "name": "나이소스",
       "timing": "BMO"
+    },
+    {
+      "title": "QCOM · AMC",
+      "start": "2026-11-04",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "QCOM",
+      "sector": "Tech",
+      "name": "퀄컴",
+      "timing": "AMC"
     },
     {
       "title": "KKR · BMO",
@@ -727,16 +757,6 @@
       "sector": "Commodities",
       "name": "옥시덴털 페트롤리엄",
       "timing": "AMC"
-    },
-    {
-      "title": "PLTR",
-      "start": "2026-11-09",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "PLTR",
-      "sector": "Tech",
-      "name": "팔란티어 테크",
-      "timing": ""
     },
     {
       "title": "RKLB",
