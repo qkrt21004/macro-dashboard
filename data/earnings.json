@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-16",
-  "window_from": "2026-07-18",
-  "window_to": "2027-04-14",
+  "generated_at": "2026-10-17",
+  "window_from": "2026-07-19",
+  "window_to": "2027-04-15",
   "ticker_count": 124,
   "succeeded": 109,
   "empty": 15,
@@ -239,14 +239,14 @@
       "timing": "BMO"
     },
     {
-      "title": "BAH",
+      "title": "BAH · BMO",
       "start": "2026-10-23",
       "color": "#FC8181",
       "allDay": true,
       "ticker": "BAH",
       "sector": "Aerospace & Defense",
       "name": "부즈 알렌 해밀턴 홀딩",
-      "timing": ""
+      "timing": "BMO"
     },
     {
       "title": "XOM",
@@ -307,16 +307,6 @@
       "sector": "Commodities",
       "name": "프리포트 맥모란",
       "timing": ""
-    },
-    {
-      "title": "GOOGL · AMC",
-      "start": "2026-10-27",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "GOOGL",
-      "sector": "Tech",
-      "name": "알파벳 C",
-      "timing": "AMC"
     },
     {
       "title": "KO · BMO",
@@ -407,6 +397,16 @@
       "sector": "Commodities",
       "name": "GE베르노바",
       "timing": ""
+    },
+    {
+      "title": "GOOGL · AMC",
+      "start": "2026-10-28",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "GOOGL",
+      "sector": "Tech",
+      "name": "알파벳 C",
+      "timing": "AMC"
     },
     {
       "title": "MSFT",
@@ -559,16 +559,6 @@
       "timing": "AMC"
     },
     {
-      "title": "SHAK · BMO",
-      "start": "2026-10-29",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SHAK",
-      "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
-      "timing": "BMO"
-    },
-    {
       "title": "CVX · BMO",
       "start": "2026-10-30",
       "color": "#F6AD55",
@@ -709,14 +699,14 @@
       "timing": "AMC"
     },
     {
-      "title": "NI · BMO",
+      "title": "CAVA",
       "start": "2026-11-04",
-      "color": "#F6AD55",
+      "color": "#68D391",
       "allDay": true,
-      "ticker": "NI",
-      "sector": "Commodities",
-      "name": "나이소스",
-      "timing": "BMO"
+      "ticker": "CAVA",
+      "sector": "Consumer & Retail",
+      "name": "카바 그룹",
+      "timing": ""
     },
     {
       "title": "QCOM · AMC",
@@ -756,6 +746,26 @@
       "ticker": "CG",
       "sector": "Financials",
       "name": "칼라일 그룹",
+      "timing": "BMO"
+    },
+    {
+      "title": "DTE · BMO",
+      "start": "2026-11-05",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "DTE",
+      "sector": "Commodities",
+      "name": "DTE 에너지",
+      "timing": "BMO"
+    },
+    {
+      "title": "IRM · BMO",
+      "start": "2026-11-05",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "IRM",
+      "sector": "REITs",
+      "name": "아이언 마운틴",
       "timing": "BMO"
     },
     {
@@ -816,16 +826,6 @@
       "ticker": "RKLB",
       "sector": "Aerospace & Defense",
       "name": "로켓 랩",
-      "timing": ""
-    },
-    {
-      "title": "CAVA",
-      "start": "2026-11-10",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "CAVA",
-      "sector": "Consumer & Retail",
-      "name": "카바 그룹",
       "timing": ""
     },
     {
