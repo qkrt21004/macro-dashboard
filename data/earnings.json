@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-17",
-  "window_from": "2026-07-19",
-  "window_to": "2027-04-15",
+  "generated_at": "2026-10-18",
+  "window_from": "2026-07-20",
+  "window_to": "2027-04-16",
   "ticker_count": 124,
   "succeeded": 109,
   "empty": 15,
   "failed": 0,
-  "event_count": 214,
+  "event_count": 215,
   "events": [
     {
       "title": "GIS · BMO",
@@ -769,6 +769,16 @@
       "timing": "BMO"
     },
     {
+      "title": "SHAK · BMO",
+      "start": "2026-11-05",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "SHAK",
+      "sector": "Consumer & Retail",
+      "name": "쉐이크쉑",
+      "timing": "BMO"
+    },
+    {
       "title": "SMR",
       "start": "2026-11-05",
       "color": "#F6AD55",
@@ -817,16 +827,6 @@
       "sector": "Commodities",
       "name": "옥시덴털 페트롤리엄",
       "timing": "AMC"
-    },
-    {
-      "title": "RKLB",
-      "start": "2026-11-09",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "RKLB",
-      "sector": "Aerospace & Defense",
-      "name": "로켓 랩",
-      "timing": ""
     },
     {
       "title": "CPNG · AMC",
@@ -2146,6 +2146,16 @@
       "ticker": "PLD",
       "sector": "REITs",
       "name": "프로로지스",
+      "timing": ""
+    },
+    {
+      "title": "USB",
+      "start": "2027-04-16",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "USB",
+      "sector": "Financials",
+      "name": "US 뱅코프",
       "timing": ""
     }
   ]
