@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-18",
-  "window_from": "2026-07-20",
-  "window_to": "2027-04-16",
+  "generated_at": "2026-10-19",
+  "window_from": "2026-07-21",
+  "window_to": "2027-04-17",
   "ticker_count": 124,
   "succeeded": 109,
   "empty": 15,
   "failed": 0,
-  "event_count": 215,
+  "event_count": 213,
   "events": [
     {
       "title": "GIS · BMO",
@@ -589,36 +589,6 @@
       "timing": "AMC"
     },
     {
-      "title": "O · AMC",
-      "start": "2026-11-02",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "O",
-      "sector": "REITs",
-      "name": "리얼티 인컴",
-      "timing": "AMC"
-    },
-    {
-      "title": "PLTR",
-      "start": "2026-11-02",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "PLTR",
-      "sector": "Tech",
-      "name": "팔란티어 테크",
-      "timing": ""
-    },
-    {
-      "title": "VNO",
-      "start": "2026-11-02",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "VNO",
-      "sector": "REITs",
-      "name": "보나도 리얼티 트러스트",
-      "timing": ""
-    },
-    {
       "title": "AMD · AMC",
       "start": "2026-11-03",
       "color": "#B794F4",
@@ -827,6 +797,16 @@
       "sector": "Commodities",
       "name": "옥시덴털 페트롤리엄",
       "timing": "AMC"
+    },
+    {
+      "title": "RKLB",
+      "start": "2026-11-09",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "RKLB",
+      "sector": "Aerospace & Defense",
+      "name": "로켓 랩",
+      "timing": ""
     },
     {
       "title": "CPNG · AMC",
