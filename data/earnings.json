@@ -1,33 +1,13 @@
 {
-  "generated_at": "2026-10-24",
-  "window_from": "2026-07-26",
-  "window_to": "2027-04-22",
+  "generated_at": "2026-10-25",
+  "window_from": "2026-07-27",
+  "window_to": "2027-04-23",
   "ticker_count": 124,
   "succeeded": 109,
   "empty": 15,
   "failed": 0,
-  "event_count": 228,
+  "event_count": 227,
   "events": [
-    {
-      "title": "COST · AMC",
-      "start": "2026-09-24",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "COST",
-      "sector": "Consumer & Retail",
-      "name": "코스트코 홀세일",
-      "timing": "AMC"
-    },
-    {
-      "title": "DRI · BMO",
-      "start": "2026-09-24",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "DRI",
-      "sector": "Consumer & Retail",
-      "name": "다든 레스토랑",
-      "timing": "BMO"
-    },
     {
       "title": "MU · AMC",
       "start": "2026-09-30",
@@ -546,6 +526,16 @@
       "ticker": "EXC",
       "sector": "Commodities",
       "name": "엑셀론",
+      "timing": "BMO"
+    },
+    {
+      "title": "XOM · BMO",
+      "start": "2026-10-30",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "XOM",
+      "sector": "Commodities",
+      "name": "엑슨 모빌",
       "timing": "BMO"
     },
     {
