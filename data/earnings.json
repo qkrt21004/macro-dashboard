@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-25",
-  "window_from": "2026-07-27",
-  "window_to": "2027-04-23",
+  "generated_at": "2026-10-26",
+  "window_from": "2026-07-28",
+  "window_to": "2027-04-24",
   "ticker_count": 124,
   "succeeded": 109,
   "empty": 15,
   "failed": 0,
-  "event_count": 227,
+  "event_count": 226,
   "events": [
     {
       "title": "MU · AMC",
@@ -839,16 +839,6 @@
       "timing": ""
     },
     {
-      "title": "ROST · AMC",
-      "start": "2026-11-12",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "ROST",
-      "sector": "Consumer & Retail",
-      "name": "로스 스토어스",
-      "timing": "AMC"
-    },
-    {
       "title": "BIDU · BMO",
       "start": "2026-11-16",
       "color": "#B794F4",
@@ -899,14 +889,14 @@
       "timing": "AMC"
     },
     {
-      "title": "TGT · BMO",
+      "title": "TGT",
       "start": "2026-11-18",
       "color": "#68D391",
       "allDay": true,
       "ticker": "TGT",
       "sector": "Consumer & Retail",
       "name": "타겟",
-      "timing": "BMO"
+      "timing": ""
     },
     {
       "title": "BJ",
