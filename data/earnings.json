@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-27",
-  "window_from": "2026-07-29",
-  "window_to": "2027-04-25",
+  "generated_at": "2026-10-28",
+  "window_from": "2026-07-30",
+  "window_to": "2027-04-26",
   "ticker_count": 124,
   "succeeded": 109,
   "empty": 15,
   "failed": 0,
-  "event_count": 220,
+  "event_count": 226,
   "events": [
     {
       "title": "MU · AMC",
@@ -529,74 +529,44 @@
       "timing": "BMO"
     },
     {
-      "title": "AMD · AMC",
-      "start": "2026-11-03",
+      "title": "AAPL · AMC",
+      "start": "2026-11-02",
       "color": "#B794F4",
       "allDay": true,
-      "ticker": "AMD",
+      "ticker": "AAPL",
       "sector": "Tech",
-      "name": "AMD",
+      "name": "애플",
       "timing": "AMC"
     },
     {
-      "title": "ANET · AMC",
-      "start": "2026-11-03",
-      "color": "#B794F4",
+      "title": "O · AMC",
+      "start": "2026-11-02",
+      "color": "#4FD1C5",
       "allDay": true,
-      "ticker": "ANET",
-      "sector": "Tech",
-      "name": "아리스타 네트웍스",
+      "ticker": "O",
+      "sector": "REITs",
+      "name": "리얼티 인컴",
       "timing": "AMC"
     },
     {
-      "title": "APO · BMO",
-      "start": "2026-11-03",
-      "color": "#4299E1",
+      "title": "PLTR · AMC",
+      "start": "2026-11-02",
+      "color": "#B794F4",
       "allDay": true,
-      "ticker": "APO",
-      "sector": "Financials",
-      "name": "아폴로 글로벌 매니지먼트",
-      "timing": "BMO"
-    },
-    {
-      "title": "CPNG · AMC",
-      "start": "2026-11-03",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "CPNG",
-      "sector": "Consumer & Retail",
-      "name": "쿠팡",
+      "ticker": "PLTR",
+      "sector": "Tech",
+      "name": "팔란티어 테크",
       "timing": "AMC"
     },
     {
-      "title": "HLNE",
-      "start": "2026-11-03",
-      "color": "#4299E1",
+      "title": "VNO · AMC",
+      "start": "2026-11-02",
+      "color": "#4FD1C5",
       "allDay": true,
-      "ticker": "HLNE",
-      "sector": "Financials",
-      "name": "해밀턴 레인",
-      "timing": ""
-    },
-    {
-      "title": "LDOS",
-      "start": "2026-11-03",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "LDOS",
-      "sector": "Aerospace & Defense",
-      "name": "레이도스 홀딩스",
-      "timing": ""
-    },
-    {
-      "title": "SMCI",
-      "start": "2026-11-03",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "SMCI",
-      "sector": "Tech",
-      "name": "슈퍼 마이크로 컴퓨터",
-      "timing": ""
+      "ticker": "VNO",
+      "sector": "REITs",
+      "name": "보나도 리얼티 트러스트",
+      "timing": "AMC"
     },
     {
       "title": "BKH · AMC",
@@ -677,6 +647,16 @@
       "sector": "REITs",
       "name": "아이언 마운틴",
       "timing": "BMO"
+    },
+    {
+      "title": "KTOS",
+      "start": "2026-11-05",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "KTOS",
+      "sector": "Aerospace & Defense",
+      "name": "크라토스 디펜스 앤드 시큐리티 솔루션",
+      "timing": ""
     },
     {
       "title": "SHAK · BMO",
@@ -2206,6 +2186,86 @@
       "ticker": "LMT",
       "sector": "Aerospace & Defense",
       "name": "록히드 마틴",
+      "timing": ""
+    },
+    {
+      "title": "AMT",
+      "start": "2027-04-26",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "AMT",
+      "sector": "REITs",
+      "name": "아메리칸 타워",
+      "timing": ""
+    },
+    {
+      "title": "DPZ",
+      "start": "2027-04-26",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "DPZ",
+      "sector": "Consumer & Retail",
+      "name": "도미노 피자",
+      "timing": ""
+    },
+    {
+      "title": "KO",
+      "start": "2027-04-26",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "KO",
+      "sector": "Consumer & Retail",
+      "name": "코카콜라",
+      "timing": ""
+    },
+    {
+      "title": "KRC",
+      "start": "2027-04-26",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "KRC",
+      "sector": "REITs",
+      "name": "킬로이 리얼티",
+      "timing": ""
+    },
+    {
+      "title": "PSA",
+      "start": "2027-04-26",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "PSA",
+      "sector": "REITs",
+      "name": "퍼블릭 스토리지",
+      "timing": ""
+    },
+    {
+      "title": "SBUX",
+      "start": "2027-04-26",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "SBUX",
+      "sector": "Consumer & Retail",
+      "name": "스타벅스",
+      "timing": ""
+    },
+    {
+      "title": "VTR",
+      "start": "2027-04-26",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "VTR",
+      "sector": "REITs",
+      "name": "벤타스",
+      "timing": ""
+    },
+    {
+      "title": "WELL",
+      "start": "2027-04-26",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "WELL",
+      "sector": "REITs",
+      "name": "웰타워",
       "timing": ""
     }
   ]
