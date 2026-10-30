@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-29",
-  "window_from": "2026-07-31",
-  "window_to": "2027-04-27",
+  "generated_at": "2026-10-30",
+  "window_from": "2026-08-01",
+  "window_to": "2027-04-28",
   "ticker_count": 124,
   "succeeded": 109,
   "empty": 15,
   "failed": 0,
-  "event_count": 244,
+  "event_count": 241,
   "events": [
     {
       "title": "MU · AMC",
@@ -369,36 +369,6 @@
       "timing": "AMC"
     },
     {
-      "title": "MSFT · AMC",
-      "start": "2026-10-28",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "MSFT",
-      "sector": "Tech",
-      "name": "마이크로소프트",
-      "timing": "AMC"
-    },
-    {
-      "title": "NI · BMO",
-      "start": "2026-10-28",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "NI",
-      "sector": "Commodities",
-      "name": "나이소스",
-      "timing": "BMO"
-    },
-    {
-      "title": "WING · BMO",
-      "start": "2026-10-28",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "WING",
-      "sector": "Consumer & Retail",
-      "name": "윙스톱",
-      "timing": "BMO"
-    },
-    {
       "title": "AMZN · AMC",
       "start": "2026-10-29",
       "color": "#B794F4",
@@ -669,14 +639,24 @@
       "timing": "AMC"
     },
     {
-      "title": "AFRM",
+      "title": "QCOM · AMC",
+      "start": "2026-11-04",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "QCOM",
+      "sector": "Tech",
+      "name": "퀄컴",
+      "timing": "AMC"
+    },
+    {
+      "title": "AFRM · AMC",
       "start": "2026-11-05",
       "color": "#4299E1",
       "allDay": true,
       "ticker": "AFRM",
       "sector": "Financials",
       "name": "어펌 홀딩스",
-      "timing": ""
+      "timing": "AMC"
     },
     {
       "title": "ARM",
@@ -706,66 +686,6 @@
       "ticker": "DTE",
       "sector": "Commodities",
       "name": "DTE 에너지",
-      "timing": "BMO"
-    },
-    {
-      "title": "IRM · BMO",
-      "start": "2026-11-05",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "IRM",
-      "sector": "REITs",
-      "name": "아이언 마운틴",
-      "timing": "BMO"
-    },
-    {
-      "title": "KTOS",
-      "start": "2026-11-05",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "KTOS",
-      "sector": "Aerospace & Defense",
-      "name": "크라토스 디펜스 앤드 시큐리티 솔루션",
-      "timing": ""
-    },
-    {
-      "title": "SHAK · BMO",
-      "start": "2026-11-05",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SHAK",
-      "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
-      "timing": "BMO"
-    },
-    {
-      "title": "SMR",
-      "start": "2026-11-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "SMR",
-      "sector": "Commodities",
-      "name": "뉴스케일 파워",
-      "timing": ""
-    },
-    {
-      "title": "SPG",
-      "start": "2026-11-05",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "SPG",
-      "sector": "REITs",
-      "name": "사이먼 프라퍼티 그룹",
-      "timing": ""
-    },
-    {
-      "title": "WEN · BMO",
-      "start": "2026-11-05",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "WEN",
-      "sector": "Consumer & Retail",
-      "name": "웬디스 컴퍼니",
       "timing": "BMO"
     },
     {
@@ -2446,6 +2366,56 @@
       "ticker": "YUM",
       "sector": "Consumer & Retail",
       "name": "염 브랜즈",
+      "timing": ""
+    },
+    {
+      "title": "AAPL",
+      "start": "2027-04-28",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "AAPL",
+      "sector": "Tech",
+      "name": "애플",
+      "timing": ""
+    },
+    {
+      "title": "CROX",
+      "start": "2027-04-28",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "CROX",
+      "sector": "Consumer & Retail",
+      "name": "크록스",
+      "timing": ""
+    },
+    {
+      "title": "DTE",
+      "start": "2027-04-28",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "DTE",
+      "sector": "Commodities",
+      "name": "DTE 에너지",
+      "timing": ""
+    },
+    {
+      "title": "IRM",
+      "start": "2027-04-28",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "IRM",
+      "sector": "REITs",
+      "name": "아이언 마운틴",
+      "timing": ""
+    },
+    {
+      "title": "LHX",
+      "start": "2027-04-28",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "LHX",
+      "sector": "Aerospace & Defense",
+      "name": "L3 해리스 테크놀로지스",
       "timing": ""
     }
   ]
