@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-01",
-  "window_from": "2026-08-03",
-  "window_to": "2027-04-30",
+  "generated_at": "2026-11-02",
+  "window_from": "2026-08-04",
+  "window_to": "2027-05-01",
   "ticker_count": 124,
   "succeeded": 109,
   "empty": 15,
   "failed": 0,
-  "event_count": 243,
+  "event_count": 245,
   "events": [
     {
       "title": "ACI · BMO",
@@ -157,16 +157,6 @@
       "sector": "Tech",
       "name": "테슬라",
       "timing": "AMC"
-    },
-    {
-      "title": "GD · BMO",
-      "start": "2026-10-22",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "GD",
-      "sector": "Aerospace & Defense",
-      "name": "제너럴 다이내믹스",
-      "timing": "BMO"
     },
     {
       "title": "KRC · AMC",
@@ -479,6 +469,46 @@
       "timing": "AMC"
     },
     {
+      "title": "CVX · BMO",
+      "start": "2026-10-30",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "CVX",
+      "sector": "Commodities",
+      "name": "셰브론",
+      "timing": "BMO"
+    },
+    {
+      "title": "EXC · BMO",
+      "start": "2026-10-30",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "EXC",
+      "sector": "Commodities",
+      "name": "엑셀론",
+      "timing": "BMO"
+    },
+    {
+      "title": "GD · BMO",
+      "start": "2026-10-30",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "GD",
+      "sector": "Aerospace & Defense",
+      "name": "제너럴 다이내믹스",
+      "timing": "BMO"
+    },
+    {
+      "title": "XOM · BMO",
+      "start": "2026-10-30",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "XOM",
+      "sector": "Commodities",
+      "name": "엑슨 모빌",
+      "timing": "BMO"
+    },
+    {
       "title": "AAPL · AMC",
       "start": "2026-11-02",
       "color": "#B794F4",
@@ -749,16 +779,6 @@
       "timing": ""
     },
     {
-      "title": "RCAT",
-      "start": "2026-11-11",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "RCAT",
-      "sector": "Aerospace & Defense",
-      "name": "레드 캣 홀딩스",
-      "timing": ""
-    },
-    {
       "title": "BIDU · BMO",
       "start": "2026-11-16",
       "color": "#B794F4",
@@ -767,6 +787,16 @@
       "sector": "Tech",
       "name": "바이두(ADR)",
       "timing": "BMO"
+    },
+    {
+      "title": "RCAT",
+      "start": "2026-11-16",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "RCAT",
+      "sector": "Aerospace & Defense",
+      "name": "레드 캣 홀딩스",
+      "timing": ""
     },
     {
       "title": "NVDA · AMC",
@@ -819,16 +849,6 @@
       "timing": ""
     },
     {
-      "title": "BJ",
-      "start": "2026-11-19",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "BJ",
-      "sector": "Consumer & Retail",
-      "name": "BJS 홀세일 클럽 홀딩스",
-      "timing": ""
-    },
-    {
       "title": "WMT",
       "start": "2026-11-19",
       "color": "#68D391",
@@ -839,18 +859,18 @@
       "timing": ""
     },
     {
-      "title": "AMBA",
-      "start": "2026-11-23",
-      "color": "#B794F4",
+      "title": "BJ",
+      "start": "2026-11-20",
+      "color": "#68D391",
       "allDay": true,
-      "ticker": "AMBA",
-      "sector": "Tech",
-      "name": "암바렐라",
+      "ticker": "BJ",
+      "sector": "Consumer & Retail",
+      "name": "BJS 홀세일 클럽 홀딩스",
       "timing": ""
     },
     {
       "title": "DELL",
-      "start": "2026-11-23",
+      "start": "2026-11-24",
       "color": "#B794F4",
       "allDay": true,
       "ticker": "DELL",
