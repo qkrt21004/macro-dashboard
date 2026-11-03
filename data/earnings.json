@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-02",
-  "window_from": "2026-08-04",
-  "window_to": "2027-05-01",
+  "generated_at": "2026-11-03",
+  "window_from": "2026-08-05",
+  "window_to": "2027-05-02",
   "ticker_count": 124,
   "succeeded": 109,
   "empty": 15,
   "failed": 0,
-  "event_count": 245,
+  "event_count": 247,
   "events": [
     {
       "title": "ACI · BMO",
@@ -759,14 +759,14 @@
       "timing": "AMC"
     },
     {
-      "title": "RKLB",
+      "title": "RKLB · AMC",
       "start": "2026-11-09",
       "color": "#FC8181",
       "allDay": true,
       "ticker": "RKLB",
       "sector": "Aerospace & Defense",
       "name": "로켓 랩",
-      "timing": ""
+      "timing": "AMC"
     },
     {
       "title": "GO",
@@ -777,6 +777,16 @@
       "sector": "Consumer & Retail",
       "name": "그로서리 아웃렛 홀딩스",
       "timing": ""
+    },
+    {
+      "title": "TDG · AMC",
+      "start": "2026-11-10",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "TDG",
+      "sector": "Aerospace & Defense",
+      "name": "트랜스다임 그룹",
+      "timing": "AMC"
     },
     {
       "title": "BIDU · BMO",
@@ -829,16 +839,6 @@
       "timing": ""
     },
     {
-      "title": "TDG · AMC",
-      "start": "2026-11-18",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "TDG",
-      "sector": "Aerospace & Defense",
-      "name": "트랜스다임 그룹",
-      "timing": "AMC"
-    },
-    {
       "title": "TGT",
       "start": "2026-11-18",
       "color": "#68D391",
@@ -869,6 +869,16 @@
       "timing": ""
     },
     {
+      "title": "HPE · AMC",
+      "start": "2026-11-23",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "HPE",
+      "sector": "Tech",
+      "name": "휴렛 팩커드 엔터프라이즈",
+      "timing": "AMC"
+    },
+    {
       "title": "DELL",
       "start": "2026-11-24",
       "color": "#B794F4",
@@ -889,14 +899,14 @@
       "timing": ""
     },
     {
-      "title": "CRM · AMC",
+      "title": "AMBA",
       "start": "2026-12-01",
       "color": "#B794F4",
       "allDay": true,
-      "ticker": "CRM",
+      "ticker": "AMBA",
       "sector": "Tech",
-      "name": "세일즈포스",
-      "timing": "AMC"
+      "name": "암바렐라",
+      "timing": ""
     },
     {
       "title": "DLTR",
@@ -919,6 +929,16 @@
       "timing": ""
     },
     {
+      "title": "CRM · AMC",
+      "start": "2026-12-02",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "CRM",
+      "sector": "Tech",
+      "name": "세일즈포스",
+      "timing": "AMC"
+    },
+    {
       "title": "DG",
       "start": "2026-12-02",
       "color": "#68D391",
@@ -929,16 +949,6 @@
       "timing": ""
     },
     {
-      "title": "HPE · AMC",
-      "start": "2026-12-02",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "HPE",
-      "sector": "Tech",
-      "name": "휴렛 팩커드 엔터프라이즈",
-      "timing": "AMC"
-    },
-    {
       "title": "KR",
       "start": "2026-12-02",
       "color": "#68D391",
@@ -947,6 +957,16 @@
       "sector": "Consumer & Retail",
       "name": "크로거",
       "timing": ""
+    },
+    {
+      "title": "HPE · AMC",
+      "start": "2026-12-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "HPE",
+      "sector": "Tech",
+      "name": "휴렛 팩커드 엔터프라이즈",
+      "timing": "AMC"
     },
     {
       "title": "AVAV",
