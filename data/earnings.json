@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-05",
-  "window_from": "2026-08-07",
-  "window_to": "2027-05-04",
+  "generated_at": "2026-11-06",
+  "window_from": "2026-08-08",
+  "window_to": "2027-05-05",
   "ticker_count": 124,
   "succeeded": 109,
   "empty": 15,
   "failed": 0,
-  "event_count": 263,
+  "event_count": 275,
   "events": [
     {
       "title": "ACI · BMO",
@@ -549,24 +549,84 @@
       "timing": "AMC"
     },
     {
-      "title": "BKH · AMC",
-      "start": "2026-11-04",
-      "color": "#F6AD55",
+      "title": "AMD · AMC",
+      "start": "2026-11-03",
+      "color": "#B794F4",
       "allDay": true,
-      "ticker": "BKH",
-      "sector": "Commodities",
-      "name": "블랙 힐스",
+      "ticker": "AMD",
+      "sector": "Tech",
+      "name": "AMD",
       "timing": "AMC"
     },
     {
-      "title": "CAVA · AMC",
-      "start": "2026-11-04",
+      "title": "ANET · AMC",
+      "start": "2026-11-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "ANET",
+      "sector": "Tech",
+      "name": "아리스타 네트웍스",
+      "timing": "AMC"
+    },
+    {
+      "title": "APO · BMO",
+      "start": "2026-11-03",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "APO",
+      "sector": "Financials",
+      "name": "아폴로 글로벌 매니지먼트",
+      "timing": "BMO"
+    },
+    {
+      "title": "CPNG · AMC",
+      "start": "2026-11-03",
       "color": "#68D391",
       "allDay": true,
-      "ticker": "CAVA",
+      "ticker": "CPNG",
       "sector": "Consumer & Retail",
-      "name": "카바 그룹",
+      "name": "쿠팡",
       "timing": "AMC"
+    },
+    {
+      "title": "HLNE · BMO",
+      "start": "2026-11-03",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "HLNE",
+      "sector": "Financials",
+      "name": "해밀턴 레인",
+      "timing": "BMO"
+    },
+    {
+      "title": "LDOS · BMO",
+      "start": "2026-11-03",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "LDOS",
+      "sector": "Aerospace & Defense",
+      "name": "레이도스 홀딩스",
+      "timing": "BMO"
+    },
+    {
+      "title": "SMCI · AMC",
+      "start": "2026-11-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "SMCI",
+      "sector": "Tech",
+      "name": "슈퍼 마이크로 컴퓨터",
+      "timing": "AMC"
+    },
+    {
+      "title": "YUM · BMO",
+      "start": "2026-11-03",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "YUM",
+      "sector": "Consumer & Retail",
+      "name": "염 브랜즈",
+      "timing": "BMO"
     },
     {
       "title": "AFRM · AMC",
@@ -729,14 +789,14 @@
       "timing": "BMO"
     },
     {
-      "title": "CSCO",
+      "title": "CSCO · AMC",
       "start": "2026-11-12",
       "color": "#B794F4",
       "allDay": true,
       "ticker": "CSCO",
       "sector": "Tech",
       "name": "시스코 시스템즈",
-      "timing": ""
+      "timing": "AMC"
     },
     {
       "title": "BIDU · BMO",
@@ -2636,6 +2696,66 @@
       "ticker": "QSR",
       "sector": "Consumer & Retail",
       "name": "레스토랑 브랜즈 인터내셔널",
+      "timing": ""
+    },
+    {
+      "title": "AFRM",
+      "start": "2027-05-05",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "AFRM",
+      "sector": "Financials",
+      "name": "어펌 홀딩스",
+      "timing": ""
+    },
+    {
+      "title": "CG",
+      "start": "2027-05-05",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "CG",
+      "sector": "Financials",
+      "name": "칼라일 그룹",
+      "timing": ""
+    },
+    {
+      "title": "HWM",
+      "start": "2027-05-05",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "HWM",
+      "sector": "Aerospace & Defense",
+      "name": "하우멧 에어로스페이스",
+      "timing": ""
+    },
+    {
+      "title": "RKLB",
+      "start": "2027-05-05",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "RKLB",
+      "sector": "Aerospace & Defense",
+      "name": "로켓 랩",
+      "timing": ""
+    },
+    {
+      "title": "SHAK",
+      "start": "2027-05-05",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "SHAK",
+      "sector": "Consumer & Retail",
+      "name": "쉐이크쉑",
+      "timing": ""
+    },
+    {
+      "title": "SMR",
+      "start": "2027-05-05",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "SMR",
+      "sector": "Commodities",
+      "name": "뉴스케일 파워",
       "timing": ""
     }
   ]
