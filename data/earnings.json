@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-06",
-  "window_from": "2026-08-08",
-  "window_to": "2027-05-05",
+  "generated_at": "2026-11-07",
+  "window_from": "2026-08-09",
+  "window_to": "2027-05-06",
   "ticker_count": 124,
   "succeeded": 109,
   "empty": 15,
   "failed": 0,
-  "event_count": 275,
+  "event_count": 271,
   "events": [
     {
       "title": "ACI · BMO",
@@ -339,36 +339,6 @@
       "timing": "AMC"
     },
     {
-      "title": "MSFT · AMC",
-      "start": "2026-10-28",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "MSFT",
-      "sector": "Tech",
-      "name": "마이크로소프트",
-      "timing": "AMC"
-    },
-    {
-      "title": "NI · BMO",
-      "start": "2026-10-28",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "NI",
-      "sector": "Commodities",
-      "name": "나이소스",
-      "timing": "BMO"
-    },
-    {
-      "title": "WING · BMO",
-      "start": "2026-10-28",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "WING",
-      "sector": "Consumer & Retail",
-      "name": "윙스톱",
-      "timing": "BMO"
-    },
-    {
       "title": "AMZN · AMC",
       "start": "2026-10-29",
       "color": "#B794F4",
@@ -629,6 +599,36 @@
       "timing": "BMO"
     },
     {
+      "title": "BKH · AMC",
+      "start": "2026-11-04",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "BKH",
+      "sector": "Commodities",
+      "name": "블랙 힐스",
+      "timing": "AMC"
+    },
+    {
+      "title": "CAVA · AMC",
+      "start": "2026-11-04",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "CAVA",
+      "sector": "Consumer & Retail",
+      "name": "카바 그룹",
+      "timing": "AMC"
+    },
+    {
+      "title": "QCOM · AMC",
+      "start": "2026-11-04",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "QCOM",
+      "sector": "Tech",
+      "name": "퀄컴",
+      "timing": "AMC"
+    },
+    {
       "title": "AFRM · AMC",
       "start": "2026-11-05",
       "color": "#4299E1",
@@ -666,66 +666,6 @@
       "ticker": "DTE",
       "sector": "Commodities",
       "name": "DTE 에너지",
-      "timing": "BMO"
-    },
-    {
-      "title": "IRM · BMO",
-      "start": "2026-11-05",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "IRM",
-      "sector": "REITs",
-      "name": "아이언 마운틴",
-      "timing": "BMO"
-    },
-    {
-      "title": "KTOS · AMC",
-      "start": "2026-11-05",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "KTOS",
-      "sector": "Aerospace & Defense",
-      "name": "크라토스 디펜스 앤드 시큐리티 솔루션",
-      "timing": "AMC"
-    },
-    {
-      "title": "SHAK · BMO",
-      "start": "2026-11-05",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SHAK",
-      "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
-      "timing": "BMO"
-    },
-    {
-      "title": "SMR · AMC",
-      "start": "2026-11-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "SMR",
-      "sector": "Commodities",
-      "name": "뉴스케일 파워",
-      "timing": "AMC"
-    },
-    {
-      "title": "SPG · AMC",
-      "start": "2026-11-05",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "SPG",
-      "sector": "REITs",
-      "name": "사이먼 프라퍼티 그룹",
-      "timing": "AMC"
-    },
-    {
-      "title": "WEN · BMO",
-      "start": "2026-11-05",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "WEN",
-      "sector": "Consumer & Retail",
-      "name": "웬디스 컴퍼니",
       "timing": "BMO"
     },
     {
@@ -877,6 +817,16 @@
       "sector": "Tech",
       "name": "휴렛 팩커드 엔터프라이즈",
       "timing": "AMC"
+    },
+    {
+      "title": "AMBA",
+      "start": "2026-11-24",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "AMBA",
+      "sector": "Tech",
+      "name": "암바렐라",
+      "timing": ""
     },
     {
       "title": "DELL",
@@ -2756,6 +2706,16 @@
       "ticker": "SMR",
       "sector": "Commodities",
       "name": "뉴스케일 파워",
+      "timing": ""
+    },
+    {
+      "title": "WEN",
+      "start": "2027-05-06",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "WEN",
+      "sector": "Consumer & Retail",
+      "name": "웬디스 컴퍼니",
       "timing": ""
     }
   ]
