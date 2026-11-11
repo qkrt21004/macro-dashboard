@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-10",
-  "window_from": "2026-08-12",
-  "window_to": "2027-05-09",
+  "generated_at": "2026-11-11",
+  "window_from": "2026-08-13",
+  "window_to": "2027-05-10",
   "ticker_count": 124,
   "succeeded": 109,
   "empty": 15,
   "failed": 0,
-  "event_count": 274,
+  "event_count": 275,
   "events": [
     {
       "title": "ACI · BMO",
@@ -789,14 +789,14 @@
       "timing": "BMO"
     },
     {
-      "title": "RCAT",
+      "title": "RCAT · AMC",
       "start": "2026-11-16",
       "color": "#FC8181",
       "allDay": true,
       "ticker": "RCAT",
       "sector": "Aerospace & Defense",
       "name": "레드 캣 홀딩스",
-      "timing": ""
+      "timing": "AMC"
     },
     {
       "title": "NVDA · AMC",
@@ -969,6 +969,16 @@
       "timing": "AMC"
     },
     {
+      "title": "AVGO · AMC",
+      "start": "2026-12-09",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "AVGO",
+      "sector": "Tech",
+      "name": "브로드컴",
+      "timing": "AMC"
+    },
+    {
       "title": "LULU · AMC",
       "start": "2026-12-09",
       "color": "#68D391",
@@ -976,16 +986,6 @@
       "ticker": "LULU",
       "sector": "Consumer & Retail",
       "name": "룰루레몬 애슬레티카",
-      "timing": "AMC"
-    },
-    {
-      "title": "AVGO · AMC",
-      "start": "2026-12-10",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "AVGO",
-      "sector": "Tech",
-      "name": "브로드컴",
       "timing": "AMC"
     },
     {
@@ -2746,6 +2746,16 @@
       "ticker": "WEN",
       "sector": "Consumer & Retail",
       "name": "웬디스 컴퍼니",
+      "timing": ""
+    },
+    {
+      "title": "SPG",
+      "start": "2027-05-10",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "SPG",
+      "sector": "REITs",
+      "name": "사이먼 프라퍼티 그룹",
       "timing": ""
     }
   ]
