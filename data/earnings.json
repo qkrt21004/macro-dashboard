@@ -1,53 +1,13 @@
 {
-  "generated_at": "2026-11-14",
-  "window_from": "2026-08-16",
-  "window_to": "2027-05-13",
+  "generated_at": "2026-11-15",
+  "window_from": "2026-08-17",
+  "window_to": "2027-05-14",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 275,
+  "event_count": 266,
   "events": [
-    {
-      "title": "AA · AMC",
-      "start": "2026-10-15",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "AA",
-      "sector": "Commodities",
-      "name": "알코아",
-      "timing": "AMC"
-    },
-    {
-      "title": "PLD · BMO",
-      "start": "2026-10-15",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "PLD",
-      "sector": "REITs",
-      "name": "프로로지스",
-      "timing": "BMO"
-    },
-    {
-      "title": "PNC · BMO",
-      "start": "2026-10-15",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "PNC",
-      "sector": "Financials",
-      "name": "PNC 파이낸셜 서비스",
-      "timing": "BMO"
-    },
-    {
-      "title": "USB · BMO",
-      "start": "2026-10-15",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "USB",
-      "sector": "Financials",
-      "name": "US 뱅코프",
-      "timing": "BMO"
-    },
     {
       "title": "GE · BMO",
       "start": "2026-10-20",
@@ -339,16 +299,6 @@
       "timing": "BMO"
     },
     {
-      "title": "WING · BMO",
-      "start": "2026-10-28",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "WING",
-      "sector": "Consumer & Retail",
-      "name": "윙스톱",
-      "timing": "BMO"
-    },
-    {
       "title": "AMZN · AMC",
       "start": "2026-10-29",
       "color": "#B794F4",
@@ -609,83 +559,43 @@
       "timing": "BMO"
     },
     {
-      "title": "AFRM · AMC",
-      "start": "2026-11-05",
-      "color": "#4299E1",
+      "title": "ARM · AMC",
+      "start": "2026-11-04",
+      "color": "#B794F4",
       "allDay": true,
-      "ticker": "AFRM",
-      "sector": "Financials",
-      "name": "어펌 홀딩스",
+      "ticker": "ARM",
+      "sector": "Tech",
+      "name": "에이알엠 홀딩스(ADR)",
       "timing": "AMC"
     },
     {
-      "title": "CG · AMC",
-      "start": "2026-11-05",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "CG",
-      "sector": "Financials",
-      "name": "칼라일 그룹",
-      "timing": "AMC"
-    },
-    {
-      "title": "DTE · BMO",
-      "start": "2026-11-05",
+      "title": "BKH · AMC",
+      "start": "2026-11-04",
       "color": "#F6AD55",
       "allDay": true,
-      "ticker": "DTE",
+      "ticker": "BKH",
       "sector": "Commodities",
-      "name": "DTE 에너지",
-      "timing": "BMO"
-    },
-    {
-      "title": "IRM · BMO",
-      "start": "2026-11-05",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "IRM",
-      "sector": "REITs",
-      "name": "아이언 마운틴",
-      "timing": "BMO"
-    },
-    {
-      "title": "KTOS · AMC",
-      "start": "2026-11-05",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "KTOS",
-      "sector": "Aerospace & Defense",
-      "name": "크라토스 디펜스 앤드 시큐리티 솔루션",
+      "name": "블랙 힐스",
       "timing": "AMC"
     },
     {
-      "title": "SHAK · BMO",
-      "start": "2026-11-05",
+      "title": "CAVA · AMC",
+      "start": "2026-11-04",
       "color": "#68D391",
       "allDay": true,
-      "ticker": "SHAK",
+      "ticker": "CAVA",
       "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
-      "timing": "BMO"
-    },
-    {
-      "title": "SMR · AMC",
-      "start": "2026-11-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "SMR",
-      "sector": "Commodities",
-      "name": "뉴스케일 파워",
+      "name": "카바 그룹",
       "timing": "AMC"
     },
     {
-      "title": "SPG · AMC",
-      "start": "2026-11-05",
-      "color": "#4FD1C5",
+      "title": "QCOM · AMC",
+      "start": "2026-11-04",
+      "color": "#B794F4",
       "allDay": true,
-      "ticker": "SPG",
-      "sector": "REITs",
-      "name": "사이먼 프라퍼티 그룹",
+      "ticker": "QCOM",
+      "sector": "Tech",
+      "name": "퀄컴",
       "timing": "AMC"
     },
     {
