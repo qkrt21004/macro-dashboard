@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-16",
-  "window_from": "2026-08-18",
-  "window_to": "2027-05-15",
+  "generated_at": "2026-11-17",
+  "window_from": "2026-08-19",
+  "window_to": "2027-05-16",
   "ticker_count": 124,
-  "succeeded": 107,
-  "empty": 17,
+  "succeeded": 108,
+  "empty": 16,
   "failed": 0,
-  "event_count": 264,
+  "event_count": 270,
   "events": [
     {
       "title": "GE · BMO",
@@ -309,24 +309,104 @@
       "timing": "BMO"
     },
     {
-      "title": "CVX · BMO",
-      "start": "2026-10-30",
-      "color": "#F6AD55",
+      "title": "AMZN · AMC",
+      "start": "2026-10-29",
+      "color": "#B794F4",
       "allDay": true,
-      "ticker": "CVX",
-      "sector": "Commodities",
-      "name": "셰브론",
+      "ticker": "AMZN",
+      "sector": "Tech",
+      "name": "아마존닷컴",
+      "timing": "AMC"
+    },
+    {
+      "title": "CROX · BMO",
+      "start": "2026-10-29",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "CROX",
+      "sector": "Consumer & Retail",
+      "name": "크록스",
       "timing": "BMO"
     },
     {
-      "title": "EXC · BMO",
-      "start": "2026-10-30",
-      "color": "#F6AD55",
+      "title": "DLR · AMC",
+      "start": "2026-10-29",
+      "color": "#4FD1C5",
       "allDay": true,
-      "ticker": "EXC",
-      "sector": "Commodities",
-      "name": "엑셀론",
+      "ticker": "DLR",
+      "sector": "REITs",
+      "name": "디지털 리얼티 트러스트",
+      "timing": "AMC"
+    },
+    {
+      "title": "HII · BMO",
+      "start": "2026-10-29",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "HII",
+      "sector": "Aerospace & Defense",
+      "name": "헌팅턴 잉걸스 인더스트리스",
       "timing": "BMO"
+    },
+    {
+      "title": "HWM · BMO",
+      "start": "2026-10-29",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "HWM",
+      "sector": "Aerospace & Defense",
+      "name": "하우멧 에어로스페이스",
+      "timing": "BMO"
+    },
+    {
+      "title": "INTC · AMC",
+      "start": "2026-10-29",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "INTC",
+      "sector": "Tech",
+      "name": "인텔",
+      "timing": "AMC"
+    },
+    {
+      "title": "LHX · BMO",
+      "start": "2026-10-29",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "LHX",
+      "sector": "Aerospace & Defense",
+      "name": "L3 해리스 테크놀로지스",
+      "timing": "BMO"
+    },
+    {
+      "title": "OWL · BMO",
+      "start": "2026-10-29",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "OWL",
+      "sector": "Financials",
+      "name": "블루 아울 캐피털",
+      "timing": "BMO"
+    },
+    {
+      "title": "QSR · BMO",
+      "start": "2026-10-29",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "QSR",
+      "sector": "Consumer & Retail",
+      "name": "레스토랑 브랜즈 인터내셔널",
+      "timing": "BMO"
+    },
+    {
+      "title": "SBUX · AMC",
+      "start": "2026-10-29",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "SBUX",
+      "sector": "Consumer & Retail",
+      "name": "스타벅스",
+      "timing": "AMC"
     },
     {
       "title": "AAPL · AMC",
@@ -336,36 +416,6 @@
       "ticker": "AAPL",
       "sector": "Tech",
       "name": "애플",
-      "timing": "AMC"
-    },
-    {
-      "title": "O · AMC",
-      "start": "2026-11-02",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "O",
-      "sector": "REITs",
-      "name": "리얼티 인컴",
-      "timing": "AMC"
-    },
-    {
-      "title": "PLTR · AMC",
-      "start": "2026-11-02",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "PLTR",
-      "sector": "Tech",
-      "name": "팔란티어 테크",
-      "timing": "AMC"
-    },
-    {
-      "title": "VNO · AMC",
-      "start": "2026-11-02",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "VNO",
-      "sector": "REITs",
-      "name": "보나도 리얼티 트러스트",
       "timing": "AMC"
     },
     {
@@ -809,6 +859,16 @@
       "timing": ""
     },
     {
+      "title": "AVAV",
+      "start": "2026-12-07",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "AVAV",
+      "sector": "Aerospace & Defense",
+      "name": "에어로바이런먼트",
+      "timing": ""
+    },
+    {
       "title": "OLLI",
       "start": "2026-12-07",
       "color": "#68D391",
@@ -816,16 +876,6 @@
       "ticker": "OLLI",
       "sector": "Consumer & Retail",
       "name": "올리스 바겐 아웃렛 홀딩스",
-      "timing": ""
-    },
-    {
-      "title": "AVAV",
-      "start": "2026-12-08",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "AVAV",
-      "sector": "Aerospace & Defense",
-      "name": "에어로바이런먼트",
       "timing": ""
     },
     {
@@ -869,16 +919,6 @@
       "timing": ""
     },
     {
-      "title": "DRI",
-      "start": "2026-12-11",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "DRI",
-      "sector": "Consumer & Retail",
-      "name": "다든 레스토랑",
-      "timing": ""
-    },
-    {
       "title": "ORCL",
       "start": "2026-12-14",
       "color": "#B794F4",
@@ -907,6 +947,16 @@
       "sector": "Tech",
       "name": "마이크론 테크놀로지",
       "timing": "AMC"
+    },
+    {
+      "title": "DRI",
+      "start": "2026-12-16",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "DRI",
+      "sector": "Consumer & Retail",
+      "name": "다든 레스토랑",
+      "timing": ""
     },
     {
       "title": "NKE · AMC",
@@ -1787,6 +1837,16 @@
       "sector": "Consumer & Retail",
       "name": "코스트코 홀세일",
       "timing": ""
+    },
+    {
+      "title": "TGT · AMC",
+      "start": "2027-03-03",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "TGT",
+      "sector": "Consumer & Retail",
+      "name": "타겟",
+      "timing": "AMC"
     },
     {
       "title": "MRVL · AMC",
