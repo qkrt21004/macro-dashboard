@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-17",
-  "window_from": "2026-08-19",
-  "window_to": "2027-05-16",
+  "generated_at": "2026-11-18",
+  "window_from": "2026-08-20",
+  "window_to": "2027-05-17",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 270,
+  "event_count": 267,
   "events": [
     {
       "title": "GE · BMO",
@@ -409,6 +409,46 @@
       "timing": "AMC"
     },
     {
+      "title": "CVX · BMO",
+      "start": "2026-10-30",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "CVX",
+      "sector": "Commodities",
+      "name": "셰브론",
+      "timing": "BMO"
+    },
+    {
+      "title": "EXC · BMO",
+      "start": "2026-10-30",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "EXC",
+      "sector": "Commodities",
+      "name": "엑셀론",
+      "timing": "BMO"
+    },
+    {
+      "title": "GD · BMO",
+      "start": "2026-10-30",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "GD",
+      "sector": "Aerospace & Defense",
+      "name": "제너럴 다이내믹스",
+      "timing": "BMO"
+    },
+    {
+      "title": "XOM · BMO",
+      "start": "2026-10-30",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "XOM",
+      "sector": "Commodities",
+      "name": "엑슨 모빌",
+      "timing": "BMO"
+    },
+    {
       "title": "AAPL · AMC",
       "start": "2026-11-02",
       "color": "#B794F4",
@@ -779,24 +819,24 @@
       "timing": "AMC"
     },
     {
-      "title": "AMBA",
+      "title": "AMBA · AMC",
       "start": "2026-11-24",
       "color": "#B794F4",
       "allDay": true,
       "ticker": "AMBA",
       "sector": "Tech",
       "name": "암바렐라",
-      "timing": ""
+      "timing": "AMC"
     },
     {
-      "title": "DELL",
+      "title": "DELL · AMC",
       "start": "2026-11-24",
       "color": "#B794F4",
       "allDay": true,
       "ticker": "DELL",
       "sector": "Tech",
       "name": "델 테크놀로지스",
-      "timing": ""
+      "timing": "AMC"
     },
     {
       "title": "MRVL",
@@ -859,16 +899,6 @@
       "timing": ""
     },
     {
-      "title": "AVAV",
-      "start": "2026-12-07",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "AVAV",
-      "sector": "Aerospace & Defense",
-      "name": "에어로바이런먼트",
-      "timing": ""
-    },
-    {
       "title": "OLLI",
       "start": "2026-12-07",
       "color": "#68D391",
@@ -876,6 +906,16 @@
       "ticker": "OLLI",
       "sector": "Consumer & Retail",
       "name": "올리스 바겐 아웃렛 홀딩스",
+      "timing": ""
+    },
+    {
+      "title": "AVAV",
+      "start": "2026-12-08",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "AVAV",
+      "sector": "Aerospace & Defense",
+      "name": "에어로바이런먼트",
       "timing": ""
     },
     {
@@ -919,6 +959,16 @@
       "timing": ""
     },
     {
+      "title": "DRI",
+      "start": "2026-12-11",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "DRI",
+      "sector": "Consumer & Retail",
+      "name": "다든 레스토랑",
+      "timing": ""
+    },
+    {
       "title": "ORCL",
       "start": "2026-12-14",
       "color": "#B794F4",
@@ -947,16 +997,6 @@
       "sector": "Tech",
       "name": "마이크론 테크놀로지",
       "timing": "AMC"
-    },
-    {
-      "title": "DRI",
-      "start": "2026-12-16",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "DRI",
-      "sector": "Consumer & Retail",
-      "name": "다든 레스토랑",
-      "timing": ""
     },
     {
       "title": "NKE · AMC",
@@ -2419,96 +2459,6 @@
       "timing": ""
     },
     {
-      "title": "HII",
-      "start": "2027-05-03",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "HII",
-      "sector": "Aerospace & Defense",
-      "name": "헌팅턴 잉걸스 인더스트리스",
-      "timing": ""
-    },
-    {
-      "title": "KKR",
-      "start": "2027-05-03",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "KKR",
-      "sector": "Financials",
-      "name": "KKR & CO",
-      "timing": ""
-    },
-    {
-      "title": "LDOS",
-      "start": "2027-05-03",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "LDOS",
-      "sector": "Aerospace & Defense",
-      "name": "레이도스 홀딩스",
-      "timing": ""
-    },
-    {
-      "title": "OXY",
-      "start": "2027-05-03",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "OXY",
-      "sector": "Commodities",
-      "name": "옥시덴털 페트롤리엄",
-      "timing": ""
-    },
-    {
-      "title": "PLTR",
-      "start": "2027-05-03",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "PLTR",
-      "sector": "Tech",
-      "name": "팔란티어 테크",
-      "timing": ""
-    },
-    {
-      "title": "PYPL",
-      "start": "2027-05-03",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "PYPL",
-      "sector": "Tech",
-      "name": "페이팔 홀딩스",
-      "timing": ""
-    },
-    {
-      "title": "SMCI",
-      "start": "2027-05-03",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "SMCI",
-      "sector": "Tech",
-      "name": "슈퍼 마이크로 컴퓨터",
-      "timing": ""
-    },
-    {
-      "title": "TDG",
-      "start": "2027-05-03",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "TDG",
-      "sector": "Aerospace & Defense",
-      "name": "트랜스다임 그룹",
-      "timing": ""
-    },
-    {
-      "title": "VNO",
-      "start": "2027-05-03",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "VNO",
-      "sector": "REITs",
-      "name": "보나도 리얼티 트러스트",
-      "timing": ""
-    },
-    {
       "title": "APO",
       "start": "2027-05-04",
       "color": "#4299E1",
@@ -2706,6 +2656,26 @@
       "ticker": "GO",
       "sector": "Consumer & Retail",
       "name": "그로서리 아웃렛 홀딩스",
+      "timing": ""
+    },
+    {
+      "title": "BIDU",
+      "start": "2027-05-17",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "BIDU",
+      "sector": "Tech",
+      "name": "바이두(ADR)",
+      "timing": ""
+    },
+    {
+      "title": "CAVA",
+      "start": "2027-05-17",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "CAVA",
+      "sector": "Consumer & Retail",
+      "name": "카바 그룹",
       "timing": ""
     }
   ]
