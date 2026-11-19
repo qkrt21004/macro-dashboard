@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-18",
-  "window_from": "2026-08-20",
-  "window_to": "2027-05-17",
+  "generated_at": "2026-11-19",
+  "window_from": "2026-08-21",
+  "window_to": "2027-05-18",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 267,
+  "event_count": 276,
   "events": [
     {
       "title": "GE · BMO",
@@ -696,16 +696,6 @@
       "ticker": "OXY",
       "sector": "Commodities",
       "name": "옥시덴털 페트롤리엄",
-      "timing": "AMC"
-    },
-    {
-      "title": "RKLB · AMC",
-      "start": "2026-11-09",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "RKLB",
-      "sector": "Aerospace & Defense",
-      "name": "로켓 랩",
       "timing": "AMC"
     },
     {
@@ -2459,6 +2449,96 @@
       "timing": ""
     },
     {
+      "title": "HII",
+      "start": "2027-05-03",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "HII",
+      "sector": "Aerospace & Defense",
+      "name": "헌팅턴 잉걸스 인더스트리스",
+      "timing": ""
+    },
+    {
+      "title": "KKR",
+      "start": "2027-05-03",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "KKR",
+      "sector": "Financials",
+      "name": "KKR & CO",
+      "timing": ""
+    },
+    {
+      "title": "LDOS",
+      "start": "2027-05-03",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "LDOS",
+      "sector": "Aerospace & Defense",
+      "name": "레이도스 홀딩스",
+      "timing": ""
+    },
+    {
+      "title": "OXY",
+      "start": "2027-05-03",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "OXY",
+      "sector": "Commodities",
+      "name": "옥시덴털 페트롤리엄",
+      "timing": ""
+    },
+    {
+      "title": "PLTR",
+      "start": "2027-05-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "PLTR",
+      "sector": "Tech",
+      "name": "팔란티어 테크",
+      "timing": ""
+    },
+    {
+      "title": "PYPL",
+      "start": "2027-05-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "PYPL",
+      "sector": "Tech",
+      "name": "페이팔 홀딩스",
+      "timing": ""
+    },
+    {
+      "title": "SMCI",
+      "start": "2027-05-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "SMCI",
+      "sector": "Tech",
+      "name": "슈퍼 마이크로 컴퓨터",
+      "timing": ""
+    },
+    {
+      "title": "TDG",
+      "start": "2027-05-03",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "TDG",
+      "sector": "Aerospace & Defense",
+      "name": "트랜스다임 그룹",
+      "timing": ""
+    },
+    {
+      "title": "VNO",
+      "start": "2027-05-03",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "VNO",
+      "sector": "REITs",
+      "name": "보나도 리얼티 트러스트",
+      "timing": ""
+    },
+    {
       "title": "APO",
       "start": "2027-05-04",
       "color": "#4299E1",
@@ -2676,6 +2756,16 @@
       "ticker": "CAVA",
       "sector": "Consumer & Retail",
       "name": "카바 그룹",
+      "timing": ""
+    },
+    {
+      "title": "NVDA",
+      "start": "2027-05-18",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "NVDA",
+      "sector": "Tech",
+      "name": "엔비디아",
       "timing": ""
     }
   ]
