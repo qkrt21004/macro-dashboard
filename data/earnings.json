@@ -1,53 +1,13 @@
 {
-  "generated_at": "2026-11-19",
-  "window_from": "2026-08-21",
-  "window_to": "2027-05-18",
+  "generated_at": "2026-11-20",
+  "window_from": "2026-08-22",
+  "window_to": "2027-05-19",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 276,
+  "event_count": 266,
   "events": [
-    {
-      "title": "GE · BMO",
-      "start": "2026-10-20",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "GE",
-      "sector": "Aerospace & Defense",
-      "name": "GE에어로스페이스",
-      "timing": "BMO"
-    },
-    {
-      "title": "NFLX · AMC",
-      "start": "2026-10-20",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "NFLX",
-      "sector": "Tech",
-      "name": "넷플릭스",
-      "timing": "AMC"
-    },
-    {
-      "title": "NOC · BMO",
-      "start": "2026-10-20",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "NOC",
-      "sector": "Aerospace & Defense",
-      "name": "노스롭 그루만",
-      "timing": "BMO"
-    },
-    {
-      "title": "RTX · BMO",
-      "start": "2026-10-20",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "RTX",
-      "sector": "Aerospace & Defense",
-      "name": "RTX",
-      "timing": "BMO"
-    },
     {
       "title": "CCI · AMC",
       "start": "2026-10-21",
@@ -449,16 +409,6 @@
       "timing": "BMO"
     },
     {
-      "title": "AAPL · AMC",
-      "start": "2026-11-02",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "AAPL",
-      "sector": "Tech",
-      "name": "애플",
-      "timing": "AMC"
-    },
-    {
       "title": "AMD · AMC",
       "start": "2026-11-03",
       "color": "#B794F4",
@@ -467,76 +417,6 @@
       "sector": "Tech",
       "name": "AMD",
       "timing": "AMC"
-    },
-    {
-      "title": "ANET · AMC",
-      "start": "2026-11-03",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "ANET",
-      "sector": "Tech",
-      "name": "아리스타 네트웍스",
-      "timing": "AMC"
-    },
-    {
-      "title": "APO · BMO",
-      "start": "2026-11-03",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "APO",
-      "sector": "Financials",
-      "name": "아폴로 글로벌 매니지먼트",
-      "timing": "BMO"
-    },
-    {
-      "title": "CPNG · AMC",
-      "start": "2026-11-03",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "CPNG",
-      "sector": "Consumer & Retail",
-      "name": "쿠팡",
-      "timing": "AMC"
-    },
-    {
-      "title": "HLNE · BMO",
-      "start": "2026-11-03",
-      "color": "#4299E1",
-      "allDay": true,
-      "ticker": "HLNE",
-      "sector": "Financials",
-      "name": "해밀턴 레인",
-      "timing": "BMO"
-    },
-    {
-      "title": "LDOS · BMO",
-      "start": "2026-11-03",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "LDOS",
-      "sector": "Aerospace & Defense",
-      "name": "레이도스 홀딩스",
-      "timing": "BMO"
-    },
-    {
-      "title": "SMCI · AMC",
-      "start": "2026-11-03",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "SMCI",
-      "sector": "Tech",
-      "name": "슈퍼 마이크로 컴퓨터",
-      "timing": "AMC"
-    },
-    {
-      "title": "YUM · BMO",
-      "start": "2026-11-03",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "YUM",
-      "sector": "Consumer & Retail",
-      "name": "염 브랜즈",
-      "timing": "BMO"
     },
     {
       "title": "ARM · AMC",
@@ -699,6 +579,16 @@
       "timing": "AMC"
     },
     {
+      "title": "RKLB · AMC",
+      "start": "2026-11-09",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "RKLB",
+      "sector": "Aerospace & Defense",
+      "name": "로켓 랩",
+      "timing": "AMC"
+    },
+    {
       "title": "GO · AMC",
       "start": "2026-11-10",
       "color": "#68D391",
@@ -829,16 +719,6 @@
       "timing": "AMC"
     },
     {
-      "title": "MRVL",
-      "start": "2026-11-26",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "MRVL",
-      "sector": "Tech",
-      "name": "마블 테크놀로지 그룹",
-      "timing": ""
-    },
-    {
       "title": "DLTR",
       "start": "2026-12-01",
       "color": "#68D391",
@@ -949,16 +829,6 @@
       "timing": ""
     },
     {
-      "title": "DRI",
-      "start": "2026-12-11",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "DRI",
-      "sector": "Consumer & Retail",
-      "name": "다든 레스토랑",
-      "timing": ""
-    },
-    {
       "title": "ORCL",
       "start": "2026-12-14",
       "color": "#B794F4",
@@ -997,6 +867,16 @@
       "sector": "Consumer & Retail",
       "name": "나이키 B",
       "timing": "AMC"
+    },
+    {
+      "title": "DRI",
+      "start": "2026-12-18",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "DRI",
+      "sector": "Consumer & Retail",
+      "name": "다든 레스토랑",
+      "timing": ""
     },
     {
       "title": "NFLX · AMC",
@@ -2766,6 +2646,26 @@
       "ticker": "NVDA",
       "sector": "Tech",
       "name": "엔비디아",
+      "timing": ""
+    },
+    {
+      "title": "HLNE",
+      "start": "2027-05-19",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "HLNE",
+      "sector": "Financials",
+      "name": "해밀턴 레인",
+      "timing": ""
+    },
+    {
+      "title": "WMT",
+      "start": "2027-05-19",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "WMT",
+      "sector": "Consumer & Retail",
+      "name": "월마트",
       "timing": ""
     }
   ]
