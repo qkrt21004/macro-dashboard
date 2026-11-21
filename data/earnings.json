@@ -1,63 +1,13 @@
 {
-  "generated_at": "2026-11-20",
-  "window_from": "2026-08-22",
-  "window_to": "2027-05-19",
+  "generated_at": "2026-11-21",
+  "window_from": "2026-08-23",
+  "window_to": "2027-05-20",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 266,
+  "event_count": 264,
   "events": [
-    {
-      "title": "CCI · AMC",
-      "start": "2026-10-21",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "CCI",
-      "sector": "REITs",
-      "name": "크라운 캐슬",
-      "timing": "AMC"
-    },
-    {
-      "title": "IBM · AMC",
-      "start": "2026-10-21",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "IBM",
-      "sector": "Tech",
-      "name": "IBM",
-      "timing": "AMC"
-    },
-    {
-      "title": "LRCX · AMC",
-      "start": "2026-10-21",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "LRCX",
-      "sector": "Tech",
-      "name": "램 리서치",
-      "timing": "AMC"
-    },
-    {
-      "title": "META · AMC",
-      "start": "2026-10-21",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "META",
-      "sector": "Tech",
-      "name": "메타 플랫폼스(페이스북)",
-      "timing": "AMC"
-    },
-    {
-      "title": "TSLA · AMC",
-      "start": "2026-10-21",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "TSLA",
-      "sector": "Tech",
-      "name": "테슬라",
-      "timing": "AMC"
-    },
     {
       "title": "KRC · AMC",
       "start": "2026-10-22",
@@ -409,13 +359,43 @@
       "timing": "BMO"
     },
     {
-      "title": "AMD · AMC",
-      "start": "2026-11-03",
+      "title": "AAPL · AMC",
+      "start": "2026-11-02",
       "color": "#B794F4",
       "allDay": true,
-      "ticker": "AMD",
+      "ticker": "AAPL",
       "sector": "Tech",
-      "name": "AMD",
+      "name": "애플",
+      "timing": "AMC"
+    },
+    {
+      "title": "O · AMC",
+      "start": "2026-11-02",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "O",
+      "sector": "REITs",
+      "name": "리얼티 인컴",
+      "timing": "AMC"
+    },
+    {
+      "title": "PLTR · AMC",
+      "start": "2026-11-02",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "PLTR",
+      "sector": "Tech",
+      "name": "팔란티어 테크",
+      "timing": "AMC"
+    },
+    {
+      "title": "VNO · AMC",
+      "start": "2026-11-02",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "VNO",
+      "sector": "REITs",
+      "name": "보나도 리얼티 트러스트",
       "timing": "AMC"
     },
     {
@@ -446,16 +426,6 @@
       "ticker": "CAVA",
       "sector": "Consumer & Retail",
       "name": "카바 그룹",
-      "timing": "AMC"
-    },
-    {
-      "title": "QCOM · AMC",
-      "start": "2026-11-04",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "QCOM",
-      "sector": "Tech",
-      "name": "퀄컴",
       "timing": "AMC"
     },
     {
@@ -739,6 +709,16 @@
       "timing": ""
     },
     {
+      "title": "MRVL",
+      "start": "2026-12-01",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "MRVL",
+      "sector": "Tech",
+      "name": "마블 테크놀로지 그룹",
+      "timing": ""
+    },
+    {
       "title": "CRM · AMC",
       "start": "2026-12-02",
       "color": "#B794F4",
@@ -849,16 +829,6 @@
       "timing": ""
     },
     {
-      "title": "MU · AMC",
-      "start": "2026-12-15",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "MU",
-      "sector": "Tech",
-      "name": "마이크론 테크놀로지",
-      "timing": "AMC"
-    },
-    {
       "title": "NKE · AMC",
       "start": "2026-12-16",
       "color": "#68D391",
@@ -866,6 +836,16 @@
       "ticker": "NKE",
       "sector": "Consumer & Retail",
       "name": "나이키 B",
+      "timing": "AMC"
+    },
+    {
+      "title": "MU · AMC",
+      "start": "2026-12-17",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "MU",
+      "sector": "Tech",
+      "name": "마이크론 테크놀로지",
       "timing": "AMC"
     },
     {
@@ -2269,16 +2249,6 @@
       "timing": ""
     },
     {
-      "title": "LHX",
-      "start": "2027-04-28",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "LHX",
-      "sector": "Aerospace & Defense",
-      "name": "L3 해리스 테크놀로지스",
-      "timing": ""
-    },
-    {
       "title": "CVX",
       "start": "2027-04-29",
       "color": "#F6AD55",
@@ -2666,6 +2636,16 @@
       "ticker": "WMT",
       "sector": "Consumer & Retail",
       "name": "월마트",
+      "timing": ""
+    },
+    {
+      "title": "BAH",
+      "start": "2027-05-20",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "BAH",
+      "sector": "Aerospace & Defense",
+      "name": "부즈 알렌 해밀턴 홀딩",
       "timing": ""
     }
   ]
