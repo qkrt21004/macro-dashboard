@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-11-22",
-  "window_from": "2026-08-24",
-  "window_to": "2027-05-21",
+  "generated_at": "2026-11-23",
+  "window_from": "2026-08-25",
+  "window_to": "2027-05-22",
   "ticker_count": 124,
   "succeeded": 108,
   "empty": 16,
   "failed": 0,
-  "event_count": 275,
+  "event_count": 270,
   "events": [
-    {
-      "title": "BAH · BMO",
-      "start": "2026-10-23",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "BAH",
-      "sector": "Aerospace & Defense",
-      "name": "부즈 알렌 해밀턴 홀딩",
-      "timing": "BMO"
-    },
     {
       "title": "PSA · AMC",
       "start": "2026-10-26",
@@ -186,16 +176,6 @@
       "ticker": "NI",
       "sector": "Commodities",
       "name": "나이소스",
-      "timing": "BMO"
-    },
-    {
-      "title": "WING · BMO",
-      "start": "2026-10-28",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "WING",
-      "sector": "Consumer & Retail",
-      "name": "윙스톱",
       "timing": "BMO"
     },
     {
@@ -489,6 +469,16 @@
       "timing": "AMC"
     },
     {
+      "title": "QCOM · AMC",
+      "start": "2026-11-04",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "QCOM",
+      "sector": "Tech",
+      "name": "퀄컴",
+      "timing": "AMC"
+    },
+    {
       "title": "AFRM · AMC",
       "start": "2026-11-05",
       "color": "#4299E1",
@@ -537,46 +527,6 @@
       "sector": "Aerospace & Defense",
       "name": "크라토스 디펜스 앤드 시큐리티 솔루션",
       "timing": "AMC"
-    },
-    {
-      "title": "SHAK · BMO",
-      "start": "2026-11-05",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "SHAK",
-      "sector": "Consumer & Retail",
-      "name": "쉐이크쉑",
-      "timing": "BMO"
-    },
-    {
-      "title": "SMR · AMC",
-      "start": "2026-11-05",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "SMR",
-      "sector": "Commodities",
-      "name": "뉴스케일 파워",
-      "timing": "AMC"
-    },
-    {
-      "title": "SPG · AMC",
-      "start": "2026-11-05",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "SPG",
-      "sector": "REITs",
-      "name": "사이먼 프라퍼티 그룹",
-      "timing": "AMC"
-    },
-    {
-      "title": "WEN · BMO",
-      "start": "2026-11-05",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "WEN",
-      "sector": "Consumer & Retail",
-      "name": "웬디스 컴퍼니",
-      "timing": "BMO"
     },
     {
       "title": "BLMN · BMO",
