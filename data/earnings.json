@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-24",
-  "window_from": "2026-08-26",
-  "window_to": "2027-05-23",
+  "generated_at": "2026-11-25",
+  "window_from": "2026-08-27",
+  "window_to": "2027-05-24",
   "ticker_count": 124,
-  "succeeded": 107,
-  "empty": 17,
+  "succeeded": 108,
+  "empty": 16,
   "failed": 0,
-  "event_count": 264,
+  "event_count": 268,
   "events": [
     {
       "title": "PSA · AMC",
@@ -189,34 +189,104 @@
       "timing": "BMO"
     },
     {
-      "title": "CVX · BMO",
-      "start": "2026-10-30",
-      "color": "#F6AD55",
+      "title": "AMZN · AMC",
+      "start": "2026-10-29",
+      "color": "#B794F4",
       "allDay": true,
-      "ticker": "CVX",
-      "sector": "Commodities",
-      "name": "셰브론",
+      "ticker": "AMZN",
+      "sector": "Tech",
+      "name": "아마존닷컴",
+      "timing": "AMC"
+    },
+    {
+      "title": "CROX · BMO",
+      "start": "2026-10-29",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "CROX",
+      "sector": "Consumer & Retail",
+      "name": "크록스",
       "timing": "BMO"
     },
     {
-      "title": "EXC · BMO",
-      "start": "2026-10-30",
-      "color": "#F6AD55",
+      "title": "DLR · AMC",
+      "start": "2026-10-29",
+      "color": "#4FD1C5",
       "allDay": true,
-      "ticker": "EXC",
-      "sector": "Commodities",
-      "name": "엑셀론",
-      "timing": "BMO"
+      "ticker": "DLR",
+      "sector": "REITs",
+      "name": "디지털 리얼티 트러스트",
+      "timing": "AMC"
     },
     {
-      "title": "GD · BMO",
-      "start": "2026-10-30",
+      "title": "HII · BMO",
+      "start": "2026-10-29",
       "color": "#FC8181",
       "allDay": true,
-      "ticker": "GD",
+      "ticker": "HII",
       "sector": "Aerospace & Defense",
-      "name": "제너럴 다이내믹스",
+      "name": "헌팅턴 잉걸스 인더스트리스",
       "timing": "BMO"
+    },
+    {
+      "title": "HWM · BMO",
+      "start": "2026-10-29",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "HWM",
+      "sector": "Aerospace & Defense",
+      "name": "하우멧 에어로스페이스",
+      "timing": "BMO"
+    },
+    {
+      "title": "INTC · AMC",
+      "start": "2026-10-29",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "INTC",
+      "sector": "Tech",
+      "name": "인텔",
+      "timing": "AMC"
+    },
+    {
+      "title": "LHX · BMO",
+      "start": "2026-10-29",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "LHX",
+      "sector": "Aerospace & Defense",
+      "name": "L3 해리스 테크놀로지스",
+      "timing": "BMO"
+    },
+    {
+      "title": "OWL · BMO",
+      "start": "2026-10-29",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "OWL",
+      "sector": "Financials",
+      "name": "블루 아울 캐피털",
+      "timing": "BMO"
+    },
+    {
+      "title": "QSR · BMO",
+      "start": "2026-10-29",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "QSR",
+      "sector": "Consumer & Retail",
+      "name": "레스토랑 브랜즈 인터내셔널",
+      "timing": "BMO"
+    },
+    {
+      "title": "SBUX · AMC",
+      "start": "2026-10-29",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "SBUX",
+      "sector": "Consumer & Retail",
+      "name": "스타벅스",
+      "timing": "AMC"
     },
     {
       "title": "AAPL · AMC",
@@ -226,36 +296,6 @@
       "ticker": "AAPL",
       "sector": "Tech",
       "name": "애플",
-      "timing": "AMC"
-    },
-    {
-      "title": "O · AMC",
-      "start": "2026-11-02",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "O",
-      "sector": "REITs",
-      "name": "리얼티 인컴",
-      "timing": "AMC"
-    },
-    {
-      "title": "PLTR · AMC",
-      "start": "2026-11-02",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "PLTR",
-      "sector": "Tech",
-      "name": "팔란티어 테크",
-      "timing": "AMC"
-    },
-    {
-      "title": "VNO · AMC",
-      "start": "2026-11-02",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "VNO",
-      "sector": "REITs",
-      "name": "보나도 리얼티 트러스트",
       "timing": "AMC"
     },
     {
@@ -649,14 +689,14 @@
       "timing": "BMO"
     },
     {
-      "title": "MRVL",
+      "title": "MRVL · AMC",
       "start": "2026-12-01",
       "color": "#B794F4",
       "allDay": true,
       "ticker": "MRVL",
       "sector": "Tech",
       "name": "마블 테크놀로지 그룹",
-      "timing": ""
+      "timing": "AMC"
     },
     {
       "title": "CRM · AMC",
