@@ -1,73 +1,13 @@
 {
-  "generated_at": "2026-11-26",
-  "window_from": "2026-08-28",
-  "window_to": "2027-05-25",
+  "generated_at": "2026-11-27",
+  "window_from": "2026-08-29",
+  "window_to": "2027-05-26",
   "ticker_count": 124,
-  "succeeded": 108,
-  "empty": 16,
+  "succeeded": 107,
+  "empty": 17,
   "failed": 0,
-  "event_count": 262,
+  "event_count": 265,
   "events": [
-    {
-      "title": "AMT · BMO",
-      "start": "2026-10-27",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "AMT",
-      "sector": "REITs",
-      "name": "아메리칸 타워",
-      "timing": "BMO"
-    },
-    {
-      "title": "BA · BMO",
-      "start": "2026-10-27",
-      "color": "#FC8181",
-      "allDay": true,
-      "ticker": "BA",
-      "sector": "Aerospace & Defense",
-      "name": "보잉",
-      "timing": "BMO"
-    },
-    {
-      "title": "FCX · BMO",
-      "start": "2026-10-27",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "FCX",
-      "sector": "Commodities",
-      "name": "프리포트 맥모란",
-      "timing": "BMO"
-    },
-    {
-      "title": "KO · BMO",
-      "start": "2026-10-27",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "KO",
-      "sector": "Consumer & Retail",
-      "name": "코카콜라",
-      "timing": "BMO"
-    },
-    {
-      "title": "PYPL · BMO",
-      "start": "2026-10-27",
-      "color": "#B794F4",
-      "allDay": true,
-      "ticker": "PYPL",
-      "sector": "Tech",
-      "name": "페이팔 홀딩스",
-      "timing": "BMO"
-    },
-    {
-      "title": "VTR · AMC",
-      "start": "2026-10-27",
-      "color": "#4FD1C5",
-      "allDay": true,
-      "ticker": "VTR",
-      "sector": "REITs",
-      "name": "벤타스",
-      "timing": "AMC"
-    },
     {
       "title": "AEP · BMO",
       "start": "2026-10-28",
@@ -409,16 +349,6 @@
       "timing": "AMC"
     },
     {
-      "title": "BKH · AMC",
-      "start": "2026-11-04",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "BKH",
-      "sector": "Commodities",
-      "name": "블랙 힐스",
-      "timing": "AMC"
-    },
-    {
       "title": "CAVA · AMC",
       "start": "2026-11-04",
       "color": "#68D391",
@@ -739,24 +669,24 @@
       "timing": "AMC"
     },
     {
-      "title": "DG",
+      "title": "DG · BMO",
       "start": "2026-12-03",
       "color": "#68D391",
       "allDay": true,
       "ticker": "DG",
       "sector": "Consumer & Retail",
       "name": "달러 제너럴",
-      "timing": ""
+      "timing": "BMO"
     },
     {
-      "title": "KR",
+      "title": "KR · BMO",
       "start": "2026-12-03",
       "color": "#68D391",
       "allDay": true,
       "ticker": "KR",
       "sector": "Consumer & Retail",
       "name": "크로거",
-      "timing": ""
+      "timing": "BMO"
     },
     {
       "title": "OLLI",
@@ -1207,16 +1137,6 @@
       "sector": "Tech",
       "name": "에이알엠 홀딩스(ADR)",
       "timing": ""
-    },
-    {
-      "title": "BKH · AMC",
-      "start": "2027-02-02",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "BKH",
-      "sector": "Commodities",
-      "name": "블랙 힐스",
-      "timing": "AMC"
     },
     {
       "title": "CCI · AMC",
@@ -2309,6 +2229,106 @@
       "timing": ""
     },
     {
+      "title": "CPNG",
+      "start": "2027-05-03",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "CPNG",
+      "sector": "Consumer & Retail",
+      "name": "쿠팡",
+      "timing": ""
+    },
+    {
+      "title": "HII",
+      "start": "2027-05-03",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "HII",
+      "sector": "Aerospace & Defense",
+      "name": "헌팅턴 잉걸스 인더스트리스",
+      "timing": ""
+    },
+    {
+      "title": "KKR",
+      "start": "2027-05-03",
+      "color": "#4299E1",
+      "allDay": true,
+      "ticker": "KKR",
+      "sector": "Financials",
+      "name": "KKR & CO",
+      "timing": ""
+    },
+    {
+      "title": "LDOS",
+      "start": "2027-05-03",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "LDOS",
+      "sector": "Aerospace & Defense",
+      "name": "레이도스 홀딩스",
+      "timing": ""
+    },
+    {
+      "title": "OXY",
+      "start": "2027-05-03",
+      "color": "#F6AD55",
+      "allDay": true,
+      "ticker": "OXY",
+      "sector": "Commodities",
+      "name": "옥시덴털 페트롤리엄",
+      "timing": ""
+    },
+    {
+      "title": "PLTR",
+      "start": "2027-05-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "PLTR",
+      "sector": "Tech",
+      "name": "팔란티어 테크",
+      "timing": ""
+    },
+    {
+      "title": "PYPL",
+      "start": "2027-05-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "PYPL",
+      "sector": "Tech",
+      "name": "페이팔 홀딩스",
+      "timing": ""
+    },
+    {
+      "title": "SMCI",
+      "start": "2027-05-03",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "SMCI",
+      "sector": "Tech",
+      "name": "슈퍼 마이크로 컴퓨터",
+      "timing": ""
+    },
+    {
+      "title": "TDG",
+      "start": "2027-05-03",
+      "color": "#FC8181",
+      "allDay": true,
+      "ticker": "TDG",
+      "sector": "Aerospace & Defense",
+      "name": "트랜스다임 그룹",
+      "timing": ""
+    },
+    {
+      "title": "VNO",
+      "start": "2027-05-03",
+      "color": "#4FD1C5",
+      "allDay": true,
+      "ticker": "VNO",
+      "sector": "REITs",
+      "name": "보나도 리얼티 트러스트",
+      "timing": ""
+    },
+    {
       "title": "APO",
       "start": "2027-05-04",
       "color": "#4299E1",
@@ -2327,16 +2347,6 @@
       "sector": "Tech",
       "name": "에이알엠 홀딩스(ADR)",
       "timing": "AMC"
-    },
-    {
-      "title": "BKH",
-      "start": "2027-05-04",
-      "color": "#F6AD55",
-      "allDay": true,
-      "ticker": "BKH",
-      "sector": "Commodities",
-      "name": "블랙 힐스",
-      "timing": ""
     },
     {
       "title": "BLMN",
@@ -2396,16 +2406,6 @@
       "ticker": "O",
       "sector": "REITs",
       "name": "리얼티 인컴",
-      "timing": ""
-    },
-    {
-      "title": "QSR",
-      "start": "2027-05-04",
-      "color": "#68D391",
-      "allDay": true,
-      "ticker": "QSR",
-      "sector": "Consumer & Retail",
-      "name": "레스토랑 브랜즈 인터내셔널",
       "timing": ""
     },
     {
@@ -2626,6 +2626,36 @@
       "ticker": "MRVL",
       "sector": "Tech",
       "name": "마블 테크놀로지 그룹",
+      "timing": ""
+    },
+    {
+      "title": "AMBA",
+      "start": "2027-05-26",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "AMBA",
+      "sector": "Tech",
+      "name": "암바렐라",
+      "timing": ""
+    },
+    {
+      "title": "COST",
+      "start": "2027-05-26",
+      "color": "#68D391",
+      "allDay": true,
+      "ticker": "COST",
+      "sector": "Consumer & Retail",
+      "name": "코스트코 홀세일",
+      "timing": ""
+    },
+    {
+      "title": "DELL",
+      "start": "2027-05-26",
+      "color": "#B794F4",
+      "allDay": true,
+      "ticker": "DELL",
+      "sector": "Tech",
+      "name": "델 테크놀로지스",
       "timing": ""
     }
   ]
